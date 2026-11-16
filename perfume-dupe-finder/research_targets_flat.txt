@@ -1,0 +1,90 @@
+tom-ford-oud-wood	Tom Ford	Oud Wood	eau-de-parfum
+le-labo-santal-33	Le Labo	Santal 33	eau-de-parfum
+dior-jadore	Dior	J'adore	eau-de-parfum
+initio-oud-for-greatness	Initio Parfums Prives	Oud for Greatness	eau-de-parfum
+ysl-black-opium	Yves Saint Laurent	Black Opium	eau-de-parfum
+tom-ford-tobacco-vanille	Tom Ford	Tobacco Vanille	eau-de-parfum
+le-labo-another-13	Le Labo	Another 13	eau-de-parfum
+armani-acqua-di-gio	Giorgio Armani	Acqua di Giò	eau-de-parfum
+prada-paradoxe	Prada	Paradoxe	eau-de-parfum
+initio-side-effect	Initio Parfums Prives	Side Effect	eau-de-parfum
+guerlain-lheure-bleue	Guerlain	L'Heure Bleue	eau-de-parfum
+mugler-angel	Mugler	Angel	eau-de-parfum
+tom-ford-black-orchid	Tom Ford	Black Orchid	eau-de-parfum
+hermes-twilly-dhermes	Hermès	Twilly d'Hermès	eau-de-parfum
+kayali-vanilla-28	Kayali	Vanilla 28	eau-de-parfum
+prada-lhomme-prada	Prada	L'Homme Prada	eau-de-parfum
+initio-atomic-rose	Initio Parfums Prives	Atomic Rose	eau-de-parfum
+valentino-donna-born-in-roma	Valentino	Donna Born in Roma	eau-de-parfum
+mugler-alien	Mugler	Alien	eau-de-parfum
+tom-ford-lost-cherry	Tom Ford	Lost Cherry	eau-de-parfum
+hermes-un-jardin-sur-le-nil	Hermès	Un Jardin sur le Nil	eau-de-parfum
+armani-armani-code	Giorgio Armani	Armani Code	eau-de-parfum
+prada-luna-rossa-carbon	Prada	Luna Rossa Carbon	eau-de-parfum
+initio-absolute-aphrodisiac	Initio Parfums Prives	Absolute Aphrodisiac	eau-de-parfum
+valentino-uomo-born-in-roma-intense	Valentino	Uomo Born in Roma Intense	eau-de-parfum
+tom-ford-soleil-blanc	Tom Ford	Soleil Blanc	eau-de-parfum
+hermes-eau-des-merveilles	Hermès	Eau des Merveilles	eau-de-toilette
+jean-paul-gaultier-scandal	Jean Paul Gaultier	Scandal	eau-de-parfum
+le-labo-the-noir-29	Le Labo	Thé Noir 29	eau-de-parfum
+initio-rehab	Initio Parfums Prives	Rehab	extrait
+valentino-voce-viva	Valentino	Voce Viva	eau-de-parfum
+gucci-flora-gorgeous-gardenia	Gucci	Flora Gorgeous Gardenia	eau-de-parfum
+dior-hypnotic-poison	Dior	Hypnotic Poison	eau-de-toilette
+initio-paragon	Initio Parfums Prives	Paragon	extrait
+kilian-moonlight-in-heaven	Kilian Paris	Moonlight in Heaven	eau-de-parfum
+mugler-angel-nova	Mugler	Angel Nova	eau-de-parfum
+narciso-rodriguez-for-her	Narciso Rodriguez	For Her	eau-de-toilette
+tom-ford-fucking-fabulous	Tom Ford	Fucking Fabulous	eau-de-parfum
+loewe-001-woman	Loewe	001 Woman	eau-de-toilette
+versace-yellow-diamond	Versace	Yellow Diamond	eau-de-toilette
+initio-blessed-baraka	Initio Parfums Prives	Blessed Baraka	eau-de-parfum
+tom-ford-tuscan-leather	Tom Ford	Tuscan Leather	eau-de-parfum
+loewe-001-man	Loewe	001 Man	eau-de-toilette
+initio-high-frequency	Initio Parfums Prives	High Frequency	eau-de-parfum
+tom-ford-ombre-leather	Tom Ford	Ombré Leather	parfum
+initio-musk-therapy	Initio Parfums Prives	Musk Therapy	extrait
+hermes-barenia	Hermès	Barénia	eau-de-parfum
+le-labo-noir-29	Le Labo	Noir 29	eau-de-parfum
+armani-armani-code-parfum	Giorgio Armani	Armani Code Parfum	parfum
+prada-paradigme	Prada	Paradigme	eau-de-parfum
+hugo-boss-boss-bottled-elixir	Hugo Boss	Boss Bottled Elixir	
+dior-addict	Dior	Addict	eau-de-parfum
+initio-narcotic-delight	Initio Parfums Prives	Narcotic Delight	eau-de-parfum
+comme-des-garcons-wonderwood	Comme des Garçons	Wonderwood	eau-de-parfum
+tom-ford-noir-de-noir	Tom Ford	Noir de Noir	eau-de-parfum
+ysl-tuxedo	Yves Saint Laurent	Tuxedo	eau-de-parfum
+mugler-angel-elixir	Mugler	Angel Elixir	eau-de-parfum
+dior-sauvage-elixir	Dior	Sauvage Elixir	elixir
+initio-psychedelic-love	Initio Parfums Prives	Psychedelic Love	eau-de-parfum
+tom-ford-rose-prick	Tom Ford	Rose Prick	eau-de-parfum
+balmain-blanc-galaxie	Balmain	Blanc Galaxie	eau-de-parfum
+balmain-bleu-infini	Balmain	Bleu Infini	eau-de-parfum
+balmain-cuir-elysees	Balmain	Cuir Elysees	eau-de-parfum
+balmain-ebene	Balmain	Ebene	eau-de-parfum
+clive-christian-20-iconic-masculine	Clive Christian	20 Iconic Masculine	eau-de-parfum
+dior-dior-homme-parfum	Dior	Dior Homme Parfum	parfum
+dior-sauvage-eau-de-toilette	Dior	Sauvage	eau-de-toilette
+dior-sauvage-eau-forte	Dior	Sauvage Eau Forte	
+dior-sauvage-parfum	Dior	Sauvage Parfum	parfum
+armani-acqua-di-gio-parfum	Giorgio Armani	Acqua di Gio Parfum	parfum
+armani-acqua-di-gio-profondo-parfum	Giorgio Armani	Acqua Di Giò Profondo	eau-de-parfum
+initio-oud-for-greatness-neo	Initio Parfums Prives	Oud for Greatness Neo	eau-de-parfum
+initio-sugar-blast	Initio Parfums Prives	Sugar Blast	eau-de-parfum
+initio-wild-rush	Initio Parfums Prives	Wild Rush	eau-de-parfum
+jo-malone-scarlet-poppy-intense	Jo Malone London	Scarlet Poppy Intense	
+jo-malone-tangerine-honey	Jo Malone London	Tangerine Honey	
+jo-malone-vanilla-scotch	Jo Malone London	Vanilla Scotch	
+kilian-fievre-verte	Kilian Paris	Fievre Verte	eau-de-parfum
+le-labo-the-matcha-26	Le Labo	Thé Matcha 26	eau-de-parfum
+mugler-alien-extraintense	Mugler	Alien Extraintense	eau-de-parfum
+mugler-alien-goddess-parfum	Mugler	Alien Goddess	eau-de-parfum
+penhaligons-changing-constance	Penhaligon's	Changing Constance	eau-de-parfum
+penhaligons-changing-constance-intense	Penhaligon's	Changing Constance Intense	eau-de-parfum
+penhaligons-empressa	Penhaligon's	Empressa	eau-de-parfum
+penhaligons-fortuitous-finley	Penhaligon's	Fortuitous Finley	eau-de-parfum
+penhaligons-the-coveted-duchess-rose-intense	Penhaligon's	The Coveted Duchess Rose Intense	eau-de-parfum
+penhaligons-the-favourite	Penhaligon's	The Favourite	eau-de-parfum
+penhaligons-the-manoeuvres-of-the-baroness	Penhaligon's	The Manoeuvres of the Baroness	eau-de-parfum
+tom-ford-santal-blush	Tom Ford	Santal Blush	eau-de-parfum
+ysl-muse	Yves Saint Laurent	Muse	eau-de-parfum

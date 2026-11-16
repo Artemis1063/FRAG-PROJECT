@@ -1,0 +1,1126 @@
+<title>Perfume Dupe Finder</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout: one reading column. Search on top, the chosen perfume's pyramid as three
+   stacked bands (top/heart/base), then ranked matches whose shared notes light up per band. */
+:root {
+  --bg: #f4f2f7;
+  --surface: #ffffff;
+  --ink: #24182b;
+  --muted: #6b6075;
+  --line: #e3dde9;
+  --accent: #985512;
+  --accent-soft: #f6e8d8;
+  --field: #8f8399;
+  --top: #3f7d66;
+  --heart: #a8405f;
+  --base: #7a5230;
+  --chip: #f1edf4;
+  --warn: #8a5a00;
+  /* San Francisco on Apple devices; Inter, its closest free match, everywhere else. */
+  --display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Helvetica Neue", sans-serif;
+  --body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Helvetica Neue", sans-serif;
+  --mono: var(--body);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #161019; --surface: #201925; --ink: #efe8f3; --muted: #a99db3; --line: #352c3c;
+    --accent: #e3a256; --accent-soft: #3a2a1c; --top: #8cc2ac; --heart: #e78aa6; --base: #d4a476;
+    --chip: #2a2230; --warn: #e8b04a; --field: #76687f; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #161019; --surface: #201925; --ink: #efe8f3; --muted: #a99db3; --line: #352c3c;
+  --accent: #e3a256; --accent-soft: #3a2a1c; --top: #8cc2ac; --heart: #e78aa6; --base: #d4a476;
+  --chip: #2a2230; --warn: #e8b04a; --field: #76687f; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+/* Motion, Apple-style: long soft deceleration, small distances, opacity with transform only. */
+:root { --ease: cubic-bezier(.32, .72, 0, 1); --ease-io: cubic-bezier(.65, 0, .35, 1); }
+button, .suggest li, .search input, .slot .picked {
+  transition: color .2s var(--ease), background-color .2s var(--ease), border-color .2s var(--ease),
+    box-shadow .3s var(--ease), transform .3s var(--ease);
+}
+button:active:not([disabled]) { transform: scale(.97); }
+@media (prefers-reduced-motion: no-preference) {
+  .view[role="tabpanel"]:not([hidden]) { animation: fade-rise .5s var(--ease) both; }
+  .suggest:not([hidden]) { animation: pop .28s var(--ease) both; transform-origin: top center; }
+  .verdict, .lookup-box, .chosen, .empty, .notice { animation: fade-rise .6s var(--ease) both; }
+  .results > li, .sugg > li, .coll > li { animation: fade-rise .6s var(--ease) both; }
+  .results > li:nth-child(2), .sugg > li:nth-child(2), .coll > li:nth-child(2) { animation-delay: .05s; }
+  .results > li:nth-child(3), .sugg > li:nth-child(3), .coll > li:nth-child(3) { animation-delay: .1s; }
+  .results > li:nth-child(4), .sugg > li:nth-child(4), .coll > li:nth-child(4) { animation-delay: .15s; }
+  .results > li:nth-child(5), .sugg > li:nth-child(5), .coll > li:nth-child(5) { animation-delay: .2s; }
+  .results > li:nth-child(n+6), .sugg > li:nth-child(n+6), .coll > li:nth-child(n+6) { animation-delay: .25s; }
+  .bar .fill { transform-origin: left center; animation: grow 1s var(--ease) .15s both; }
+  .dots i.on { animation: dot-in .4s var(--ease) both; }
+  @keyframes fade-rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  @keyframes pop { from { opacity: 0; transform: translateY(-4px) scale(.98); } to { opacity: 1; transform: none; } }
+  @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  @keyframes dot-in { from { transform: scale(.4); opacity: 0; } to { transform: none; opacity: 1; } }
+}
+@media (prefers-reduced-motion: reduce) {
+  button, .suggest li, .search input, .slot .picked, .tab-ink { transition: none !important; }
+  button:active:not([disabled]) { transform: none; }
+}
+[hidden] { display: none !important; }
+body {
+  background: var(--bg); color: var(--ink); font: 15px/1.55 var(--body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 48px;
+}
+.wrap { max-width: 860px; margin: 0 auto; display: grid; gap: 28px; }
+a { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+h1, h2, h3 { text-wrap: balance; margin: 0; }
+.mono { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.eyebrow { font: 700 11px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+
+/* Header + search */
+header { padding-top: 36px; display: grid; gap: 14px; }
+.mark { font: 800 clamp(34px, 7vw, 52px)/1.05 var(--display); letter-spacing: -.03em; }
+.mark b { font-weight: 800; color: var(--accent); }
+.lede { color: var(--muted); max-width: 58ch; margin: 0; }
+.search { position: relative; }
+.search input {
+  width: 100%; font: 18px var(--body); color: var(--ink); background: var(--surface);
+  border: 1.5px solid var(--field); border-radius: 12px; padding: 14px 16px;
+}
+.search input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.suggest {
+  position: absolute; z-index: 5; left: 0; right: 0; top: calc(100% + 6px); list-style: none; margin: 0; padding: 6px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 12px 32px rgb(0 0 0 / .14);
+}
+.suggest li { padding: 9px 10px; border-radius: 8px; cursor: pointer; display: flex; justify-content: space-between; gap: 12px; }
+.suggest li[aria-selected="true"], .suggest li:hover { background: var(--chip); }
+.suggest .b { color: var(--muted); font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.suggest .lookup { color: var(--accent); }
+.tries { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 13px; color: var(--muted); }
+.tries button {
+  font: 13px var(--body); color: var(--ink); background: transparent; border: 1px solid var(--line);
+  border-radius: 999px; padding: 6px 12px; min-height: 32px; cursor: pointer;
+}
+.tries button:hover { border-color: var(--accent); }
+
+/* Chosen perfume */
+.chosen { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 22px; display: grid; gap: 18px; }
+.chosen-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; align-items: end; }
+.chosen-head > div { min-width: 0; }
+.pname { font: 800 clamp(26px, 5vw, 34px)/1.1 var(--display); letter-spacing: -.025em; }
+.pbrand { color: var(--muted); margin-top: 4px; }
+.facts { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13px; color: var(--muted); }
+.facts strong { color: var(--ink); font-weight: 700; }
+
+.pyramid { display: grid; gap: 1px; background: var(--line); border-radius: 10px; overflow: hidden; }
+.band { background: var(--surface); display: grid; grid-template-columns: 112px 1fr; gap: 12px; padding: 10px 12px; align-items: start; }
+.band .lbl { display: grid; gap: 2px; }
+.band .lbl b { font: 700 13px var(--body); }
+.band .lbl span { font: 11px var(--mono); color: var(--muted); }
+.band[data-l="t"] .lbl b { color: var(--top); }
+.band[data-l="h"] .lbl b { color: var(--heart); }
+.band[data-l="ba"] .lbl b, .band[data-l="all"] .lbl b { color: var(--base); }
+.chips { display: flex; flex-wrap: wrap; gap: 5px; min-width: 0; }
+.chip { font-size: 13px; padding: 2px 9px; border-radius: 999px; background: var(--chip); color: var(--muted); }
+.chip.on { color: var(--surface); font-weight: 600; }
+.band[data-l="t"] .chip.on { background: var(--top); }
+.band[data-l="h"] .chip.on { background: var(--heart); }
+.band[data-l="ba"] .chip.on, .band[data-l="all"] .chip.on { background: var(--base); }
+.chosen .chip { color: var(--ink); }
+
+.perf { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 12px; color: var(--muted); }
+.perf span { display: inline-flex; align-items: center; gap: 6px; }
+.dots { display: inline-flex; gap: 3px; }
+.dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--line); }
+.dots i.on { background: var(--accent); }
+
+/* Results */
+.section { display: grid; gap: 12px; }
+.section h2 { font: 800 22px/1.2 var(--display); letter-spacing: -.02em; }
+.section .sub { color: var(--muted); font-size: 14px; margin: -6px 0 0; }
+.results { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px; display: grid; gap: 12px; }
+.card-head { display: grid; grid-template-columns: 64px 1fr auto; gap: 14px; align-items: center; }
+.card-head > div { min-width: 0; }
+.score { text-align: center; }
+.score .n { font: 800 28px/1 var(--display); letter-spacing: -.03em; }
+.score .n small { font-size: 14px; }
+.score .w { font: 600 11px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.cname { font: 700 17px/1.25 var(--body); }
+.cbrand { color: var(--muted); font-size: 14px; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 5px; }
+.badge { font: 600 11px/1 var(--mono); letter-spacing: .04em; padding: 4px 7px; border-radius: 6px; border: 1px solid var(--line); color: var(--muted); }
+.badge.known { background: var(--accent-soft); border-color: transparent; color: var(--accent); }
+.badge.warn { color: var(--warn); }
+.price { text-align: right; font-size: 14px; }
+.price .amt { font: 700 16px var(--mono); }
+.price .save { color: var(--top); font-weight: 700; font-size: 13px; }
+.price .est { color: var(--muted); font-size: 12px; }
+.card .pyramid { background: transparent; gap: 4px; border-radius: 0; }
+.card .band { padding: 0; grid-template-columns: 56px 1fr; gap: 10px; }
+.card .band .lbl span { display: none; }
+.card-foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; align-items: center; font-size: 13px; }
+.card-foot button { font: 600 13px var(--body); background: none; border: 0; padding: 4px 0; min-height: 28px; color: var(--ink); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.empty { color: var(--muted); background: var(--surface); border: 1px dashed var(--line); border-radius: 14px; padding: 18px; margin: 0; }
+
+/* Live lookup */
+.lookup-box { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 22px; display: grid; gap: 12px; }
+.lookup-box h2 { font: 800 24px/1.15 var(--display); letter-spacing: -.02em; }
+.lookup-box p { margin: 0; color: var(--muted); max-width: 60ch; }
+.btn { justify-self: start; font: 700 15px var(--body); background: var(--accent); color: var(--surface); border: 0; border-radius: 10px; padding: 11px 18px; cursor: pointer; }
+.btn[disabled] { opacity: .6; cursor: progress; }
+.note-unverified { border-left: 3px solid var(--warn); padding: 8px 12px; background: var(--chip); border-radius: 0 8px 8px 0; color: var(--ink); font-size: 14px; }
+
+footer { border-top: 1px solid var(--line); padding-top: 18px; color: var(--muted); font-size: 12.5px; display: grid; gap: 6px; }
+footer p { margin: 0; max-width: 75ch; }
+
+/* Hub tabs */
+.tabs { position: relative; display: flex; gap: 4px; border-bottom: 1px solid var(--line); overflow-x: auto; scrollbar-width: none; }
+/* One underline that glides between tabs; script sets its position and width. */
+.tab-ink { position: absolute; left: 0; bottom: 0; height: 2.5px; width: 0; border-radius: 2px; background: var(--accent); pointer-events: none; }
+.tab-ink.ready { transition: transform .5s var(--ease), width .5s var(--ease); }
+.tabs button {
+  font: 700 15px var(--body); color: var(--muted); background: none; border: 0; border-bottom: 2.5px solid transparent;
+  padding: 10px 14px 9px; cursor: pointer; white-space: nowrap; margin-bottom: -1px;
+}
+.tabs button[aria-selected="true"] { color: var(--ink); }
+.tabs button:hover { color: var(--ink); }
+.tabs .count { font: 600 12px var(--mono); color: var(--muted); margin-left: 4px; }
+.view { display: grid; gap: 28px; }
+.linkish { font: 600 13px var(--body); background: none; border: 0; padding: 4px 0; min-height: 28px; color: var(--ink); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.linkish.added { color: var(--top); text-decoration: none; cursor: default; }
+.actions { display: inline-flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; }
+
+/* Layer: two perfume slots joined by a plus */
+.slots { display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: start; }
+.slots > .plus { font: 300 32px/1 var(--display); color: var(--muted); padding-top: 34px; }
+.slot { display: grid; gap: 6px; min-width: 0; }
+.slot .picked { background: var(--surface); border: 1.5px solid var(--field); border-radius: 12px; padding: 12px 14px; display: grid; gap: 2px; min-width: 0; }
+.slot .picked .cname { overflow-wrap: anywhere; }
+.slot .picked button { justify-self: start; margin-top: 4px; }
+.search.small input { font-size: 16px; padding: 12px 14px; }
+
+.verdict { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 22px; display: grid; gap: 20px; }
+.verdict-head { display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: center; }
+.big { font: 800 64px/0.9 var(--display); letter-spacing: -.04em; }
+.big small { font-size: 26px; letter-spacing: 0; }
+.verdict-head h2 { font: 800 24px/1.15 var(--display); letter-spacing: -.02em; }
+.verdict-head p { margin: 4px 0 0; color: var(--muted); font-size: 14px; }
+.bars { display: grid; gap: 10px; }
+.bar { display: grid; grid-template-columns: 120px 1fr 88px; gap: 12px; align-items: center; font-size: 14px; }
+.bar .track { height: 8px; border-radius: 999px; background: var(--chip); overflow: hidden; }
+.bar .fill { height: 100%; border-radius: 999px; background: var(--muted); }
+.bar.main .fill { background: var(--accent); }
+.bar.main .k { font-weight: 700; }
+.bar .v { font: 700 14px var(--mono); text-align: right; }
+.bar .v.none { font: 12px var(--body); color: var(--muted); white-space: nowrap; }
+.why h3, .how h3 { font: 700 15px var(--body); margin-bottom: 6px; }
+.why ul, .how ol { margin: 0; padding-left: 20px; display: grid; gap: 5px; }
+.how ol li::marker { color: var(--accent); font-family: var(--mono); }
+.swap { background: var(--accent-soft); border-radius: 10px; padding: 10px 14px; font-size: 14px; }
+
+.sugg { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.sugg li { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; display: grid; grid-template-columns: 64px 1fr auto; gap: 14px; align-items: center; }
+.sugg li > div { min-width: 0; }
+.sugg .reason { color: var(--muted); font-size: 13.5px; margin-top: 3px; }
+
+/* My collection */
+.coll { list-style: none; margin: 0; padding: 0; display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.coll li { background: var(--surface); padding: 12px 16px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; align-items: center; }
+.coll li > div { min-width: 0; }
+.notice { font-size: 13.5px; color: var(--muted); background: var(--chip); border-radius: 10px; padding: 10px 14px; display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; justify-content: space-between; }
+.notice p { margin: 0; }
+.copybox { width: 100%; font: 13px var(--mono); color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 8px; }
+
+@media (max-width: 560px) {
+  .slots { grid-template-columns: 1fr; }
+  .slots > .plus { padding: 0; text-align: center; font-size: 24px; }
+  .bar { grid-template-columns: 96px 1fr 80px; gap: 8px; }
+  .big { font-size: 52px; }
+  .sugg li { grid-template-columns: 52px 1fr; }
+  .sugg li > .actions { grid-column: 2; }
+  .card-head { grid-template-columns: 52px 1fr; }
+  .price { grid-column: 2; text-align: left; }
+  .band { grid-template-columns: 1fr; gap: 6px; }
+  .card .band { grid-template-columns: 48px 1fr; }
+  .chosen { padding: 16px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .card { animation: rise .25s ease both; }
+  @keyframes rise { from { transform: translateY(4px); } to { transform: none; } }
+}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Wear it well · pay less</div>
+    <h1 class="mark">Perfume <b>Layering</b> &amp; Dupe Finder</h1>
+    <div class="tabs" role="tablist" aria-label="Sections">
+      <button type="button" role="tab" id="tab-layer" aria-controls="layerView" data-view="layer">Layer</button>
+      <button type="button" role="tab" id="tab-dupes" aria-controls="dupesView" data-view="dupes">Find dupes</button>
+      <button type="button" role="tab" id="tab-collection" aria-controls="collView" data-view="collection">My collection<span class="count mono" id="collCount"></span></button>
+      <span class="tab-ink" id="tabInk" aria-hidden="true"></span>
+    </div>
+  </header>
+
+  <section id="layerView" class="view" role="tabpanel" aria-labelledby="tab-layer" hidden>
+    <p class="lede">Pick two perfumes to see how well they wear together and how to apply them. Pick one to see what from My collection goes with it.</p>
+    <div class="slots">
+      <div class="slot" id="slotA"></div>
+      <div class="plus" aria-hidden="true">+</div>
+      <div class="slot" id="slotB"></div>
+    </div>
+    <div class="tries" id="pairTries">Try:</div>
+    <div id="layerOut" class="view"></div>
+  </section>
+
+  <section id="dupesView" class="view" role="tabpanel" aria-labelledby="tab-dupes" hidden>
+    <p class="lede">Type a perfume you love. You get cheaper perfumes that share its top, heart and base notes, plus the dupes people recommend most.</p>
+    <div class="search" id="combo">
+      <label for="q" class="eyebrow" style="display:block;margin-bottom:6px">Find a perfume</label>
+      <input id="q" type="search" role="combobox" aria-expanded="false" autocomplete="off" spellcheck="false" placeholder="e.g. Baccarat Rouge 540, Aventus, Santal 33" aria-controls="suggest" aria-autocomplete="list">
+      <ul class="suggest" id="suggest" role="listbox" hidden></ul>
+    </div>
+    <div class="tries" id="tries">Try:</div>
+    <div id="main" class="view"></div>
+  </section>
+
+  <section id="collView" class="view" role="tabpanel" aria-labelledby="tab-collection" hidden>
+    <p class="lede">The perfumes you own. Layering suggestions come from this list.</p>
+    <div id="collAdd"></div>
+    <div id="collOut" class="view" style="gap:14px"></div>
+  </section>
+
+  <footer>
+    <p>Perfume data: <a href="https://www.scento.com/perfume-database" target="_blank" rel="noopener">Scento Perfume Database</a> (CC BY 4.0), plus researched additions. Data last refreshed <span id="built" class="mono"></span>. Prices are approximate, per 100 ml, and change often.</p>
+    <p>Brand and perfume names are trademarks of their owners. This site isn't affiliated with any of them. "Smells similar" is based on published notes and community opinion, so try a sample before you buy.</p>
+    <p>Layering scores are a guide built from published notes and established perfumery principles (the fragrance wheel, classic pairings and accords). Skin chemistry changes everything, so test on skin first.</p>
+  </footer>
+</div>
+
+<script type="application/json" id="data">__DATA_JSON__</script>
+<script>/*__MATCH_JS__*/</script>
+<script>/*__LAYER_JS__*/</script>
+<script>
+(function () {
+  "use strict";
+  var data = JSON.parse(document.getElementById("data").textContent);
+  var idx = DupeMatch.buildIndex(data);
+  var $ = function (id) { return document.getElementById(id); };
+  var q = $("q"), sug = $("suggest"), combo = $("combo"), main = $("main");
+  var LAYER = { t: ["Top", "first 15 min"], h: ["Heart", "20 min – 2 h"], ba: ["Base", "2 h onward"], all: ["Notes", "no pyramid"] };
+  var TIER = { budget: "budget", mid: "mid-price", designer: "designer", niche: "niche" };
+  var CONC = { "eau-de-parfum": "EDP", "eau-de-toilette": "EDT", extrait: "Extrait", parfum: "Parfum", "eau-de-cologne": "EDC", elixir: "Elixir" };
+
+  $("built").textContent = data.built;
+
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+  function noteName(id) { return (data.notes[id] || [id])[0]; }
+
+  // ---- search boxes ----
+  // Wires a combobox: `onPick(perfume)` for a listed perfume, `onLookup(text)` (optional)
+  // for the "look it up with Claude" row.
+  var pickerCount = 0;
+  function picker(input, sug, combo, onPick, onLookup) {
+    var hits = [], active = -1, prefix = "s" + (pickerCount++) + "-";
+    // ARIA 1.2 combobox: the role and expanded state live on the input itself.
+    input.setAttribute("role", "combobox");
+    function close() { sug.hidden = true; input.setAttribute("aria-expanded", "false"); input.removeAttribute("aria-activedescendant"); }
+    function show() {
+      var text = input.value.trim();
+      sug.innerHTML = "";
+      hits = text ? DupeMatch.search(idx, text, 7) : [];
+      hits.forEach(function (p, i) {
+        var li = el("li");
+        li.id = prefix + i; li.setAttribute("role", "option");
+        li.appendChild(el("span", "", p.n));
+        li.appendChild(el("span", "b", p.b));
+        li.addEventListener("mousedown", function (e) { e.preventDefault(); close(); onPick(p); });
+        sug.appendChild(li);
+      });
+      if (onLookup && text.length > 2) {
+        var li = el("li", "lookup");
+        li.id = prefix + hits.length; li.setAttribute("role", "option");
+        li.textContent = hits.length ? "Not listed? Look up “" + text + "” with Claude" : "Not in our list yet. Look up “" + text + "” with Claude";
+        li.addEventListener("mousedown", function (e) { e.preventDefault(); close(); onLookup(text); });
+        sug.appendChild(li);
+      } else if (text && !hits.length) {
+        sug.appendChild(el("li", "b", "Not in our list yet"));
+      }
+      active = -1;
+      input.removeAttribute("aria-activedescendant");
+      sug.hidden = !sug.children.length;
+      input.setAttribute("aria-expanded", String(!sug.hidden));
+    }
+    function highlight(i) {
+      var items = sug.children;
+      if (!items.length) return;
+      active = (i + items.length) % items.length;
+      for (var k = 0; k < items.length; k++) items[k].setAttribute("aria-selected", String(k === active));
+      input.setAttribute("aria-activedescendant", items[active].id);
+    }
+    input.addEventListener("input", show);
+    input.addEventListener("focus", function () { if (input.value.trim()) show(); });
+    input.addEventListener("blur", close);
+    input.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowDown") { e.preventDefault(); if (sug.hidden) show(); highlight(active + 1); }
+      else if (e.key === "ArrowUp") { e.preventDefault(); highlight(active - 1); }
+      else if (e.key === "Escape") { close(); }
+      else if (e.key === "Enter") {
+        e.preventDefault();
+        var text = input.value.trim();
+        if (!text) return;
+        close();
+        if (active >= 0 && active < hits.length) onPick(hits[active]);
+        else if (onLookup && (active === hits.length || !hits.length)) onLookup(text);
+        else if (hits.length) onPick(hits[0]);
+      }
+    });
+  }
+
+  // A labelled search box built in script, for the Layer and My collection pickers.
+  function searchBox(label, placeholder, onPick) {
+    var n = pickerCount;
+    var combo = el("div", "search small");
+    var lab = el("label", "eyebrow", label);
+    lab.htmlFor = "pick" + n; lab.style.display = "block"; lab.style.marginBottom = "6px";
+    var input = el("input");
+    input.id = "pick" + n; input.type = "search"; input.autocomplete = "off"; input.spellcheck = false;
+    input.placeholder = placeholder; input.setAttribute("aria-autocomplete", "list");
+    var sug = el("ul", "suggest"); sug.id = "pickList" + n; sug.setAttribute("role", "listbox"); sug.hidden = true;
+    input.setAttribute("aria-controls", sug.id);
+    combo.appendChild(lab); combo.appendChild(input); combo.appendChild(sug);
+    picker(input, sug, combo, onPick);
+    return combo;
+  }
+
+  picker(q, sug, combo, choose, showLookup);
+
+  function tryButton(box, label, fn) {
+    var b = el("button", "", label);
+    b.type = "button";
+    b.addEventListener("click", fn);
+    box.appendChild(b);
+  }
+  ["Baccarat Rouge 540", "Aventus", "Santal 33", "Black Opium", "Angels' Share", "Lattafa Khamrah"].forEach(function (name) {
+    var p = DupeMatch.search(idx, name, 1)[0];
+    if (p) tryButton($("tries"), p.n, function () { choose(p); });
+  });
+
+  function setHash(h) {
+    try { history.replaceState(null, "", h ? "#" + h : location.pathname + location.search); } catch (e) { /* hash is a convenience */ }
+  }
+
+  function choose(p) {
+    q.value = p.n + " · " + p.b;
+    showView("dupes", true);
+    setHash(p.id);
+    render(p);
+  }
+
+  // ---- shared pieces ----
+  function pyramid(p, highlightIn) {
+    if (!p.all.length) return el("p", "sub", "The brand doesn't publish this perfume's notes. It's listed because many people recommend it as a dupe.");
+    var box = el("div", "pyramid");
+    var layers = p.fl ? [["all", p.h]] : [["t", p.t], ["h", p.h], ["ba", p.ba]];
+    layers.forEach(function (l) {
+      if (!l[1].length) return;
+      var band = el("div", "band"); band.dataset.l = l[0];
+      var lbl = el("div", "lbl");
+      lbl.appendChild(el("b", "", LAYER[l[0]][0]));
+      lbl.appendChild(el("span", "", LAYER[l[0]][1]));
+      band.appendChild(lbl);
+      var chips = el("div", "chips");
+      l[1].forEach(function (n) {
+        var on = highlightIn && highlightIn.indexOf(n) >= 0;
+        chips.appendChild(el("span", "chip" + (on ? " on" : ""), noteName(n)));
+      });
+      band.appendChild(chips);
+      box.appendChild(band);
+    });
+    return box;
+  }
+
+  function perfRow(p) {
+    if (!p.perf) return null;
+    var row = el("div", "perf");
+    [["longevity", "Longevity"], ["sillage", "Sillage"], ["projection", "Projection"]].forEach(function (k) {
+      var v = p.perf[k[0]];
+      if (!v) return;
+      var s = el("span");
+      s.appendChild(document.createTextNode(k[1]));
+      var dots = el("span", "dots");
+      dots.setAttribute("aria-label", v + " out of 5");
+      for (var i = 1; i <= 5; i++) dots.appendChild(el("i", i <= v ? "on" : ""));
+      s.appendChild(dots);
+      row.appendChild(s);
+    });
+    row.appendChild(el("span", "", "approx."));
+    return row;
+  }
+
+  function priceText(p) {
+    return p.p ? "$" + p.p + " / 100 ml" : "price unknown";
+  }
+
+  function fragranticaLink(p) {
+    var a = el("a", "", "See on Fragrantica ↗");
+    a.href = "https://www.fragrantica.com/search/?query=" + encodeURIComponent(p.b + " " + p.n);
+    a.target = "_blank"; a.rel = "noopener";
+    return a;
+  }
+
+  function chosenCard(p, unverified) {
+    var c = el("section", "chosen");
+    c.setAttribute("aria-label", "Chosen perfume");
+    var head = el("div", "chosen-head");
+    var left = el("div");
+    left.appendChild(el("div", "eyebrow", unverified ? "Live lookup · unverified" : "You picked"));
+    left.appendChild(el("h2", "pname", p.n));
+    left.appendChild(el("div", "pbrand", p.b));
+    head.appendChild(left);
+    var facts = el("div", "facts");
+    function fact(label, value) {
+      var s = el("span"); s.appendChild(document.createTextNode(label + " "));
+      s.appendChild(el("strong", "mono", value)); facts.appendChild(s);
+    }
+    if (p.c) fact("Type", CONC[p.c] || p.c);
+    fact("Price", p.p ? "$" + p.p + "/100 ml" : TIER[p.tier] + " brand");
+    if (p.pd) fact("Checked", p.pd);
+    head.appendChild(facts);
+    c.appendChild(head);
+    c.appendChild(pyramid(p, p.all));
+    var pr = perfRow(p);
+    if (pr) c.appendChild(pr);
+    if (p.conf === "low") c.appendChild(el("div", "note-unverified", "Notes for this perfume come from a single source, so treat them with some caution."));
+    if (!unverified) {
+      var foot = el("div", "card-foot");
+      var actions = el("span", "actions");
+      actions.appendChild(layerButton(p));
+      actions.appendChild(collButton(p));
+      foot.appendChild(actions);
+      foot.appendChild(fragranticaLink(p));
+      c.appendChild(foot);
+    }
+    return c;
+  }
+
+  function resultCard(r, original) {
+    var p = r.perfume, li = el("li", "card");
+    var head = el("div", "card-head");
+    var sc = el("div", "score");
+    var n = el("div", "n mono");
+    if (p.all.length) { n.textContent = r.score; n.appendChild(el("small", "", "%")); }
+    else n.textContent = "—";
+    sc.appendChild(n); sc.appendChild(el("div", "w", p.all.length ? "notes match" : "no notes"));
+    head.appendChild(sc);
+    var mid = el("div");
+    mid.appendChild(el("div", "cname", p.n));
+    mid.appendChild(el("div", "cbrand", p.b + (p.c ? " · " + (CONC[p.c] || p.c) : "")));
+    var badges = el("div", "badges");
+    if (r.kind === "original") badges.appendChild(el("span", "badge known", "Inspired this"));
+    else if (r.knownDupe) badges.appendChild(el("span", "badge known", "Known dupe"));
+    if (p.conf === "low") badges.appendChild(el("span", "badge warn", "Single source"));
+    if (badges.children.length) mid.appendChild(badges);
+    head.appendChild(mid);
+    var price = el("div", "price");
+    if (p.p) {
+      price.appendChild(el("div", "amt", "$" + p.p));
+      price.appendChild(r.savings != null && r.savings > 0 ? el("div", "save", r.savings + "% less") : el("div", "est", "per 100 ml"));
+    } else {
+      price.appendChild(el("div", "est", "Price unknown"));
+      price.appendChild(el("div", "est", TIER[p.tier] + " brand"));
+    }
+    head.appendChild(price);
+    li.appendChild(head);
+    li.appendChild(pyramid(p, original.all));
+    var foot = el("div", "card-foot");
+    var pr = perfRow(p);
+    foot.appendChild(pr || el("span", "est", ""));
+    var actions = el("span", "actions");
+    if (idx.byId[p.id]) {
+      actions.appendChild(dupesButton(p, "Find dupes of this"));
+      actions.appendChild(layerButton(p));
+      actions.appendChild(collButton(p));
+    }
+    actions.appendChild(fragranticaLink(p));
+    foot.appendChild(actions);
+    li.appendChild(foot);
+    return li;
+  }
+
+  function section(title, sub, list, original, emptyText) {
+    var s = el("section", "section");
+    s.appendChild(el("h2", "", title));
+    if (sub) s.appendChild(el("p", "sub", sub));
+    if (!list.length) { s.appendChild(el("p", "empty", emptyText)); return s; }
+    var ul = el("ul", "results");
+    list.forEach(function (r) { ul.appendChild(resultCard(r, original)); });
+    s.appendChild(ul);
+    return s;
+  }
+
+  function renderResults(p, unverified) {
+    var res = DupeMatch.findDupes(idx, p);
+    var frag = document.createDocumentFragment();
+    if (res.mode === "cheaper") {
+      frag.appendChild(section("Cheaper alternatives",
+        "Ranked by shared notes. Highlighted notes also appear in " + p.n + ". Base and heart notes count most, because they last longest on skin.",
+        res.cheaper, p, "No cheaper perfume in our list shares enough of its notes. Try a related perfume, or check back after the next weekly update."));
+    } else {
+      frag.appendChild(section("Smells like",
+        p.n + " is already affordable. These are the pricier perfumes it resembles, starting with any it's known to be inspired by.",
+        res.smellsLike, p, "We don't know of a pricier perfume that shares enough of its notes."));
+      frag.appendChild(section("Similar for the same price or less", null, res.similar, p,
+        "Nothing at this price shares enough of its notes."));
+    }
+    return frag;
+  }
+
+  var lastDupe = null;
+  function render(p) {
+    lastDupe = p;
+    main.innerHTML = "";
+    main.appendChild(chosenCard(p, false));
+    main.appendChild(renderResults(p, false));
+  }
+
+  // ---- live lookup ----
+  var lookupCtl = null;
+  function showLookup(text) {
+    sug.hidden = true; q.setAttribute("aria-expanded", "false");
+    main.innerHTML = "";
+    var box = el("section", "lookup-box");
+    box.appendChild(el("div", "eyebrow", "Not in our list"));
+    box.appendChild(el("h2", "", "“" + text + "”"));
+    box.appendChild(el("p", "", "Claude can look up its notes and price, then we'll match them against our list. Answers from a live lookup can be wrong, so they're marked as unverified."));
+    var btn = el("button", "btn", "Look it up with Claude");
+    btn.type = "button"; btn.id = "lookup-btn";
+    var status = el("p", "");
+    status.setAttribute("role", "status");
+    btn.addEventListener("click", function () { runLookup(text, btn, status); });
+    box.appendChild(btn); box.appendChild(status);
+    main.appendChild(box);
+  }
+
+  var samplePromise = window.claude && window.claude.use ? window.claude.use("sample") : Promise.resolve(null);
+
+  var VOCAB = Object.keys(data.notes).map(function (k) { return data.notes[k][0]; }).join(", ");
+  var ERR = {
+    not_granted: "This page isn't allowed to use Claude for you. Everything else still works.",
+    sampling_disabled: "Claude isn't available for your account, so live lookups are off.",
+    rate_limited: "Too many lookups just now. Try again in a few minutes.",
+    session_expired: "Sign in to claude.ai again, then try once more.",
+    invalid_json: "Claude's answer came back in the wrong shape. Try again.",
+    refused: "Claude couldn't answer that one. Check the spelling, or try the brand name too.",
+  };
+
+  function runLookup(text, btn, status) {
+    samplePromise.then(function (sample) {
+      if (!sample) {
+        status.textContent = "Live lookups need you to be signed in to claude.ai and viewing this page there. Everything else on the page works without it.";
+        return;
+      }
+      btn.disabled = true; btn.textContent = "Looking it up…";
+      status.textContent = "";
+      if (lookupCtl) lookupCtl.abort();
+      lookupCtl = new AbortController();
+      var prompt =
+        "You are a fragrance expert. Give the published facts for the perfume the user names.\n" +
+        "Perfume: " + text + "\n\n" +
+        "Answer with only a JSON object, no prose:\n" +
+        '{"found": true|false, "name": "...", "brand": "...", "concentration": "eau-de-parfum|eau-de-toilette|extrait|parfum|eau-de-cologne|elixir|", ' +
+        '"top": ["note", ...], "heart": [...], "base": [...], "price_usd_100ml": number or null, ' +
+        '"dupes": [{"name": "...", "brand": "..."}]}\n' +
+        "Rules: use the brand's official note pyramid. Write each note using a name from this list when one fits: " + VOCAB + ". " +
+        "price_usd_100ml is the approximate regular US retail price scaled to 100 ml. " +
+        "dupes lists up to 5 cheaper perfumes widely recommended as dupes of it, only if you are confident. " +
+        'If you do not know this perfume, answer {"found": false}.';
+      sample.json(prompt, { signal: lookupCtl.signal, modelTier: "default" }).then(function (r) {
+        btn.disabled = false; btn.textContent = "Look it up with Claude";
+        if (!r || !r.found) {
+          status.textContent = "Claude doesn't recognize “" + text + "”. Check the spelling, or add the brand name.";
+          return;
+        }
+        showLookupResult(r);
+      }, function (e) {
+        btn.disabled = false; btn.textContent = "Look it up with Claude";
+        if (e && e.code === "cancelled") return;
+        status.textContent = (e && ERR[e.code]) || "The lookup didn't finish. Try again.";
+      });
+    });
+  }
+
+  function showLookupResult(r) {
+    var p = DupeMatch.pyramidPerfume(idx, { name: r.name, brand: r.brand, top: r.top, heart: r.heart, base: r.base, price: r.price_usd_100ml });
+    p.c = r.concentration || "";
+    // Notes we couldn't map to our vocabulary still deserve a mention.
+    var known = {};
+    p.all.forEach(function (n) { known[noteName(n).toLowerCase()] = 1; });
+    var unmapped = [].concat(r.top || [], r.heart || [], r.base || []).filter(function (n) { return !known[String(n).toLowerCase()]; });
+    var named = (r.dupes || []).map(function (d) {
+      var hit = DupeMatch.search(idx, d.brand + " " + d.name, 1)[0];
+      if (hit && DupeMatch.norm(hit.n) === DupeMatch.norm(d.name)) { p.d.push(hit.id); return null; }
+      return d;
+    }).filter(Boolean);
+    // Claude-named dupes we have count as known dupes for ranking.
+    p.d.forEach(function (id) { if (p.dupes.indexOf(id) < 0) p.dupes.push(id); });
+    main.innerHTML = "";
+    main.appendChild(el("p", "note-unverified", "From a live lookup with Claude. The notes, price and suggested dupes below are unverified."));
+    main.appendChild(chosenCard(p, true));
+    if (unmapped.length) main.appendChild(el("p", "sub", "Notes we couldn't match to our list: " + unmapped.join(", ") + "."));
+    var res = DupeMatch.findDupes(idx, p);
+    res.cheaper = res.cheaper || res.similar || [];
+    res.cheaper.forEach(function (x) { if (p.d.indexOf(x.perfume.id) >= 0) x.knownDupe = true; });
+    main.appendChild(section("Cheaper alternatives from our list", "Matched against the notes Claude found.", res.cheaper, p,
+      "No perfume in our list shares enough of these notes."));
+    if (named.length) {
+      var s = el("section", "section");
+      s.appendChild(el("h2", "", "Claude also suggests"));
+      s.appendChild(el("p", "sub", "These aren't in our list yet, so we can't compare their notes."));
+      var ul = el("ul", "results");
+      named.forEach(function (d) {
+        var li = el("li", "card");
+        var head = el("div");
+        head.appendChild(el("div", "cname", d.name));
+        head.appendChild(el("div", "cbrand", d.brand));
+        li.appendChild(head);
+        var foot = el("div", "card-foot");
+        foot.appendChild(fragranticaLink({ b: d.brand, n: d.name }));
+        li.appendChild(foot);
+        ul.appendChild(li);
+      });
+      s.appendChild(ul);
+      main.appendChild(s);
+    }
+  }
+
+  // ---- My collection ----
+  // Signed-in viewers who may write get it saved to their claude.ai account (a private
+  // per-person document); everyone else keeps it in this browser. Only ids are stored.
+  var MAX_COLL = 500, LOCAL_KEY = "pdf.collection";
+  var Coll = {
+    ids: [], where: "browser", doc: null, listeners: [],
+    has: function (id) { return this.ids.indexOf(id) >= 0; },
+    add: function (id) {
+      if (this.has(id)) return true;
+      if (this.ids.length >= MAX_COLL) return false;
+      this.ids = this.ids.concat(id); this.save(); return true;
+    },
+    remove: function (id) { this.ids = this.ids.filter(function (x) { return x !== id; }); this.save(); },
+    changed: function () { this.listeners.forEach(function (fn) { fn(); }); },
+    save: function () {
+      var self = this;
+      this.changed();
+      if (this.where === "account") {
+        this.doc.set({ ids: this.ids }).catch(function () {
+          // Refused (e.g. a view-only visitor): keep it in this browser instead.
+          self.where = "browser"; self.saveLocal(); self.changed();
+        });
+      } else this.saveLocal();
+    },
+    loadLocal: function () {
+      try { var v = JSON.parse(localStorage.getItem(LOCAL_KEY) || "[]"); return Array.isArray(v) ? v.filter(function (x) { return typeof x === "string"; }) : []; }
+      catch (e) { return []; }
+    },
+    saveLocal: function () { try { localStorage.setItem(LOCAL_KEY, JSON.stringify(this.ids)); } catch (e) { /* storage blocked */ } },
+    init: function () {
+      var self = this;
+      this.ids = this.loadLocal().slice(0, MAX_COLL);
+      if (!(window.claude && window.claude.use)) return;
+      Promise.all([window.claude.use("db"), window.claude.use("user")]).then(function (r) {
+        var db = r[0], user = r[1];
+        if (!db || !user) return null;
+        return user.id().then(function (uid) {
+          if (!uid) return null;
+          var doc = db.doc("data/users/" + uid + "/collection");
+          return doc.get().then(function (snap) {
+            var remote = snap.exists && Array.isArray((snap.data() || {}).ids) ? snap.data().ids : [];
+            var local = self.ids;
+            var merged = remote.concat(local.filter(function (id) { return remote.indexOf(id) < 0; })).slice(0, MAX_COLL);
+            var write = merged.length !== remote.length ? doc.set({ ids: merged }) : Promise.resolve();
+            return write.then(function () {
+              // The browser copy now lives in the account: merge it only once.
+              self.doc = doc; self.where = "account"; self.ids = merged;
+              try { localStorage.removeItem(LOCAL_KEY); } catch (e) { /* storage blocked */ }
+              self.changed();
+            });
+          });
+        });
+      }).catch(function () { /* stay with the browser copy */ });
+    },
+  };
+
+  var collButtons = [];
+  function syncCollButton(p, b, named) {
+    var inColl = Coll.has(p.id);
+    b.textContent = inColl ? "✓ " + (named ? p.n + " is in" : "In") + " My collection" : "Add " + (named ? p.n + " " : "") + "to My collection";
+    b.className = "linkish" + (inColl ? " added" : "");
+    b.disabled = inColl;
+  }
+  // `named` puts the perfume's name on the button, for places showing two perfumes.
+  function collButton(p, named) {
+    var b = el("button");
+    b.type = "button";
+    syncCollButton(p, b, named);
+    b.addEventListener("click", function () {
+      if (!Coll.add(p.id)) b.textContent = "My collection is full (" + MAX_COLL + ")";
+    });
+    collButtons.push([p, b, named]);
+    return b;
+  }
+  function layerButton(p) {
+    var b = el("button", "linkish", "Layer with this");
+    b.type = "button";
+    b.addEventListener("click", function () { openLayer(p, null); });
+    return b;
+  }
+  function dupesButton(p, label) {
+    var b = el("button", "linkish", label || "Find dupes");
+    b.type = "button";
+    b.addEventListener("click", function () { choose(p); window.scrollTo({ top: 0, behavior: "smooth" }); });
+    return b;
+  }
+
+  // ---- Layer ----
+  var pairA = null, pairB = null;
+
+  function openLayer(a, b) {
+    pairA = a; pairB = b;
+    showView("layer", true);
+    renderLayer();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function slot(box, p, label, set) {
+    box.innerHTML = "";
+    if (!p) {
+      box.appendChild(searchBox(label, "Search a perfume", function (picked) { set(picked); renderLayer(); }));
+      return;
+    }
+    box.appendChild(el("div", "eyebrow", label));
+    var card = el("div", "picked");
+    card.appendChild(el("div", "cname", p.n));
+    card.appendChild(el("div", "cbrand", p.b + (p.c ? " · " + (CONC[p.c] || p.c) : "")));
+    var pr = perfRow(p);
+    if (pr) card.appendChild(pr);
+    var change = el("button", "linkish", "Change");
+    change.type = "button";
+    change.addEventListener("click", function () {
+      set(null); renderLayer();
+      var input = box.querySelector("input");
+      if (input) input.focus();
+    });
+    card.appendChild(change);
+    box.appendChild(card);
+  }
+
+  [["Lattafa Khamrah", "Kayali Vanilla 28"], ["Bleu de Chanel", "Dior Sauvage"], ["Baccarat Rouge 540", "Santal 33"]].forEach(function (pr) {
+    var a = DupeMatch.search(idx, pr[0], 1)[0], b = DupeMatch.search(idx, pr[1], 1)[0];
+    if (a && b) tryButton($("pairTries"), a.n + " + " + b.n, function () { openLayer(a, b); });
+  });
+
+  function verdictLabel(smell) {
+    return smell >= 75 ? "They blend beautifully" : smell >= 60 ? "They work well together"
+      : smell >= LayerMatch.CLASH ? "Worth a try" : "Not a natural pair";
+  }
+
+  // Counts a number up from 0 with a soft ease-out, like Apple's stat reveals.
+  var calm = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function countUp(node, to) {
+    if (calm || !window.requestAnimationFrame) return;
+    var start = null, dur = 900;
+    node.nodeValue = "0";
+    // If frames stall (a background tab), still land on the real number.
+    setTimeout(function () { node.nodeValue = String(to); }, dur + 300);
+    requestAnimationFrame(function step(t) {
+      if (start === null) start = t;
+      var k = Math.min(1, (t - start) / dur);
+      node.nodeValue = String(Math.round(to * (1 - Math.pow(1 - k, 4))));
+      if (k < 1) requestAnimationFrame(step);
+    });
+  }
+
+  function bar(label, value, main) {
+    var row = el("div", "bar" + (main ? " main" : ""));
+    row.appendChild(el("span", "k", label));
+    var track = el("div", "track");
+    var fill = el("div", "fill");
+    fill.style.width = (value || 0) + "%";
+    track.appendChild(fill);
+    row.appendChild(track);
+    row.appendChild(value == null ? el("span", "v none", "No data yet") : el("span", "v", value + "%"));
+    return row;
+  }
+
+  function renderLayer() {
+    slot($("slotA"), pairA, "First perfume", function (p) { pairA = p; });
+    slot($("slotB"), pairB, "Second perfume", function (p) { pairB = p; });
+    $("pairTries").hidden = !!(pairA || pairB);
+    setHash(pairA ? "layer~" + pairA.id + (pairB ? "~" + pairB.id : "") : "layer");
+    var out = $("layerOut");
+    out.innerHTML = "";
+    if (pairA && pairB) out.appendChild(verdict(pairA, pairB));
+    var one = pairA || pairB;
+    if (one && !(pairA && pairB)) out.appendChild(suggestions(one));
+  }
+
+  function verdict(A, B) {
+    var box = el("section", "verdict");
+    box.setAttribute("aria-label", "How they layer");
+    if (A.id === B.id) {
+      box.appendChild(el("p", "sub", "That's the same perfume twice. Pick a different second perfume."));
+      return box;
+    }
+    var r = LayerMatch.pair(idx, A, B);
+    if (r.unscorable) {
+      box.appendChild(el("p", "sub", r.missing.n + " has no published notes, so we can't score layering with it."));
+      return box;
+    }
+    var head = el("div", "verdict-head");
+    var big = el("div", "big mono");
+    big.textContent = r.overall; big.appendChild(el("small", "", "%"));
+    countUp(big.firstChild, r.overall);
+    head.appendChild(big);
+    var hd = el("div");
+    hd.appendChild(el("div", "eyebrow", "Overall match"));
+    hd.appendChild(el("h2", "", verdictLabel(r.scores.smell)));
+    var noPerf = [A, B].filter(function (p) { return !p.perf; }).map(function (p) { return p.n; });
+    var basis = r.basedOn === 4 ? "Based on all 4 scores. How it smells counts most."
+      : "Based on " + r.basedOn + " of 4 scores" + (noPerf.length ? " (no performance data yet for " + noPerf.join(" or ") + ")" : "") + ".";
+    hd.appendChild(el("p", "", basis + (r.capped ? " Capped at " + LayerMatch.CAP + "% because the scents clash." : "")));
+    head.appendChild(hd);
+    box.appendChild(head);
+
+    var bars = el("div", "bars");
+    bars.appendChild(bar("How it smells", r.scores.smell, true));
+    bars.appendChild(bar("Sillage", r.scores.sillage));
+    bars.appendChild(bar("Projection", r.scores.projection));
+    bars.appendChild(bar("Longevity", r.scores.longevity));
+    box.appendChild(bars);
+
+    if (r.reasons.length || r.tooAlike) {
+      var why = el("div", "why");
+      why.appendChild(el("h3", "", "Why"));
+      var ul = el("ul");
+      if (r.tooAlike) ul.appendChild(el("li", "", "These are very alike, so layering adds little."));
+      r.reasons.forEach(function (x) { ul.appendChild(el("li", "", x)); });
+      why.appendChild(ul);
+      box.appendChild(why);
+    }
+    var how = el("div", "how");
+    how.appendChild(el("h3", "", "How to wear them"));
+    var ol = el("ol");
+    r.advice.tips.forEach(function (x) { ol.appendChild(el("li", "", x)); });
+    how.appendChild(ol);
+    box.appendChild(how);
+
+    r.swaps.forEach(function (s) {
+      var other = s.from === A ? B : A;
+      var sw = el("div", "swap");
+      sw.appendChild(document.createTextNode("Same combo for less: swap " + s.from.n + " for " + s.to.b + " " + s.to.n +
+        (s.to.p && s.from.p ? " (about " + Math.round(100 * (1 - s.to.p / s.from.p)) + "% less)" : "") + ", a known dupe. "));
+      var b = el("button", "linkish", "Check that pair");
+      b.type = "button";
+      b.addEventListener("click", function () { openLayer(s.from === A ? s.to : other, s.from === A ? other : s.to); });
+      sw.appendChild(b);
+      box.appendChild(sw);
+    });
+
+    var foot = el("div", "card-foot");
+    var actions = el("span", "actions");
+    actions.appendChild(collButton(A, true));
+    actions.appendChild(collButton(B, true));
+    foot.appendChild(actions);
+    box.appendChild(foot);
+    return box;
+  }
+
+  function suggestions(p) {
+    var s = el("section", "section");
+    s.appendChild(el("h2", "", "Goes with " + p.n + " from My collection"));
+    if (!LayerMatch.hasNotes(p)) {
+      s.appendChild(el("p", "empty", p.n + " has no published notes, so we can't score layering with it."));
+      return s;
+    }
+    var list = LayerMatch.suggest(idx, p, Coll.ids, 5);
+    if (!list.length) {
+      var empty = el("div", "empty");
+      empty.appendChild(el("p", "", Coll.ids.length
+        ? "Nothing else in My collection can be scored with it yet. Add more perfumes you own, or pick a second perfume above."
+        : "My collection is empty. Add the perfumes you own and we'll suggest which go with " + p.n + ". You can still pick a second perfume above."));
+      empty.style.display = "grid"; empty.style.gap = "10px"; empty.firstChild.style.margin = "0";
+      var acts = el("span", "actions");
+      acts.appendChild(collButton(p));
+      var go = el("button", "linkish", "Open My collection");
+      go.type = "button";
+      go.addEventListener("click", function () { showView("collection"); });
+      acts.appendChild(go);
+      empty.appendChild(acts);
+      s.appendChild(empty);
+      return s;
+    }
+    s.appendChild(el("p", "sub", "Ranked by how they smell together."));
+    var ul = el("ul", "sugg");
+    list.forEach(function (x) {
+      var li = el("li");
+      var sc = el("div", "score");
+      var n = el("div", "n mono"); n.textContent = x.result.scores.smell; n.appendChild(el("small", "", "%"));
+      sc.appendChild(n); sc.appendChild(el("div", "w", "smell"));
+      li.appendChild(sc);
+      var mid = el("div");
+      mid.appendChild(el("div", "cname", x.perfume.n));
+      mid.appendChild(el("div", "cbrand", x.perfume.b + " · overall " + x.result.overall + "%"));
+      if (x.result.reasons[0]) mid.appendChild(el("div", "reason", x.result.reasons[0]));
+      li.appendChild(mid);
+      var acts = el("span", "actions");
+      var b = el("button", "linkish", "Check this pair");
+      b.type = "button";
+      b.addEventListener("click", function () { openLayer(p, x.perfume); });
+      acts.appendChild(b);
+      li.appendChild(acts);
+      ul.appendChild(li);
+    });
+    s.appendChild(ul);
+    return s;
+  }
+
+  // ---- My collection view ----
+  $("collAdd").appendChild(searchBox("Add a perfume you own", "Search a perfume", function (p) {
+    if (!Coll.add(p.id)) alertColl("My collection is full (" + MAX_COLL + " perfumes). Remove one to add another.");
+    var input = $("collAdd").querySelector("input");
+    input.value = "";
+  }));
+  var collMsg = "";
+  function alertColl(msg) { collMsg = msg; renderColl(); }
+
+  function renderColl() {
+    var out = $("collOut");
+    out.innerHTML = "";
+    if (collMsg) { out.appendChild(el("p", "note-unverified", collMsg)); collMsg = ""; }
+    var gone = Coll.ids.filter(function (id) { return !idx.byId[id]; });
+    if (gone.length) {
+      out.appendChild(el("p", "note-unverified", gone.length + (gone.length === 1 ? " perfume" : " perfumes") +
+        " in My collection " + (gone.length === 1 ? "is" : "are") + " no longer in our list: " + gone.join(", ") + ". " +
+        "We've kept " + (gone.length === 1 ? "it" : "them") + " here, but can't score " + (gone.length === 1 ? "it" : "them") + "."));
+    }
+    var have = Coll.ids.filter(function (id) { return idx.byId[id]; }).map(function (id) { return idx.byId[id]; });
+    if (!have.length) {
+      out.appendChild(el("p", "empty", "Nothing here yet. Search above, or use “Add to My collection” on any perfume."));
+    } else {
+      var ul = el("ul", "coll");
+      have.forEach(function (p) {
+        var li = el("li");
+        var d = el("div");
+        d.appendChild(el("div", "cname", p.n));
+        d.appendChild(el("div", "cbrand", p.b + (LayerMatch.hasNotes(p) ? "" : " · no published notes, can't be layered")));
+        li.appendChild(d);
+        var acts = el("span", "actions");
+        acts.appendChild(layerButton(p));
+        acts.appendChild(dupesButton(p));
+        var rm = el("button", "linkish", "Remove");
+        rm.type = "button";
+        rm.setAttribute("aria-label", "Remove " + p.n);
+        rm.addEventListener("click", function () { Coll.remove(p.id); });
+        acts.appendChild(rm);
+        li.appendChild(acts);
+        ul.appendChild(li);
+      });
+      out.appendChild(ul);
+    }
+    if (Coll.where === "browser") {
+      var n = el("div", "notice");
+      n.appendChild(el("p", "", "Saved in this browser only. Sign in to claude.ai to keep it across devices."));
+      if (Coll.ids.length) {
+        var copy = el("button", "linkish", "Copy list");
+        copy.type = "button";
+        copy.addEventListener("click", function () {
+          var text = Coll.ids.map(function (id) { var p = idx.byId[id]; return p ? p.b + " " + p.n : id; }).join("\n");
+          function fallback() {
+            var ta = el("textarea", "copybox"); ta.value = text; ta.rows = Math.min(8, Coll.ids.length); ta.readOnly = true;
+            n.appendChild(ta); ta.focus(); ta.select(); copy.hidden = true;
+          }
+          try {
+            navigator.clipboard.writeText(text).then(function () { copy.textContent = "Copied"; }, fallback);
+          } catch (e) { fallback(); }
+        });
+        n.appendChild(copy);
+      }
+      out.appendChild(n);
+    }
+  }
+
+  Coll.listeners.push(function () {
+    $("collCount").textContent = Coll.ids.length ? String(Coll.ids.length) : "";
+    collButtons = collButtons.filter(function (x) { return x[1].isConnected; });
+    collButtons.forEach(function (x) { syncCollButton(x[0], x[1], x[2]); });
+    if (current === "collection") renderColl();
+    if (current === "layer" && (pairA || pairB) && !(pairA && pairB)) renderLayer();
+  });
+
+  // ---- tabs and links ----
+  var current = null;
+  function showView(name, keepHash) {
+    current = name;
+    [["layer", "layerView"], ["dupes", "dupesView"], ["collection", "collView"]].forEach(function (v) {
+      $(v[1]).hidden = v[0] !== name;
+      $("tab-" + v[0]).setAttribute("aria-selected", String(v[0] === name));
+      $("tab-" + v[0]).tabIndex = v[0] === name ? 0 : -1;
+    });
+    placeInk();
+    if (keepHash) return;
+    if (name === "collection") { setHash("collection"); renderColl(); }
+    else if (name === "layer") renderLayer();
+    else if (name === "dupes") {
+      if (!main.children.length) render(DupeMatch.search(idx, "Baccarat Rouge 540", 1)[0] || data.perfumes[0]);
+      setHash(lastDupe ? lastDupe.id : "dupes");
+    }
+  }
+  function placeInk() {
+    var ink = $("tabInk"), t = current && $("tab-" + current);
+    if (!ink || !t) return;
+    ink.style.width = t.offsetWidth + "px";
+    ink.style.transform = "translateX(" + t.offsetLeft + "px)";
+    // Glide only after the first placement, so the page doesn't open with the line sliding in.
+    if (!ink.classList.contains("ready")) setTimeout(function () { ink.classList.add("ready"); }, 50);
+  }
+  window.addEventListener("resize", placeInk);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(placeInk);
+  var tabs = document.querySelectorAll(".tabs button");
+  Array.prototype.forEach.call(tabs, function (b, i) {
+    b.addEventListener("click", function () { showView(b.dataset.view); });
+    b.addEventListener("keydown", function (e) {
+      var j = e.key === "ArrowRight" ? i + 1 : e.key === "ArrowLeft" ? i - 1 : e.key === "Home" ? 0 : e.key === "End" ? tabs.length - 1 : null;
+      if (j === null) return;
+      e.preventDefault();
+      var next = tabs[(j + tabs.length) % tabs.length];
+      next.focus(); showView(next.dataset.view);
+    });
+  });
+
+  // ---- start ----
+  Coll.init();
+  Coll.changed();
+  var hash = decodeURIComponent((location.hash || "").slice(1));
+  if (idx.byId[hash]) {
+    q.value = idx.byId[hash].n + " · " + idx.byId[hash].b;
+    choose(idx.byId[hash]);
+  } else if (hash === "dupes") {
+    showView("dupes");
+  } else if (hash === "collection") {
+    showView("collection");
+  } else {
+    var parts = hash.split("~");
+    if (parts[0] === "layer") { pairA = idx.byId[parts[1]] || null; pairB = idx.byId[parts[2]] || null; }
+    showView("layer");
+  }
+})();
+</script>

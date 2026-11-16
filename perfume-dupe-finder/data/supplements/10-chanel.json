@@ -1,0 +1,634 @@
+{
+  "perfumes": [
+    {
+      "name": "Coco Mademoiselle",
+      "brand": "Chanel",
+      "concentration": "eau-de-parfum",
+      "year": 2001,
+      "aliases": [
+        "coco mademoiselle",
+        "coco mademoiselle edp"
+      ],
+      "top": [
+        "Orange",
+        "Bergamot",
+        "Mandarin"
+      ],
+      "heart": [
+        "Rose",
+        "Jasmine",
+        "Ylang-Ylang",
+        "Mimosa"
+      ],
+      "base": [
+        "Patchouli",
+        "Vetiver",
+        "Vanilla",
+        "White Musk"
+      ],
+      "family": "Petal Garden",
+      "price_usd_100ml": 185,
+      "price_date": "2026-10",
+      "dupe_of": [],
+      "longevity": 4,
+      "sillage": 4,
+      "projection": 4,
+      "accords": [
+        "citrus",
+        "rose",
+        "patchouli",
+        "woody"
+      ],
+      "sources": [
+        "https://www.olfastory.com/en/perfume/coco-mademoiselle/composition",
+        "https://en.wikipedia.org/wiki/Coco_Mademoiselle",
+        "https://www.ulta.com/p/coco-mademoiselle-eau-de-parfum-spray-pimprod2015831?sku=2055113"
+      ]
+    },
+    {
+      "name": "Coco Mademoiselle Eau de Parfum Intense",
+      "brand": "Chanel",
+      "concentration": "eau-de-parfum",
+      "year": 2018,
+      "aliases": [
+        "coco mademoiselle intense"
+      ],
+      "top": [
+        "Orange",
+        "Bergamot"
+      ],
+      "heart": [
+        "Rose",
+        "Jasmine"
+      ],
+      "base": [
+        "Patchouli",
+        "Tonka Bean",
+        "Vanilla",
+        "Amber"
+      ],
+      "family": "Amber & Resin",
+      "price_usd_100ml": 195,
+      "price_date": "2026-10",
+      "dupe_of": [],
+      "longevity": 5,
+      "sillage": 4,
+      "projection": 4,
+      "accords": [
+        "patchouli",
+        "amber",
+        "vanilla",
+        "rose"
+      ],
+      "sources": [
+        "https://basenotes.com/fragrances/coco-mademoiselle-eau-de-parfum-intense-by-chanel.26154795",
+        "https://www.ulta.com/p/coco-mademoiselle-eau-de-parfum-intense-spray-pimprod2015973?sku=2523367"
+      ]
+    },
+    {
+      "name": "Chance Eau Tendre",
+      "brand": "Chanel",
+      "concentration": "eau-de-toilette",
+      "year": 2010,
+      "aliases": [
+        "chance eau tendre",
+        "chance eau tendre edt"
+      ],
+      "top": [
+        "Grapefruit",
+        "Quince"
+      ],
+      "heart": [
+        "Jasmine",
+        "Hyacinth"
+      ],
+      "base": [
+        "White Musk",
+        "Cedar",
+        "Amber"
+      ],
+      "family": "Orchard Fruit",
+      "price_usd_100ml": 155,
+      "price_date": "2026-10",
+      "dupe_of": [],
+      "longevity": 3,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "fruity",
+        "citrus",
+        "floral",
+        "musky"
+      ],
+      "sources": [
+        "https://www.olfastory.com/en/perfume/chance-eau-tendre/composition",
+        "https://www.olfastory.com/parfum/chance-eau-tendre-0/composition",
+        "https://www.ulta.com/p/chance-eau-tendre-eau-de-parfum-spray-pimprod2015977?sku=2539926"
+      ]
+    },
+    {
+      "name": "Chance Eau Tendre Eau de Parfum",
+      "brand": "Chanel",
+      "concentration": "eau-de-parfum",
+      "year": 2019,
+      "aliases": [
+        "chance eau tendre edp"
+      ],
+      "top": [
+        "Grapefruit",
+        "Quince"
+      ],
+      "heart": [
+        "Jasmine",
+        "Rose"
+      ],
+      "base": [
+        "White Musk"
+      ],
+      "family": "Petal Garden",
+      "price_usd_100ml": 185,
+      "price_date": "2026-10",
+      "dupe_of": [],
+      "longevity": 4,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "floral",
+        "rose",
+        "fruity",
+        "musky"
+      ],
+      "sources": [
+        "https://www.olfastory.com/en/perfume/chance-eau-tendre-eau-de-parfum/composition",
+        "https://www.ulta.com/p/chance-eau-tendre-eau-de-parfum-spray-pimprod2015977?sku=2539926"
+      ]
+    },
+    {
+      "name": "Chance",
+      "brand": "Chanel",
+      "concentration": "eau-de-toilette",
+      "year": 2002,
+      "aliases": [
+        "chance",
+        "chanel chance",
+        "chance edt"
+      ],
+      "top": [
+        "Citron",
+        "Pink Pepper"
+      ],
+      "heart": [
+        "Jasmine",
+        "Iris",
+        "Hyacinth"
+      ],
+      "base": [
+        "Patchouli",
+        "Amber",
+        "White Musk",
+        "Vetiver"
+      ],
+      "family": "Petal Garden",
+      "price_usd_100ml": 155,
+      "price_date": "2026-10",
+      "dupe_of": [],
+      "longevity": 4,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "floral",
+        "spicy",
+        "patchouli",
+        "amber"
+      ],
+      "sources": [
+        "https://www.olfastory.com/en/perfume/chanel-chance-eau-de-toilette",
+        "https://en.wikipedia.org/wiki/Chanel_Chance",
+        "https://www.ulta.com/p/chance-eau-de-toilette-spray-pimprod2015856?sku=2078591"
+      ]
+    },
+    {
+      "name": "Chance Eau Fraîche",
+      "brand": "Chanel",
+      "concentration": "eau-de-toilette",
+      "year": 2007,
+      "aliases": [
+        "chance eau fraiche"
+      ],
+      "top": [
+        "Citron"
+      ],
+      "heart": [
+        "Jasmine",
+        "Water Hyacinth"
+      ],
+      "base": [
+        "Teak Wood",
+        "Patchouli",
+        "Vetiver"
+      ],
+      "family": "Sunlit Citrus",
+      "price_usd_100ml": 155,
+      "price_date": "2026-10",
+      "dupe_of": [],
+      "longevity": 3,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "citrus",
+        "fresh",
+        "floral",
+        "woody"
+      ],
+      "sources": [
+        "https://www.chanel.com/us/fragrance/p/136420/chance-eau-fraiche-eau-de-toilette-spray/",
+        "https://www.nordstrom.com/s/chanel-chance-eau-frache-eau-de-toilette-spray/2927047",
+        "https://www.macys.com/shop/product/chanel-chance-eau-fraiche-eau-de-toilette-spray-3.4-oz?ID=232466",
+        "https://www.ulta.com/p/chance-eau-fraiche-eau-de-toilette-spray-pimprod2015933?sku=2141563"
+      ]
+    },
+    {
+      "name": "Bleu de Chanel Eau de Parfum",
+      "brand": "Chanel",
+      "concentration": "eau-de-parfum",
+      "year": 2014,
+      "aliases": [
+        "bleu de chanel edp",
+        "bleu de chanel"
+      ],
+      "top": [
+        "Grapefruit",
+        "Lemon",
+        "Bergamot",
+        "Pink Pepper"
+      ],
+      "heart": [
+        "Cedar",
+        "Ginger",
+        "Nutmeg",
+        "Jasmine"
+      ],
+      "base": [
+        "Sandalwood",
+        "Tonka Bean",
+        "Vanilla",
+        "Incense",
+        "Amberwood"
+      ],
+      "family": "Wood & Root",
+      "price_usd_100ml": 173,
+      "price_date": "2026-10",
+      "dupe_of": [],
+      "longevity": 4,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "citrus",
+        "woody",
+        "aromatic",
+        "amber"
+      ],
+      "sources": [
+        "https://basenotes.com/fragrances/bleu-de-chanel-eau-de-parfum-by-chanel.26145039",
+        "https://www.olfastory.com/en/perfume/chanel-bleu-de-chanel-eau-de-parfum-vaporisateur",
+        "https://www.ulta.com/p/bleu-de-chanel-eau-de-parfum-spray-pimprod2015836?sku=2286831"
+      ]
+    },
+    {
+      "name": "Bleu de Chanel Parfum",
+      "brand": "Chanel",
+      "concentration": "parfum",
+      "year": 2018,
+      "aliases": [
+        "bleu de chanel parfum"
+      ],
+      "top": [
+        "Citrus"
+      ],
+      "heart": [
+        "Cedar"
+      ],
+      "base": [
+        "Sandalwood"
+      ],
+      "family": "Wood & Root",
+      "price_usd_100ml": 210,
+      "price_date": "2026-10",
+      "dupe_of": [],
+      "longevity": 4,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "woody",
+        "citrus",
+        "aromatic"
+      ],
+      "sources": [
+        "https://www.chanel.com/us/fragrance/p/107180/bleu-de-chanel-parfum-spray/",
+        "https://www.ulta.com/p/bleu-de-chanel-parfum-spray-pimprod2015976?sku=2527084",
+        "https://en.wikipedia.org/wiki/Bleu_de_Chanel"
+      ]
+    },
+    {
+      "name": "No 5 Eau de Parfum",
+      "brand": "Chanel",
+      "concentration": "eau-de-parfum",
+      "year": 1986,
+      "aliases": [
+        "n°5",
+        "no 5",
+        "no5",
+        "chanel no 5",
+        "chanel n5"
+      ],
+      "top": [
+        "Aldehydes",
+        "Neroli",
+        "Bergamot",
+        "Lemon"
+      ],
+      "heart": [
+        "Rose",
+        "Jasmine",
+        "Ylang-Ylang"
+      ],
+      "base": [
+        "Vanilla",
+        "Sandalwood",
+        "Vetiver"
+      ],
+      "family": "Powder Veil",
+      "price_usd_100ml": 190,
+      "price_date": "2026-10",
+      "dupe_of": [],
+      "longevity": 4,
+      "sillage": 4,
+      "projection": 4,
+      "accords": [
+        "aldehydic",
+        "floral",
+        "powdery"
+      ],
+      "sources": [
+        "https://www.olfastory.com/en/perfume/ndeg5/composition",
+        "https://www.chanel.com/us/fragrance/p/125530/n5-eau-de-parfum-spray/",
+        "https://www.ulta.com/p/n5-eau-de-parfum-spray-pimprod2015864?sku=2269167"
+      ]
+    },
+    {
+      "name": "Allure Homme Sport",
+      "brand": "Chanel",
+      "concentration": "eau-de-toilette",
+      "year": 2004,
+      "aliases": [
+        "allure homme sport",
+        "allure sport"
+      ],
+      "top": [
+        "Orange",
+        "Mandarin",
+        "Aldehydes",
+        "Sea Notes"
+      ],
+      "heart": [
+        "Pepper",
+        "Neroli",
+        "Cedar"
+      ],
+      "base": [
+        "Tonka Bean",
+        "Vanilla",
+        "White Musk",
+        "Amber",
+        "Vetiver"
+      ],
+      "family": "Sunlit Citrus",
+      "price_usd_100ml": 142,
+      "price_date": "2026-10",
+      "dupe_of": [],
+      "longevity": 3,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "citrus",
+        "fresh",
+        "woody",
+        "musky"
+      ],
+      "sources": [
+        "https://www.olfastory.com/en/perfume/allure-homme-sport",
+        "https://www.ulta.com/p/allure-homme-sport-eau-de-toilette-spray-pimprod2015930?sku=2100393"
+      ]
+    },
+    {
+      "name": "Allure Homme Édition Blanche",
+      "brand": "Chanel",
+      "concentration": "eau-de-parfum",
+      "year": 2014,
+      "aliases": [
+        "allure homme edition blanche",
+        "edition blanche"
+      ],
+      "top": [
+        "Lemon",
+        "Bergamot"
+      ],
+      "heart": [
+        "Sandalwood"
+      ],
+      "base": [
+        "Vanilla",
+        "Vetiver"
+      ],
+      "family": "Sunlit Citrus",
+      "price_usd_100ml": 173,
+      "price_date": "2026-10",
+      "dupe_of": [],
+      "longevity": 3,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "citrus",
+        "woody",
+        "vanilla"
+      ],
+      "sources": [
+        "https://www.chanel.com/us/fragrance/p/127460/allure-homme-edition-blanche-eau-de-parfum-spray/",
+        "https://basenotes.com/fragrances/allure-homme-edition-blanche-eau-de-parfum-by-chanel.26152548"
+      ]
+    },
+    {
+      "name": "Coco Noir",
+      "brand": "Chanel",
+      "concentration": "eau-de-parfum",
+      "year": 2012,
+      "aliases": [
+        "coco noir"
+      ],
+      "top": [
+        "Bergamot",
+        "Grapefruit",
+        "Orange"
+      ],
+      "heart": [
+        "Rose",
+        "Rose Geranium",
+        "Jasmine",
+        "Narcissus"
+      ],
+      "base": [
+        "Patchouli",
+        "Tonka Bean",
+        "Sandalwood",
+        "Vanilla",
+        "White Musk",
+        "Incense"
+      ],
+      "family": "Amber & Resin",
+      "price_usd_100ml": 185,
+      "price_date": "2026-10",
+      "dupe_of": [],
+      "longevity": 4,
+      "sillage": 4,
+      "projection": 4,
+      "accords": [
+        "amber",
+        "rose",
+        "patchouli",
+        "woody"
+      ],
+      "sources": [
+        "https://www.olfastory.com/en/perfume/coco-noir/composition",
+        "https://www.macys.com/shop/product/chanel-coco-noir-eau-de-parfum-fragrance-collection?ID=725966",
+        "https://www.bloomingdales.com/shop/product/chanel-coco-noir-eau-de-parfum-spray-3.4-oz.?ID=644788"
+      ]
+    },
+    {
+      "name": "Gabrielle",
+      "brand": "Chanel",
+      "concentration": "eau-de-parfum",
+      "year": 2017,
+      "aliases": [
+        "gabrielle chanel",
+        "gabrielle"
+      ],
+      "top": [
+        "Mandarin",
+        "Grapefruit",
+        "Blackcurrant"
+      ],
+      "heart": [
+        "Tuberose",
+        "Jasmine",
+        "Ylang-Ylang",
+        "Orange Blossom"
+      ],
+      "base": [
+        "Sandalwood",
+        "Musk"
+      ],
+      "family": "White Bloom",
+      "price_usd_100ml": 185,
+      "price_date": "2026-10",
+      "dupe_of": [],
+      "longevity": 4,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "white floral",
+        "citrus",
+        "musky"
+      ],
+      "sources": [
+        "https://www.olfastory.com/en/perfume/gabrielle-chanel/composition",
+        "https://www.ulta.com/p/gabrielle-chanel-eau-de-parfum-spray-pimprod2015972?sku=2516493"
+      ]
+    },
+    {
+      "name": "Coromandel",
+      "brand": "Chanel",
+      "concentration": "eau-de-parfum",
+      "year": 2007,
+      "aliases": [
+        "coromandel",
+        "les exclusifs coromandel"
+      ],
+      "top": [
+        "Frankincense",
+        "Bitter Orange"
+      ],
+      "heart": [
+        "Patchouli",
+        "Iris",
+        "Rose"
+      ],
+      "base": [
+        "Benzoin",
+        "Amber",
+        "Vanilla"
+      ],
+      "family": "Amber & Resin",
+      "price_usd_100ml": 298,
+      "price_date": "2026-10",
+      "dupe_of": [],
+      "longevity": 5,
+      "sillage": 4,
+      "projection": 4,
+      "accords": [
+        "patchouli",
+        "amber",
+        "balsamic",
+        "incense"
+      ],
+      "sources": [
+        "https://www.olfastory.com/en/perfume/coromandel",
+        "https://www.olfastory.com/en/perfume/coromandel/composition",
+        "https://meetmescent.com/products/coromandel-les-exclusifs-de-chanel",
+        "https://www.chanel.com/us/fragrance/p/122290/coromandel-les-exclusifs-de-chanel-eau-de-parfum/"
+      ]
+    },
+    {
+      "name": "Égoïste",
+      "brand": "Chanel",
+      "concentration": "eau-de-toilette",
+      "year": 1990,
+      "aliases": [
+        "egoiste",
+        "egoiste pour homme"
+      ],
+      "top": [
+        "Mandarin",
+        "Coriander",
+        "Rosewood"
+      ],
+      "heart": [
+        "Rose",
+        "Cinnamon",
+        "Carnation"
+      ],
+      "base": [
+        "Sandalwood",
+        "Vanilla",
+        "Tonka Bean",
+        "Ambrette"
+      ],
+      "family": "Spice Route",
+      "dupe_of": [],
+      "longevity": 4,
+      "sillage": 4,
+      "projection": 4,
+      "accords": [
+        "woody",
+        "spicy",
+        "sweet",
+        "rose"
+      ],
+      "sources": [
+        "https://www.olfastory.com/en/perfume/egoiste",
+        "https://www.chanel.com/gb/fragrance/p/114460/egoiste-eau-de-toilette-spray/",
+        "https://www.raidersofthelostscent.blog/2015/04/chanel-egoiste.html"
+      ]
+    }
+  ],
+  "patches": []
+}

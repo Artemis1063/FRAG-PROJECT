@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Local editor / Claude config (contains machine-specific paths)
+.claude/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node
+node_modules/
+
+# Course material not part of this project
+ExplainabilityMachineLearning*.pdf
+ML_interpretability*.pdf

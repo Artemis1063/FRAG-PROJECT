@@ -1,0 +1,898 @@
+{
+ "perfumes": [
+  {
+   "name": "Ambery Saffron",
+   "brand": "Dossier",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "dossier ambery saffron"
+   ],
+   "top": [
+    "Saffron",
+    "Orange Blossom"
+   ],
+   "heart": [
+    "Jasmine",
+    "Plum",
+    "Cedarwood"
+   ],
+   "base": [
+    "Oakmoss",
+    "Fir Balsam",
+    "Amber"
+   ],
+   "price_usd_100ml": 79,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "mfk-baccarat-rouge-540"
+   ],
+   "sources": [
+    "https://dossier.co/products/ambery-saffron"
+   ]
+  },
+  {
+   "name": "Ambery Rose",
+   "brand": "Dossier",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "dossier ambery rose"
+   ],
+   "top": [
+    "Lychee",
+    "Blackcurrant",
+    "Bergamot",
+    "Grapefruit"
+   ],
+   "heart": [
+    "Rose",
+    "Plum",
+    "Nutmeg",
+    "Saffron"
+   ],
+   "base": [
+    "Amber",
+    "Vetiver",
+    "Musks",
+    "Cedarwood"
+   ],
+   "price_usd_100ml": 98,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "parfums-de-marly-delina"
+   ],
+   "sources": [
+    "https://dossier.co/products/ambery-rose"
+   ]
+  },
+  {
+   "name": "Ambery Peach",
+   "brand": "Dossier",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "dossier ambery peach"
+   ],
+   "top": [
+    "Peach",
+    "Orange",
+    "Bitter Almond",
+    "Cardamom"
+   ],
+   "heart": [
+    "Jasmine",
+    "Davana",
+    "Rum",
+    "Vetiver"
+   ],
+   "base": [
+    "Patchouli",
+    "Vanilla",
+    "Oakmoss",
+    "Tonka Bean"
+   ],
+   "price_usd_100ml": 98,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "tom-ford-bitter-peach"
+   ],
+   "sources": [
+    "https://dossier.co/products/ambery-peach"
+   ]
+  },
+  {
+   "name": "Ambery Vetiver",
+   "brand": "Dossier",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "dossier ambery vetiver"
+   ],
+   "top": [
+    "Bergamot",
+    "Lemon",
+    "Bucchu"
+   ],
+   "heart": [
+    "Orange Blossom",
+    "Marigold",
+    "Violet"
+   ],
+   "base": [
+    "Vetiver",
+    "Amber",
+    "Cedarwood"
+   ],
+   "price_usd_100ml": 98,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "byredo-bal-dafrique"
+   ],
+   "sources": [
+    "https://dossier.co/products/ambery-vetiver"
+   ]
+  },
+  {
+   "name": "Ambery Oakwood",
+   "brand": "Dossier",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "dossier ambery oakwood"
+   ],
+   "top": [
+    "Cognac",
+    "Cinnamon",
+    "Candied Fruits"
+   ],
+   "heart": [
+    "Oakwood",
+    "Coffee",
+    "Myrrh"
+   ],
+   "base": [
+    "Tonka Bean",
+    "Vanilla",
+    "Cistus",
+    "Praline"
+   ],
+   "price_usd_100ml": 98,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "kilian-angels-share"
+   ],
+   "sources": [
+    "https://dossier.co/products/ambery-oakwood"
+   ]
+  },
+  {
+   "name": "Ambery Cherry",
+   "brand": "Dossier",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "dossier ambery cherry"
+   ],
+   "top": [
+    "Cherry",
+    "Almond",
+    "Cinnamon"
+   ],
+   "heart": [
+    "Cloves",
+    "Rose",
+    "Jasmine",
+    "Plum"
+   ],
+   "base": [
+    "Peru Balsam",
+    "Tonka Bean",
+    "Vanilla"
+   ],
+   "price_usd_100ml": 79,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "tom-ford-lost-cherry"
+   ],
+   "sources": [
+    "https://dossier.co/products/ambery-cherry"
+   ]
+  },
+  {
+   "name": "Ambery Vanilla",
+   "brand": "Dossier",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "dossier ambery vanilla"
+   ],
+   "top": [
+    "Mandarin",
+    "Pear",
+    "Pink Pepper",
+    "Liquorice"
+   ],
+   "heart": [
+    "Cedarwood",
+    "Patchouli",
+    "Vanilla",
+    "Coffee"
+   ],
+   "price_usd_100ml": 58,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "ysl-black-opium"
+   ],
+   "sources": [
+    "https://dossier.co/products/ambery-vanilla"
+   ]
+  },
+  {
+   "name": "Floral Lavender",
+   "brand": "Dossier",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "dossier floral lavender"
+   ],
+   "top": [
+    "Mandarin",
+    "Neroli",
+    "Blackcurrant"
+   ],
+   "heart": [
+    "Jasmine",
+    "Lavender",
+    "Orange Blossom"
+   ],
+   "base": [
+    "Vanilla",
+    "Amber",
+    "Musk"
+   ],
+   "price_usd_100ml": 49,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "ysl-libre"
+   ],
+   "sources": [
+    "https://dossier.co/products/floral-lavender"
+   ]
+  },
+  {
+   "name": "Floral Marshmallow",
+   "brand": "Dossier",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "dossier floral marshmallow"
+   ],
+   "top": [
+    "Marshmallow",
+    "Neroli",
+    "Bergamot"
+   ],
+   "heart": [
+    "Orange Blossom",
+    "Honeysuckle",
+    "Jasmine",
+    "Orris"
+   ],
+   "base": [
+    "Amber",
+    "Vanilla",
+    "Musk"
+   ],
+   "price_usd_100ml": 78,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "kilian-love-dont-be-shy"
+   ],
+   "sources": [
+    "https://dossier.co/products/floral-marshmallow"
+   ]
+  },
+  {
+   "name": "Floral Pear",
+   "brand": "Dossier",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "dossier floral pear"
+   ],
+   "top": [
+    "Pear",
+    "Bergamot",
+    "Watermelon",
+    "Rhubarb"
+   ],
+   "heart": [
+    "Quince",
+    "Rose",
+    "Freesia",
+    "Orange Blossom"
+   ],
+   "base": [
+    "Woody Notes",
+    "Musk",
+    "Amber"
+   ],
+   "price_usd_100ml": 64,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "jo-malone-english-pear-and-freesia"
+   ],
+   "sources": [
+    "https://dossier.co/products/floral-pear"
+   ]
+  },
+  {
+   "name": "Woody Sage",
+   "brand": "Dossier",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "dossier woody sage"
+   ],
+   "top": [
+    "Fig Tree",
+    "Grapefruit"
+   ],
+   "heart": [
+    "Marine Notes",
+    "Ambrette"
+   ],
+   "base": [
+    "Clary Sage",
+    "Amberwood"
+   ],
+   "price_usd_100ml": 58,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "jo-malone-wood-sage-and-sea-salt"
+   ],
+   "sources": [
+    "https://dossier.co/products/woody-sage"
+   ]
+  },
+  {
+   "name": "Woody Chestnut",
+   "brand": "Dossier",
+   "concentration": "eau-de-toilette",
+   "aliases": [
+    "dossier woody chestnut"
+   ],
+   "top": [
+    "Pink Pepper",
+    "Orange Blossom",
+    "Cloves"
+   ],
+   "heart": [
+    "Chestnut",
+    "Gaïac Wood",
+    "Cade Wood"
+   ],
+   "base": [
+    "Vanilla",
+    "Peru Balm",
+    "Cedarwood"
+   ],
+   "price_usd_100ml": 64,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "maison-margiela-replica-by-the-fireplace"
+   ],
+   "sources": [
+    "https://dossier.co/products/woody-chestnut"
+   ]
+  },
+  {
+   "name": "Woody Tobacco",
+   "brand": "Dossier",
+   "concentration": "eau-de-toilette",
+   "aliases": [
+    "dossier woody tobacco"
+   ],
+   "top": [
+    "Lemon",
+    "Pink Pepper",
+    "Neroli"
+   ],
+   "heart": [
+    "Rum",
+    "Dry Fruits",
+    "Blond Woods"
+   ],
+   "base": [
+    "Styrax",
+    "Tobacco Leaves",
+    "Vanilla"
+   ],
+   "price_usd_100ml": 78,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "maison-margiela-replica-jazz-club-toilette"
+   ],
+   "sources": [
+    "https://dossier.co/products/woody-tobacco"
+   ]
+  },
+  {
+   "name": "Woody Oakmoss",
+   "brand": "Dossier",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "dossier woody oakmoss"
+   ],
+   "top": [
+    "Bergamot",
+    "Orange",
+    "Peach"
+   ],
+   "heart": [
+    "Jasmine",
+    "Rose",
+    "Patchouli"
+   ],
+   "base": [
+    "Oakmoss",
+    "Vanilla",
+    "Vetiver"
+   ],
+   "price_usd_100ml": 49,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "chanel-coco-mademoiselle"
+   ],
+   "sources": [
+    "https://dossier.co/products/woody-oakmoss"
+   ]
+  },
+  {
+   "name": "Citrus Ginger",
+   "brand": "Dossier",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "dossier citrus ginger"
+   ],
+   "top": [
+    "Peppermint",
+    "Lemon",
+    "Ginger"
+   ],
+   "heart": [
+    "Vetiver",
+    "Pink Pepper",
+    "Nutmeg"
+   ],
+   "base": [
+    "Sandalwood",
+    "Incense",
+    "Cedarwood"
+   ],
+   "price_usd_100ml": 58,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "chanel-bleu-de-chanel"
+   ],
+   "sources": [
+    "https://dossier.co/products/citrus-ginger"
+   ]
+  },
+  {
+   "name": "Musky Oakmoss",
+   "brand": "Dossier",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "dossier musky oakmoss"
+   ],
+   "top": [
+    "Apple",
+    "Pineapple",
+    "Bergamot"
+   ],
+   "heart": [
+    "Rose",
+    "Birch Leaf",
+    "Patchouli"
+   ],
+   "base": [
+    "Musk",
+    "Oakmoss",
+    "Amber"
+   ],
+   "price_usd_100ml": 98,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "creed-aventus"
+   ],
+   "sources": [
+    "https://dossier.co/products/musky-oakmoss"
+   ]
+  },
+  {
+   "name": "Musky Violet",
+   "brand": "Dossier",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "dossier musky violet"
+   ],
+   "top": [
+    "Watermelon",
+    "Green Apple",
+    "Peach"
+   ],
+   "heart": [
+    "Violet Leaf",
+    "Iris",
+    "Jasmine",
+    "Rose"
+   ],
+   "base": [
+    "Musks",
+    "Sandalwood",
+    "Cedarwood",
+    "Vetiver"
+   ],
+   "price_usd_100ml": 98,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "byredo-mojave-ghost"
+   ],
+   "sources": [
+    "https://dossier.co/products/musky-violet"
+   ]
+  },
+  {
+   "name": "Woody Sandalwood",
+   "brand": "Dossier",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "dossier woody sandalwood"
+   ],
+   "top": [
+    "Violet Leaves",
+    "Cardamom"
+   ],
+   "heart": [
+    "Orris",
+    "Ambrox",
+    "Cedarwood",
+    "Cypriol"
+   ],
+   "base": [
+    "Musk",
+    "Sandalwood",
+    "Amber"
+   ],
+   "price_usd_100ml": 79,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "le-labo-santal-33"
+   ],
+   "sources": [
+    "https://dossier.co/products/woody-sandalwood"
+   ]
+  },
+  {
+   "name": "Powdery Tobacco",
+   "brand": "Dossier",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "dossier powdery tobacco"
+   ],
+   "top": [
+    "Tobacco",
+    "Ginger",
+    "Apricot"
+   ],
+   "heart": [
+    "Honey",
+    "Vanilla",
+    "Cocoa"
+   ],
+   "base": [
+    "Tonka Bean",
+    "Dry Fruits",
+    "Blond Woods"
+   ],
+   "price_usd_100ml": 78,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "tom-ford-tobacco-vanille"
+   ],
+   "sources": [
+    "https://dossier.co/products/powdery-tobacco"
+   ]
+  },
+  {
+   "name": "Fougere Oud",
+   "brand": "Dossier",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "dossier fougere oud"
+   ],
+   "top": [
+    "Rosewood",
+    "Tobacco",
+    "Pink Pepper",
+    "Coriander"
+   ],
+   "heart": [
+    "Oud",
+    "Patchouli",
+    "Vetiver"
+   ],
+   "base": [
+    "Tonka Bean",
+    "Labdanum",
+    "Cedarwood"
+   ],
+   "price_usd_100ml": 98,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "tom-ford-oud-wood"
+   ],
+   "sources": [
+    "https://dossier.co/products/fougere-oud"
+   ]
+  },
+  {
+   "name": "Red Temptation",
+   "brand": "Zara",
+   "aliases": [
+    "zara red temptation"
+   ],
+   "dupe_of": [
+    "mfk-baccarat-rouge-540"
+   ],
+   "sources": [
+    "https://www.alexandriauk.com/blogs/fragrance-academy/zara-perfume-dupe-list",
+    "https://melissajanelee.com/zara-perfume-dupes/",
+    "https://selfhealjourney.com/2026/03/16/zara-perfume-dupes/",
+    "https://wicked-good.co/blogs/clean-perfume/zara-perfume-dupes",
+    "https://www.perfumesdupes.com/blog/perfumes-zara-equivalencias-lujo"
+   ]
+  },
+  {
+   "name": "Gardenia",
+   "brand": "Zara",
+   "aliases": [
+    "zara gardenia"
+   ],
+   "dupe_of": [
+    "ysl-black-opium"
+   ],
+   "sources": [
+    "https://www.alexandriauk.com/blogs/fragrance-academy/zara-perfume-dupe-list",
+    "https://melissajanelee.com/zara-perfume-dupes/",
+    "https://selfhealjourney.com/2026/03/16/zara-perfume-dupes/",
+    "https://wicked-good.co/blogs/clean-perfume/zara-perfume-dupes"
+   ]
+  },
+  {
+   "name": "Ebony Wood",
+   "brand": "Zara",
+   "aliases": [
+    "zara ebony wood"
+   ],
+   "dupe_of": [
+    "jo-malone-wood-sage-and-sea-salt"
+   ],
+   "sources": [
+    "https://www.alexandriauk.com/blogs/fragrance-academy/zara-perfume-dupe-list",
+    "https://melissajanelee.com/zara-perfume-dupes/",
+    "https://selfhealjourney.com/2026/03/16/zara-perfume-dupes/",
+    "https://wicked-good.co/blogs/clean-perfume/zara-perfume-dupes"
+   ]
+  },
+  {
+   "name": "Vibrant Leather",
+   "brand": "Zara",
+   "aliases": [
+    "zara vibrant leather"
+   ],
+   "dupe_of": [
+    "creed-aventus"
+   ],
+   "sources": [
+    "https://www.alexandriauk.com/blogs/fragrance-academy/zara-perfume-dupe-list",
+    "https://melissajanelee.com/zara-perfume-dupes/",
+    "https://selfhealjourney.com/2026/03/16/zara-perfume-dupes/",
+    "https://wicked-good.co/blogs/clean-perfume/zara-perfume-dupes",
+    "https://www.perfumesdupes.com/blog/perfumes-zara-equivalencias-lujo"
+   ]
+  },
+  {
+   "name": "Waterlily Tea Dress",
+   "brand": "Zara",
+   "aliases": [
+    "zara waterlily tea dress"
+   ],
+   "dupe_of": [
+    "byredo-gypsy-water"
+   ],
+   "sources": [
+    "https://www.alexandriauk.com/blogs/fragrance-academy/zara-perfume-dupe-list",
+    "https://melissajanelee.com/zara-perfume-dupes/",
+    "https://selfhealjourney.com/2026/03/16/zara-perfume-dupes/",
+    "https://wicked-good.co/blogs/clean-perfume/zara-perfume-dupes"
+   ]
+  },
+  {
+   "name": "Golden Decade",
+   "brand": "Zara",
+   "aliases": [
+    "zara golden decade"
+   ],
+   "dupe_of": [
+    "ysl-libre",
+    "ysl-libre-intense"
+   ],
+   "sources": [
+    "https://www.alexandriauk.com/blogs/fragrance-academy/zara-perfume-dupe-list",
+    "https://melissajanelee.com/zara-perfume-dupes/",
+    "https://selfhealjourney.com/2026/03/16/zara-perfume-dupes/",
+    "https://wicked-good.co/blogs/clean-perfume/zara-perfume-dupes",
+    "https://www.perfumesdupes.com/blog/perfumes-zara-equivalencias-lujo"
+   ]
+  },
+  {
+   "name": "Fields at Nightfall",
+   "brand": "Zara",
+   "aliases": [
+    "zara fields at nightfall"
+   ],
+   "dupe_of": [
+    "zadig-voltaire-this-is-her"
+   ],
+   "sources": [
+    "https://www.alexandriauk.com/blogs/fragrance-academy/zara-perfume-dupe-list",
+    "https://melissajanelee.com/zara-perfume-dupes/",
+    "https://selfhealjourney.com/2026/03/16/zara-perfume-dupes/",
+    "https://wicked-good.co/blogs/clean-perfume/zara-perfume-dupes"
+   ]
+  },
+  {
+   "name": "Amalfi Sunray",
+   "brand": "Zara",
+   "aliases": [
+    "zara amalfi sunray"
+   ],
+   "dupe_of": [
+    "tom-ford-neroli-portofino"
+   ],
+   "sources": [
+    "https://www.alexandriauk.com/blogs/fragrance-academy/zara-perfume-dupe-list",
+    "https://melissajanelee.com/zara-perfume-dupes/",
+    "https://wicked-good.co/blogs/clean-perfume/zara-perfume-dupes"
+   ]
+  },
+  {
+   "name": "Hypnotic Vanilla",
+   "brand": "Zara",
+   "aliases": [
+    "zara hypnotic vanilla"
+   ],
+   "dupe_of": [
+    "dior-hypnotic-poison"
+   ],
+   "sources": [
+    "https://www.alexandriauk.com/blogs/fragrance-academy/zara-perfume-dupe-list",
+    "https://melissajanelee.com/zara-perfume-dupes/",
+    "https://selfhealjourney.com/2026/03/16/zara-perfume-dupes/"
+   ]
+  },
+  {
+   "name": "Femme",
+   "brand": "Zara",
+   "aliases": [
+    "zara femme"
+   ],
+   "dupe_of": [
+    "dior-hypnotic-poison"
+   ],
+   "sources": [
+    "https://melissajanelee.com/zara-perfume-dupes/",
+    "https://www.perfumesdupes.com/blog/perfumes-zara-equivalencias-lujo"
+   ]
+  },
+  {
+   "name": "Nude Bouquet",
+   "brand": "Zara",
+   "aliases": [
+    "zara nude bouquet"
+   ],
+   "dupe_of": [
+    "dior-miss-dior-blooming-bouquet-2"
+   ],
+   "sources": [
+    "https://www.alexandriauk.com/blogs/fragrance-academy/zara-perfume-dupe-list",
+    "https://melissajanelee.com/zara-perfume-dupes/",
+    "https://selfhealjourney.com/2026/03/16/zara-perfume-dupes/",
+    "https://wicked-good.co/blogs/clean-perfume/zara-perfume-dupes"
+   ]
+  },
+  {
+   "name": "Energetically New York",
+   "brand": "Zara",
+   "aliases": [
+    "zara energetically new york"
+   ],
+   "dupe_of": [
+    "le-labo-santal-33"
+   ],
+   "sources": [
+    "https://www.alexandriauk.com/blogs/fragrance-academy/zara-perfume-dupe-list",
+    "https://melissajanelee.com/zara-perfume-dupes/",
+    "https://selfhealjourney.com/2026/03/16/zara-perfume-dupes/",
+    "https://wicked-good.co/blogs/clean-perfume/zara-perfume-dupes"
+   ]
+  },
+  {
+   "name": "Cherry Smoothie",
+   "brand": "Zara",
+   "aliases": [
+    "zara cherry smoothie"
+   ],
+   "dupe_of": [
+    "tom-ford-lost-cherry"
+   ],
+   "sources": [
+    "https://www.alexandriauk.com/blogs/fragrance-academy/zara-perfume-dupe-list",
+    "https://melissajanelee.com/zara-perfume-dupes/",
+    "https://selfhealjourney.com/2026/03/16/zara-perfume-dupes/",
+    "https://wicked-good.co/blogs/clean-perfume/zara-perfume-dupes"
+   ]
+  },
+  {
+   "name": "Fashionably London",
+   "brand": "Zara",
+   "aliases": [
+    "zara fashionably london"
+   ],
+   "dupe_of": [
+    "parfums-de-marly-delina-exclusif"
+   ],
+   "sources": [
+    "https://melissajanelee.com/zara-perfume-dupes/",
+    "https://selfhealjourney.com/2026/03/16/zara-perfume-dupes/",
+    "https://wicked-good.co/blogs/clean-perfume/zara-perfume-dupes"
+   ]
+  },
+  {
+   "name": "Vibrant Caramel",
+   "brand": "Zara",
+   "aliases": [
+    "zara vibrant caramel"
+   ],
+   "dupe_of": [
+    "prada-paradoxe"
+   ],
+   "sources": [
+    "https://www.alexandriauk.com/blogs/fragrance-academy/zara-perfume-dupe-list",
+    "https://melissajanelee.com/zara-perfume-dupes/",
+    "https://selfhealjourney.com/2026/03/16/zara-perfume-dupes/"
+   ]
+  },
+  {
+   "name": "Woman Gold",
+   "brand": "Zara",
+   "aliases": [
+    "zara woman gold"
+   ],
+   "dupe_of": [],
+   "sources": [
+    "https://www.alexandriauk.com/blogs/fragrance-academy/zara-perfume-dupe-list",
+    "https://melissajanelee.com/zara-perfume-dupes/",
+    "https://selfhealjourney.com/2026/03/16/zara-perfume-dupes/",
+    "https://wicked-good.co/blogs/clean-perfume/zara-perfume-dupes"
+   ]
+  },
+  {
+   "name": "Sublime Epoque",
+   "brand": "Zara",
+   "aliases": [
+    "zara sublime epoque"
+   ],
+   "dupe_of": [],
+   "sources": [
+    "https://www.alexandriauk.com/blogs/fragrance-academy/zara-perfume-dupe-list",
+    "https://melissajanelee.com/zara-perfume-dupes/",
+    "https://selfhealjourney.com/2026/03/16/zara-perfume-dupes/",
+    "https://wicked-good.co/blogs/clean-perfume/zara-perfume-dupes"
+   ]
+  }
+ ],
+ "patches": []
+}

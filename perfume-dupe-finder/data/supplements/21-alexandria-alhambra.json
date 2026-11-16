@@ -1,0 +1,1265 @@
+{
+ "perfumes": [
+  {
+   "name": "Interplay",
+   "brand": "Alexandria Fragrances",
+   "aliases": [
+    "interplay"
+   ],
+   "heart": [
+    "Jasmine",
+    "Saffron",
+    "Cedar",
+    "Ambergris"
+   ],
+   "family": "Amber & Resin",
+   "price_usd_100ml": 113,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "mfk-baccarat-rouge-540"
+   ],
+   "accords": [
+    "amber",
+    "woody",
+    "saffron"
+   ],
+   "sources": [
+    "https://alexandriafragrances.com/products/interplay"
+   ]
+  },
+  {
+   "name": "Oasis Water",
+   "brand": "Alexandria Fragrances",
+   "aliases": [
+    "oasis water"
+   ],
+   "heart": [
+    "Bergamot",
+    "Lemon",
+    "Pine Needles",
+    "Incense",
+    "Amber",
+    "Sandalwood"
+   ],
+   "family": "Wood & Root",
+   "price_usd_100ml": 113,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "byredo-gypsy-water"
+   ],
+   "accords": [
+    "citrus",
+    "woody",
+    "incense"
+   ],
+   "sources": [
+    "https://alexandriafragrances.com/products/oasis-water"
+   ]
+  },
+  {
+   "name": "Hawaii Volcano",
+   "brand": "Alexandria Fragrances",
+   "aliases": [
+    "hawaii volcano"
+   ],
+   "heart": [
+    "Jamaican Lime",
+    "Sicilian Mandarin",
+    "Bergamot",
+    "Hibiscus",
+    "Jasmine",
+    "Ylang-Ylang",
+    "Musk",
+    "Tropical Wood"
+   ],
+   "family": "Sunlit Citrus",
+   "price_usd_100ml": 113,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "creed-virgin-island-water"
+   ],
+   "accords": [
+    "citrus",
+    "tropical",
+    "musky"
+   ],
+   "sources": [
+    "https://alexandriafragrances.com/products/hawaii-volcano"
+   ]
+  },
+  {
+   "name": "Brasilia",
+   "brand": "Alexandria Fragrances",
+   "aliases": [
+    "brasilia"
+   ],
+   "heart": [
+    "Pineapple",
+    "Apple",
+    "Bergamot",
+    "Black Currant",
+    "Birch",
+    "Rose",
+    "Jasmine",
+    "Patchouli",
+    "Oakmoss",
+    "Ambergris",
+    "Musk",
+    "Vanilla"
+   ],
+   "family": "Orchard Fruit",
+   "price_usd_100ml": 113,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "creed-aventus"
+   ],
+   "accords": [
+    "fruity",
+    "smoky",
+    "woody"
+   ],
+   "sources": [
+    "https://alexandriafragrances.com/products/brasilia"
+   ]
+  },
+  {
+   "name": "Black Panther",
+   "brand": "Alexandria Fragrances",
+   "aliases": [
+    "black panther"
+   ],
+   "heart": [
+    "Grapefruit",
+    "Ambroxan",
+    "Musk",
+    "Woody Notes"
+   ],
+   "family": "Sunlit Citrus",
+   "price_usd_100ml": 113,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "bvlgari-le-gemme-tygar"
+   ],
+   "accords": [
+    "citrus",
+    "woody",
+    "ambroxan"
+   ],
+   "sources": [
+    "https://alexandriafragrances.com/products/black-panther"
+   ]
+  },
+  {
+   "name": "Ghostbusters",
+   "brand": "Alexandria Fragrances",
+   "aliases": [
+    "ghostbusters"
+   ],
+   "heart": [
+    "Magnolia",
+    "Violet",
+    "Sapodilla",
+    "Ambergris"
+   ],
+   "family": "Skin Musk",
+   "price_usd_100ml": 113,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "byredo-mojave-ghost"
+   ],
+   "accords": [
+    "floral",
+    "musky",
+    "woody"
+   ],
+   "sources": [
+    "https://alexandriafragrances.com/products/ghostbusters-inspired-by-mojave-ghost-byredo"
+   ]
+  },
+  {
+   "name": "Salty Waves",
+   "brand": "Alexandria Fragrances",
+   "aliases": [
+    "salty waves"
+   ],
+   "top": [
+    "Grapefruit"
+   ],
+   "heart": [
+    "Sea Salt",
+    "Musk"
+   ],
+   "family": "Salt & Mineral",
+   "price_usd_100ml": 113,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "jo-malone-wood-sage-and-sea-salt"
+   ],
+   "accords": [
+    "salty",
+    "aromatic",
+    "fresh"
+   ],
+   "sources": [
+    "https://alexandriafragrances.com/products/salty-waves-inspired-by-jo-malone-wood-sage-sea-salt"
+   ]
+  },
+  {
+   "name": "The Extreme",
+   "brand": "Alexandria Fragrances",
+   "aliases": [
+    "the extreme"
+   ],
+   "heart": [
+    "Mandarin Orange",
+    "Neroli",
+    "Cardamom",
+    "Nutmeg",
+    "Saffron",
+    "Rose",
+    "Jasmine",
+    "Orange Blossom",
+    "Kulfi",
+    "Sandalwood",
+    "Amber",
+    "Vanilla"
+   ],
+   "family": "Velvet Sweet",
+   "price_usd_100ml": 83,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "tom-ford-noir-extreme"
+   ],
+   "accords": [
+    "gourmand",
+    "spicy",
+    "amber"
+   ],
+   "sources": [
+    "https://alexandriafragrances.com/products/the-extreme"
+   ]
+  },
+  {
+   "name": "Lady Diana",
+   "brand": "Alexandria Fragrances",
+   "aliases": [
+    "lady diana"
+   ],
+   "heart": [
+    "Lychee",
+    "Turkish Rose",
+    "Rhubarb",
+    "Peony",
+    "Nutmeg",
+    "Vanilla",
+    "Incense"
+   ],
+   "family": "Petal Garden",
+   "price_usd_100ml": 113,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "parfums-de-marly-delina"
+   ],
+   "accords": [
+    "rose",
+    "fruity",
+    "musky"
+   ],
+   "sources": [
+    "https://alexandriafragrances.com/products/lady-diana"
+   ]
+  },
+  {
+   "name": "Lady Diana Exclusive",
+   "brand": "Alexandria Fragrances",
+   "aliases": [
+    "lady diana exclusive"
+   ],
+   "heart": [
+    "Pear",
+    "Bergamot",
+    "Lychee",
+    "Turkish Rose",
+    "Incense",
+    "Oud",
+    "Amber",
+    "Vanilla"
+   ],
+   "family": "Petal Garden",
+   "price_usd_100ml": 113,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "parfums-de-marly-delina-exclusif"
+   ],
+   "accords": [
+    "rose",
+    "fruity",
+    "oud"
+   ],
+   "sources": [
+    "https://alexandriafragrances.com/products/lady-diana-exclusive-1"
+   ]
+  },
+  {
+   "name": "Himalaya Mountains",
+   "brand": "Alexandria Fragrances",
+   "aliases": [
+    "himalaya mountains"
+   ],
+   "top": [
+    "Bergamot",
+    "Grapefruit",
+    "Lemon"
+   ],
+   "heart": [
+    "Sandalwood"
+   ],
+   "base": [
+    "Ambergris",
+    "Musk",
+    "Cedar"
+   ],
+   "family": "Sunlit Citrus",
+   "price_usd_100ml": 113,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "creed-himalaya"
+   ],
+   "accords": [
+    "citrus",
+    "woody",
+    "musky"
+   ],
+   "sources": [
+    "https://alexandriafragrances.com/products/himalaya-mountains"
+   ]
+  },
+  {
+   "name": "Hacivaz",
+   "brand": "Alexandria Fragrances",
+   "aliases": [
+    "hacivaz"
+   ],
+   "heart": [
+    "Bergamot",
+    "Pineapple",
+    "Grapefruit",
+    "Jasmine",
+    "Cedar",
+    "Patchouli",
+    "Oakmoss"
+   ],
+   "family": "Orchard Fruit",
+   "price_usd_100ml": 113,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "nishane-hacivat"
+   ],
+   "accords": [
+    "fruity",
+    "woody",
+    "chypre"
+   ],
+   "sources": [
+    "https://alexandriafragrances.com/products/hacivaz"
+   ]
+  },
+  {
+   "name": "H'ANI",
+   "brand": "Alexandria Fragrances",
+   "aliases": [
+    "h'ani"
+   ],
+   "heart": [
+    "Lemon",
+    "Bergamot",
+    "Pink Pepper",
+    "Ginger",
+    "Cardamom",
+    "Green Notes",
+    "Patchouli",
+    "Cedar",
+    "Sandalwood",
+    "Musk",
+    "Vanilla"
+   ],
+   "family": "Velvet Sweet",
+   "price_usd_100ml": 113,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "nishane-ani"
+   ],
+   "accords": [
+    "vanilla",
+    "spicy",
+    "citrus"
+   ],
+   "sources": [
+    "https://alexandriafragrances.com/products/hani"
+   ]
+  },
+  {
+   "name": "Turin",
+   "brand": "Alexandria Fragrances",
+   "aliases": [
+    "turin"
+   ],
+   "heart": [
+    "Salted Caramel",
+    "Black Pepper",
+    "Sichuan Pepper",
+    "Patchouli",
+    "Cinnamon",
+    "Vetiver",
+    "Amber",
+    "Oak"
+   ],
+   "family": "Wood & Root",
+   "price_usd_100ml": 117,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "nishane-tero"
+   ],
+   "accords": [
+    "woody",
+    "spicy",
+    "earthy"
+   ],
+   "sources": [
+    "https://alexandriafragrances.com/products/turin-inspired-by-nishane-tero"
+   ]
+  },
+  {
+   "name": "Dear Gabby",
+   "brand": "Alexandria Fragrances",
+   "aliases": [
+    "dear gabby"
+   ],
+   "heart": [
+    "Grapefruit",
+    "Mandarin Orange",
+    "Black Currant",
+    "Pear",
+    "Pink Pepper",
+    "Tuberose",
+    "Jasmine",
+    "Ylang-Ylang",
+    "Orange Blossom",
+    "Lily-of-the-Valley",
+    "Orris",
+    "Sandalwood",
+    "Cashmeran",
+    "Musk"
+   ],
+   "family": "White Bloom",
+   "price_usd_100ml": 103,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "chanel-gabrielle"
+   ],
+   "accords": [
+    "white floral",
+    "tuberose",
+    "musky"
+   ],
+   "sources": [
+    "https://alexandriafragrances.com/products/dear-gabby"
+   ]
+  },
+  {
+   "name": "Royal Equestrian",
+   "brand": "Alexandria Fragrances",
+   "aliases": [
+    "royal equestrian"
+   ],
+   "top": [
+    "Apple",
+    "Bergamot",
+    "Orange"
+   ],
+   "heart": [
+    "Lavender",
+    "Violet",
+    "Geranium"
+   ],
+   "base": [
+    "Amber",
+    "Vanilla",
+    "Cardamom",
+    "Pepper",
+    "Sandalwood",
+    "Patchouli"
+   ],
+   "family": "Spice Route",
+   "price_usd_100ml": 113,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "parfums-de-marly-layton"
+   ],
+   "accords": [
+    "apple",
+    "lavender",
+    "vanilla"
+   ],
+   "sources": [
+    "https://alexandriafragrances.com/products/royal-equestrian"
+   ]
+  },
+  {
+   "name": "Valère",
+   "brand": "Alexandria Fragrances",
+   "concentration": "extrait",
+   "aliases": [
+    "valere",
+    "valère"
+   ],
+   "top": [
+    "Saffron",
+    "Mandarin Orange",
+    "Pink Pepper",
+    "Bergamot"
+   ],
+   "heart": [
+    "Black Pepper",
+    "Geranium",
+    "Red Thyme"
+   ],
+   "base": [
+    "Tonka Bean",
+    "Vetiver",
+    "Cedar"
+   ],
+   "family": "Spice Route",
+   "price_usd_100ml": 123,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "parfums-de-marly-carios"
+   ],
+   "accords": [
+    "spicy",
+    "woody",
+    "saffron"
+   ],
+   "sources": [
+    "https://alexandriafragrances.com/products/valere"
+   ]
+  },
+  {
+   "name": "Dark Knight",
+   "brand": "Alexandria Fragrances",
+   "aliases": [
+    "dark knight"
+   ],
+   "top": [
+    "Rum",
+    "Dark Chocolate"
+   ],
+   "heart": [
+    "Vetiver",
+    "Patchouli",
+    "Sandalwood"
+   ],
+   "base": [
+    "Sugar Cane"
+   ],
+   "family": "Velvet Sweet",
+   "price_usd_100ml": 113,
+   "price_date": "2026-10",
+   "dupe_of": [],
+   "accords": [
+    "boozy",
+    "gourmand",
+    "woody"
+   ],
+   "sources": [
+    "https://alexandriafragrances.com/products/dark-knight"
+   ]
+  },
+  {
+   "name": "Baroque Rouge 540",
+   "brand": "Maison Alhambra",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "baroque rouge 540",
+    "la rouge baroque"
+   ],
+   "top": [
+    "Jasmine",
+    "Saffron"
+   ],
+   "heart": [
+    "Bitter Almond",
+    "Cedar"
+   ],
+   "base": [
+    "Woody Notes",
+    "Musk",
+    "Ambergris"
+   ],
+   "family": "Amber & Resin",
+   "price_usd_100ml": 22,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "mfk-baccarat-rouge-540"
+   ],
+   "longevity": 4,
+   "accords": [
+    "amber",
+    "saffron",
+    "woody"
+   ],
+   "sources": [
+    "https://www.ferwer.com/product/18501",
+    "https://whatscent.app/magazine/best-long-lasting-maison-alhambra-perfumes-2026"
+   ]
+  },
+  {
+   "name": "Kismet Angel",
+   "brand": "Maison Alhambra",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "kismet angel",
+    "kismet magic angel"
+   ],
+   "top": [
+    "Vanilla",
+    "Honey",
+    "Amber"
+   ],
+   "heart": [
+    "Cognac",
+    "Cinnamon",
+    "Caramel",
+    "Tonka Bean"
+   ],
+   "base": [
+    "Dark Chocolate"
+   ],
+   "family": "Velvet Sweet",
+   "price_usd_100ml": 45,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "kilian-angels-share"
+   ],
+   "longevity": 5,
+   "sillage": 4,
+   "projection": 4,
+   "accords": [
+    "boozy",
+    "cinnamon",
+    "gourmand"
+   ],
+   "sources": [
+    "https://www.duneperfumes.com.au/products/kismet-magic-angel-100ml-edp-maison-al-hambra",
+    "https://whatscent.app/magazine/best-long-lasting-maison-alhambra-perfumes-2026"
+   ]
+  },
+  {
+   "name": "Kismet for Women",
+   "brand": "Maison Alhambra",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "kismet for women"
+   ],
+   "top": [
+    "Apricot",
+    "Jasmine",
+    "Rose"
+   ],
+   "heart": [
+    "Tuberose",
+    "Narcissus"
+   ],
+   "base": [
+    "Amber",
+    "Cedar"
+   ],
+   "family": "White Bloom",
+   "price_usd_100ml": 20,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "kilian-good-girl-gone-bad"
+   ],
+   "sillage": 2,
+   "projection": 2,
+   "accords": [
+    "white floral",
+    "fruity",
+    "tuberose"
+   ],
+   "sources": [
+    "https://decantified.com/products/kismet-for-women-by-maison-alhambra-1ml-sample-decant"
+   ]
+  },
+  {
+   "name": "Delilah",
+   "brand": "Maison Alhambra",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "delilah"
+   ],
+   "top": [
+    "Rhubarb",
+    "Lychee",
+    "Bergamot"
+   ],
+   "heart": [
+    "Turkish Rose",
+    "Peony",
+    "Lily"
+   ],
+   "base": [
+    "White Musk",
+    "Vanilla",
+    "Cashmeran"
+   ],
+   "family": "Petal Garden",
+   "price_usd_100ml": 30,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "parfums-de-marly-delina"
+   ],
+   "longevity": 3,
+   "accords": [
+    "rose",
+    "fruity",
+    "musky"
+   ],
+   "sources": [
+    "https://decantified.com/products/delilah-by-maison-alhambra-1ml-sample-decant",
+    "https://maisonalhambra.co/product/delilah-maison-alhambra-inspired-by-parfums-de-marly-delina/",
+    "https://www.duneperfumes.com.au/products/delilah-100ml-edp-maison-al-hambra",
+    "https://whatscent.app/magazine/best-long-lasting-maison-alhambra-perfumes-2026"
+   ]
+  },
+  {
+   "name": "Reyna",
+   "brand": "Maison Alhambra",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "reyna"
+   ],
+   "top": [
+    "Mandarin Orange",
+    "Bergamot",
+    "Grapefruit"
+   ],
+   "heart": [
+    "Raspberry",
+    "Orange Blossom",
+    "Black Currant"
+   ],
+   "base": [
+    "Marshmallow",
+    "Whipped Cream",
+    "Musk",
+    "Ambrette"
+   ],
+   "family": "Velvet Sweet",
+   "price_usd_100ml": 39,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "parfums-de-marly-oriana"
+   ],
+   "accords": [
+    "fruity",
+    "gourmand",
+    "musky"
+   ],
+   "sources": [
+    "https://www.duneperfumes.com.au/products/reyna-100ml-edp-maison-al-hambra"
+   ]
+  },
+  {
+   "name": "Athena",
+   "brand": "Maison Alhambra",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "athena"
+   ],
+   "top": [
+    "Tangerine",
+    "Pink Pepper",
+    "Bergamot"
+   ],
+   "heart": [
+    "Jasmine Sambac",
+    "Ylang-Ylang",
+    "Lily-of-the-Valley"
+   ],
+   "base": [
+    "Vanilla",
+    "Sandalwood",
+    "Patchouli",
+    "Musk"
+   ],
+   "family": "White Bloom",
+   "price_usd_100ml": 20,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "burberry-goddess"
+   ],
+   "sillage": 2,
+   "projection": 2,
+   "accords": [
+    "floral",
+    "vanilla",
+    "musky"
+   ],
+   "sources": [
+    "https://decantified.com/products/athena-maison-alhambra"
+   ]
+  },
+  {
+   "name": "Glacier Le Noir",
+   "brand": "Maison Alhambra",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "glacier le noir"
+   ],
+   "top": [
+    "Cardamom"
+   ],
+   "heart": [
+    "Lavender",
+    "Iris"
+   ],
+   "base": [
+    "Vanilla"
+   ],
+   "family": "Powder Veil",
+   "price_usd_100ml": 39,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "jean-paul-gaultier-le-male-le-parfum"
+   ],
+   "longevity": 4,
+   "accords": [
+    "lavender",
+    "iris",
+    "vanilla"
+   ],
+   "sources": [
+    "https://www.duneperfumes.com.au/products/glacier-le-noir-100ml-edp-maison-al-hambra",
+    "https://whatscent.app/magazine/best-long-lasting-maison-alhambra-perfumes-2026"
+   ]
+  },
+  {
+   "name": "Glacier Bold",
+   "brand": "Maison Alhambra",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "glacier bold"
+   ],
+   "top": [
+    "Bergamot"
+   ],
+   "heart": [
+    "Coconut Wood"
+   ],
+   "base": [
+    "Tonka Bean"
+   ],
+   "family": "Velvet Sweet",
+   "price_usd_100ml": 39,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "jean-paul-gaultier-le-beau-le-parfum"
+   ],
+   "accords": [
+    "coconut",
+    "tonka",
+    "woody"
+   ],
+   "sources": [
+    "https://www.duneperfumes.com.au/products/glacier-bold-100ml-edp-maison-al-hambra",
+    "https://maisonalhambra.co/product/glacier-bold-maison-alhambra-inspired-by-jpg-le-beau-le-parfum/"
+   ]
+  },
+  {
+   "name": "Glacier Bella",
+   "brand": "Maison Alhambra",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "glacier bella"
+   ],
+   "top": [
+    "Pear",
+    "Bergamot"
+   ],
+   "heart": [
+    "Floral Notes",
+    "Leather"
+   ],
+   "base": [
+    "Musk",
+    "Vetiver",
+    "Amber",
+    "Vanilla"
+   ],
+   "family": "Velvet Sweet",
+   "price_usd_100ml": 39,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "jean-paul-gaultier-la-belle"
+   ],
+   "accords": [
+    "pear",
+    "vanilla",
+    "amber"
+   ],
+   "sources": [
+    "https://www.duneperfumes.com.au/products/glacier-bella-100ml-edp-maison-al-hambra"
+   ]
+  },
+  {
+   "name": "Yeah!",
+   "brand": "Maison Alhambra",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "yeah!",
+    "yeah"
+   ],
+   "top": [
+    "Apple",
+    "Ginger",
+    "Bergamot"
+   ],
+   "heart": [
+    "Sage",
+    "Juniper Berries",
+    "Geranium"
+   ],
+   "base": [
+    "Amberwood",
+    "Tonka Bean",
+    "Cedar",
+    "Vetiver",
+    "Olibanum"
+   ],
+   "family": "Green Leaf",
+   "price_usd_100ml": 20,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "ysl-y-eau-de-parfum"
+   ],
+   "sillage": 2,
+   "projection": 2,
+   "accords": [
+    "fresh",
+    "aromatic",
+    "apple"
+   ],
+   "sources": [
+    "https://decantified.com/products/yeah-maison-alhambra-1ml-sample-decant"
+   ]
+  },
+  {
+   "name": "Dark Door Sport",
+   "brand": "Maison Alhambra",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "dark door sport"
+   ],
+   "top": [
+    "Grapefruit",
+    "Lemon",
+    "Bergamot",
+    "Elemi"
+   ],
+   "heart": [
+    "Ginger",
+    "Cedar",
+    "Vetiver"
+   ],
+   "base": [
+    "Lavender",
+    "Rosemary",
+    "Sandalwood"
+   ],
+   "family": "Sunlit Citrus",
+   "price_usd_100ml": 20,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "dior-dior-homme-sport"
+   ],
+   "sillage": 2,
+   "projection": 2,
+   "accords": [
+    "citrus",
+    "ginger",
+    "woody"
+   ],
+   "sources": [
+    "https://decantified.com/products/dark-door-sport-by-maison-alhambra-1ml-sample-decant"
+   ]
+  },
+  {
+   "name": "Victorioso",
+   "brand": "Maison Alhambra",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "victorioso"
+   ],
+   "top": [
+    "Marine Notes",
+    "Bergamot"
+   ],
+   "heart": [
+    "Bay Leaf",
+    "Jasmine"
+   ],
+   "base": [
+    "Ambergris",
+    "Oakmoss",
+    "Guaiac Wood",
+    "Patchouli"
+   ],
+   "family": "Salt & Mineral",
+   "price_usd_100ml": 20,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "rabanne-invictus-toilette"
+   ],
+   "accords": [
+    "marine",
+    "fresh",
+    "woody"
+   ],
+   "sources": [
+    "https://decantified.com/products/victorioso-by-maison-alhambra-1ml-sample-decant"
+   ]
+  },
+  {
+   "name": "Victorioso Legend",
+   "brand": "Maison Alhambra",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "victorioso legend",
+    "victorioso myth"
+   ],
+   "top": [
+    "Sea Salt",
+    "Marine Notes",
+    "Grapefruit"
+   ],
+   "heart": [
+    "Bay Leaf",
+    "Geranium",
+    "Spices"
+   ],
+   "base": [
+    "Red Amber",
+    "Guaiac Wood"
+   ],
+   "family": "Salt & Mineral",
+   "price_usd_100ml": 20,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "rabanne-invictus-legend"
+   ],
+   "accords": [
+    "marine",
+    "salty",
+    "amber"
+   ],
+   "sources": [
+    "https://decantified.com/products/victorioso-legend-myth-by-maison-alhambra-1ml-sample-decant"
+   ]
+  },
+  {
+   "name": "Afro Leather",
+   "brand": "Maison Alhambra",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "afro leather"
+   ],
+   "top": [
+    "Cardamom",
+    "Leather",
+    "Saffron"
+   ],
+   "heart": [
+    "Vetiver",
+    "Patchouli",
+    "Cumin"
+   ],
+   "base": [
+    "Geranium",
+    "Oud",
+    "Bergamot",
+    "Musk"
+   ],
+   "family": "Smoke & Leather",
+   "price_usd_100ml": 49,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "memo-paris-african-leather"
+   ],
+   "accords": [
+    "leather",
+    "spicy",
+    "earthy"
+   ],
+   "sources": [
+    "https://www.duneperfumes.com.au/products/afro-leather-80ml-edp-maison-al-hambra"
+   ]
+  },
+  {
+   "name": "Como Moiselle",
+   "brand": "Maison Alhambra",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "como moiselle"
+   ],
+   "top": [
+    "Angelica",
+    "Mimosa",
+    "Frangipani",
+    "Mandarin",
+    "Pimento",
+    "Coriander"
+   ],
+   "heart": [
+    "Orange Blossom",
+    "Jasmine",
+    "Ylang-Ylang",
+    "Tuberose"
+   ],
+   "base": [
+    "Labdanum",
+    "Benzoin",
+    "Tonka Bean"
+   ],
+   "family": "White Bloom",
+   "price_usd_100ml": 36,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "chanel-coco-mademoiselle"
+   ],
+   "accords": [
+    "floral",
+    "amber",
+    "citrus"
+   ],
+   "sources": [
+    "https://www.duneperfumes.com.au/products/como-moiselle-100ml-edp-maison-al-hambra"
+   ]
+  },
+  {
+   "name": "Maitre de Blue",
+   "brand": "Maison Alhambra",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "maitre de blue"
+   ],
+   "top": [
+    "Grapefruit",
+    "Lemon",
+    "Mint",
+    "Pink Pepper"
+   ],
+   "heart": [
+    "Ginger",
+    "Iso E Super",
+    "Jasmine",
+    "Nutmeg"
+   ],
+   "base": [
+    "Cedar",
+    "Frankincense",
+    "Labdanum",
+    "Patchouli",
+    "Sandalwood",
+    "Vetiver",
+    "White Musk"
+   ],
+   "family": "Wood & Root",
+   "price_usd_100ml": 39,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "chanel-bleu-de-chanel"
+   ],
+   "accords": [
+    "citrus",
+    "woody",
+    "incense"
+   ],
+   "sources": [
+    "https://www.duneperfumes.com.au/products/maitre-de-blue-100ml-edp-maison-al-hambra"
+   ]
+  },
+  {
+   "name": "Alpine Homme Sport",
+   "brand": "Maison Alhambra",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "alpine homme sport"
+   ],
+   "top": [
+    "Mandarin Orange",
+    "Mint",
+    "Cypress",
+    "Sage"
+   ],
+   "heart": [
+    "Cedar",
+    "Pepper"
+   ],
+   "base": [
+    "Tonka Bean",
+    "Musk",
+    "Sandalwood"
+   ],
+   "family": "Sunlit Citrus",
+   "price_usd_100ml": 20,
+   "price_date": "2026-10",
+   "dupe_of": [
+    "chanel-allure-homme-sport"
+   ],
+   "accords": [
+    "citrus",
+    "fresh",
+    "musky"
+   ],
+   "sources": [
+    "https://decantified.com/products/alpine-homme-sport-by-maison-alhambra-1ml-sample-decant"
+   ]
+  },
+  {
+   "name": "Opulence Leather",
+   "brand": "Maison Alhambra",
+   "concentration": "eau-de-parfum",
+   "aliases": [
+    "opulence leather",
+    "amber and leather"
+   ],
+   "top": [
+    "Cardamom"
+   ],
+   "heart": [
+    "Leather",
+    "Jasmine Sambac"
+   ],
+   "base": [
+    "Amber",
+    "Oakmoss",
+    "Patchouli"
+   ],
+   "family": "Smoke & Leather",
+   "price_usd_100ml": 20,
+   "price_date": "2026-10",
+   "dupe_of": [],
+   "accords": [
+    "leather",
+    "amber",
+    "spicy"
+   ],
+   "sources": [
+    "https://decantified.com/products/opulence-leather-by-maison-alhambra-1ml-sample-decant",
+    "https://www.duneperfumes.com.au/products/opulence-leather-previously-amber-leather-100ml-edp-maison-al-hambra"
+   ]
+  }
+ ],
+ "patches": []
+}

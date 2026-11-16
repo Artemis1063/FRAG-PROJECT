@@ -1,0 +1,974 @@
+{
+  "perfumes": [],
+  "patches": [
+    {
+      "id": "dolce-gabbana-k-by-dolce-and-gabbana",
+      "price_usd_100ml": 150,
+      "price_date": "2026-10",
+      "longevity": 4,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "citrus",
+        "aromatic",
+        "woody",
+        "spicy"
+      ],
+      "sources": [
+        "https://www.thefragranceshop.co.uk/dolce-gabbana/k-dolceandgabanna/eau-de-parfum-spray/p/52282",
+        "https://www.parfumo.com/Perfumes/Dolce_Gabbana/k-eau-de-parfum",
+        "https://basenotes.com/fragrances/k-by-dolce-gabbana-by-dolce-gabbana.26159513/reviews/positive/"
+      ]
+    },
+    {
+      "id": "guerlain-habit-rouge",
+      "price_usd_100ml": 130,
+      "price_date": "2026-10",
+      "longevity": 4,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "citrus",
+        "amber",
+        "powdery",
+        "vanilla"
+      ],
+      "sources": [
+        "https://vivir.com/article/guerlain-habit-rouge-eau-de-parfum-review",
+        "https://www.silloria.com/en/perfumes/guerlain/guerlain-habit-rouge-edp",
+        "https://www.parfumo.com/Perfumes/Guerlain/Habit_Rouge_Eau_de_Parfum"
+      ]
+    },
+    {
+      "id": "ralph-lauren-polo-red",
+      "price_usd_100ml": 93,
+      "price_date": "2026-10",
+      "longevity": 3,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "citrus",
+        "fruity",
+        "spicy",
+        "coffee",
+        "woody"
+      ],
+      "sources": [
+        "https://www.ralphlauren.com/men-accessories-fragrance/polo-red-eau-de-toilette/164480.html",
+        "https://basenotes.com/fragrances/polo-red-by-ralph-lauren.26139347/reviews/negative/"
+      ]
+    },
+    {
+      "id": "calvin-klein-obsession",
+      "price_usd_100ml": 100,
+      "price_date": "2026-10",
+      "longevity": 4,
+      "sillage": 4,
+      "projection": 4,
+      "accords": [
+        "amber",
+        "spicy",
+        "vanilla",
+        "balsamic"
+      ],
+      "sources": [
+        "https://www.perfumeoutlet.com/products/obsession-by-calvin-klein-eau-de-parfum-spray-for-women",
+        "https://www.parfumo.com/Perfumes/Calvin_Klein/Obsession_Eau_de_Parfum",
+        "https://southbeachperfumes.com/blogs/the-fragrance-encyclopedia-by-south-beach-perfumes/obsession-by-calvin-klein-notes-longevity-review-complete-guide"
+      ]
+    },
+    {
+      "id": "lattafa-fakhar-black",
+      "price_usd_100ml": 30,
+      "price_date": "2026-10",
+      "longevity": 3,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "aromatic",
+        "fresh spicy",
+        "lavender",
+        "woody",
+        "amber"
+      ],
+      "sources": [
+        "https://scentclones.com/lattafa-fakhar-review/",
+        "https://www.findafragrance.com/fragrance-reviews/fakhar-black-edp"
+      ]
+    },
+    {
+      "id": "marc-jacobs-perfect",
+      "price_usd_100ml": 168,
+      "price_date": "2026-10",
+      "longevity": 3,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "floral",
+        "sweet",
+        "nutty",
+        "fruity",
+        "woody"
+      ],
+      "sources": [
+        "https://www.marcjacobs.com/us-en/perfect-eau-de-parfum-100-ml/3614227086227.html",
+        "https://www.sephora.com/product/marc-jacobs-fragrances-perfect-eau-de-parfum-P460871",
+        "https://www.lookfantastic.com/p/perfect-marc-jacobs-eau-de-parfum-100ml/12612980/"
+      ]
+    },
+    {
+      "id": "viktor-rolf-spicebomb-extreme",
+      "price_usd_100ml": 167,
+      "price_date": "2026-10",
+      "longevity": 4,
+      "sillage": 4,
+      "projection": 4,
+      "accords": [
+        "warm spicy",
+        "tobacco",
+        "vanilla",
+        "sweet"
+      ],
+      "sources": [
+        "https://fourthsense.co/viktor-and-rolf-spicebomb-extreme-review/",
+        "https://scentgrail.com/perfume-reviews/spicebomb-extreme-review/",
+        "https://scentadvisors.com/fragrance-reviews/spicebomb-extreme-review/"
+      ]
+    },
+    {
+      "id": "armaf-club-de-nuit-iconic",
+      "price_usd_100ml": 55,
+      "price_date": "2026-10",
+      "longevity": 4,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "citrus",
+        "aromatic",
+        "woody",
+        "fresh spicy",
+        "amber"
+      ],
+      "sources": [
+        "https://emiratesoud.co.uk/products/club-de-nuit-iconic-perfume-105ml-edp-armaf",
+        "https://vivir.com/article/armaf-cdn-iconic"
+      ]
+    },
+    {
+      "id": "carolina-herrera-very-good-girl",
+      "price_usd_100ml": 230,
+      "price_date": "2026-10",
+      "longevity": 3,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "fruity",
+        "rose",
+        "vanilla",
+        "sweet",
+        "floral"
+      ],
+      "sources": [
+        "https://www.carolinaherrera.com/us/en/p-fragrance/very-good-girl",
+        "https://www.sephora.com/product/carolina-herrera-very-good-girl-eau-de-parfum-P474032",
+        "https://thescentbase.com/perfumes/carolina-herrera/very-good-girl"
+      ]
+    },
+    {
+      "id": "diptyque-orpheon",
+      "price_usd_100ml": 340,
+      "price_date": "2026-10",
+      "longevity": 4,
+      "sillage": 2,
+      "projection": 2,
+      "accords": [
+        "woody",
+        "aromatic",
+        "powdery",
+        "floral"
+      ],
+      "sources": [
+        "https://www.luckyscent.com/product/4832013/orpheon-by-diptyque",
+        "https://www.womanandhome.com/beauty/diptyque-orpheon-perfume-editor-recommendation/",
+        "https://www.scentplusart.com/blogs/news/diptyque-orpheon-review"
+      ]
+    },
+    {
+      "id": "issey-miyake-nuit-dissey",
+      "price_usd_100ml": 95,
+      "price_date": "2026-10",
+      "longevity": 4,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "leather",
+        "woody",
+        "citrus",
+        "spicy"
+      ],
+      "sources": [
+        "https://www.michael84.co.uk/issey-miyake-nuit-dissey-fragrance-review/",
+        "https://basenotes.com/fragrances/nuit-dissey-by-issey-miyake.26143020/reviews/"
+      ]
+    },
+    {
+      "id": "michael-kors-wonderlust",
+      "price_usd_100ml": 122,
+      "price_date": "2026-10",
+      "longevity": 4,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "nutty",
+        "sweet",
+        "powdery",
+        "warm spicy",
+        "woody"
+      ],
+      "sources": [
+        "https://www.michaelkors.com/wonderlust-eau-de-parfum--3.4-oz./5JT6-01.html",
+        "https://southbeachperfumes.com/blogs/the-fragrance-encyclopedia-by-south-beach-perfumes/michael-kors-wonderlust-notes-longevity-review-complete-guide",
+        "https://www.macys.com/shop/product/michael-kors-wonderlust-eau-de-parfum-fragrance-collection?ID=2904475"
+      ]
+    },
+    {
+      "id": "afnan-supremacy-not-only-intense",
+      "price_usd_100ml": 75,
+      "price_date": "2026-10",
+      "longevity": 4,
+      "sillage": 4,
+      "projection": 4,
+      "accords": [
+        "fruity",
+        "citrus",
+        "woody",
+        "smoky",
+        "mossy"
+      ],
+      "sources": [
+        "https://www.afnanperfumesusa.com/products/afnan-supremacy-not-only-intense-luxury-collection",
+        "https://basenotes.com/fragrances/supremacy-not-only-intense-by-afnan.26189974/reviews/positive/",
+        "https://www.parfumo.com/Perfumes/Afnan_Perfumes/supremacy-not-only-intense"
+      ]
+    },
+    {
+      "id": "moschino-toy-2",
+      "price_usd_100ml": 70,
+      "price_date": "2026-10",
+      "longevity": 3,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "citrus",
+        "fruity",
+        "white floral",
+        "musky",
+        "woody"
+      ],
+      "sources": [
+        "https://perfumania.com/products/moschino-toy-2-by-moschino-for-women-eau-de-parfum-spray",
+        "https://elatlasdelperfume.com/perfume/toy-2-moschino-eau-de-parfum/",
+        "https://www.parfumo.com/Perfumes/Moschino/Toy_2"
+      ]
+    },
+    {
+      "id": "rabanne-phantom",
+      "price_usd_100ml": 120,
+      "price_date": "2026-10",
+      "longevity": 4,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "citrus",
+        "lavender",
+        "aromatic",
+        "vanilla",
+        "sweet"
+      ],
+      "sources": [
+        "https://www.fragrancenet.com/cologne/paco-rabanne/paco-rabanne-phantom/edt",
+        "https://thefragranceworld.co.uk/blog/paco-rabanne-phantom-uk-guide/",
+        "https://www.escentual.com/blog/2021/10/22/paco-rabanne-phantom-eau-de-toilette-review/"
+      ]
+    },
+    {
+      "id": "jean-paul-gaultier-le-male-le-parfum",
+      "price_usd_100ml": 120,
+      "price_date": "2026-10",
+      "longevity": 4,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "lavender",
+        "vanilla",
+        "powdery",
+        "warm spicy",
+        "amber"
+      ],
+      "sources": [
+        "https://www.michael84.co.uk/le-male-le-parfum-jean-paul-gaultier-review/",
+        "https://www.findafragrance.com/fragrance-reviews/le-male-le-parfum",
+        "https://www.parfumo.com/Perfumes/Jean_Paul_Gaultier/le-male-le-parfum"
+      ]
+    },
+    {
+      "id": "byredo-sunday-cologne",
+      "price_usd_100ml": 320,
+      "price_date": "2026-10",
+      "longevity": 3,
+      "sillage": 2,
+      "projection": 2,
+      "accords": [
+        "aromatic",
+        "fresh spicy",
+        "citrus",
+        "woody",
+        "musky"
+      ],
+      "sources": [
+        "https://marissacollections.com/products/byredo-sunday-cologne-100ml",
+        "https://basenotes.com/fragrances/sunday-cologne-fantastic-man-by-byredo.26130499/reviews/",
+        "https://www.parfumo.com/Perfumes/Byredo/Sunday_Cologne_Fantastic_Man_Eau_de_Parfum"
+      ]
+    },
+    {
+      "id": "kayali-lovefest-burning-cherry-48",
+      "price_usd_100ml": 150,
+      "price_date": "2026-10",
+      "longevity": 3,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "cherry",
+        "fruity",
+        "smoky",
+        "woody",
+        "sweet"
+      ],
+      "sources": [
+        "https://us.kayali.com/products/lovefest-burning-cherry-48",
+        "http://www.oliviaandbeauty.com/2022/09/kayali-lovefest-burning-cherry-48.html",
+        "https://basenotes.com/fragrances/lovefest-burning-cherry-48-by-kayali.26189929"
+      ]
+    },
+    {
+      "id": "roberto-cavalli-just-cavalli",
+      "longevity": 3,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "white floral",
+        "citrus",
+        "woody"
+      ],
+      "sources": [
+        "https://fragrancemarket.com/products/just-cavalli-by-roberto-cavalli-for-women-eau-de-toilette-spray",
+        "https://perfumania.com/products/just-cavalli-by-roberto-cavalli-for-women-eau-de-toilette-spray"
+      ]
+    },
+    {
+      "id": "davidoff-zino",
+      "price_usd_100ml": 20,
+      "price_date": "2026-10",
+      "longevity": 4,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "woody",
+        "aromatic",
+        "rose",
+        "amber",
+        "powdery"
+      ],
+      "sources": [
+        "https://www.notino.co.uk/reviews/davidoff/zino-eau-de-toilette-for-men/",
+        "https://www.fragrancenet.com/cologne/davidoff/zino-davidoff/edt",
+        "https://www.parfumo.com/Perfumes/Davidoff/Zino_Eau_de_Toilette"
+      ]
+    },
+    {
+      "id": "maison-margiela-replica-sailing-day",
+      "price_usd_100ml": 170,
+      "price_date": "2026-10",
+      "longevity": 3,
+      "sillage": 2,
+      "projection": 2,
+      "accords": [
+        "aquatic",
+        "marine",
+        "aldehydic",
+        "aromatic"
+      ],
+      "sources": [
+        "https://www.macys.com/shop/product/maison-margiela-replica-sailing-day-eau-de-toilette-fragrance-collection?ID=17619935",
+        "https://www.venbafragrance.com/products/maison-margiela-replica-sailing-day-edt-1",
+        "https://www.trendsicle.com/cologne-guide/maison-margiela-sailing-day/"
+      ]
+    },
+    {
+      "id": "parfums-de-marly-carlisle",
+      "price_usd_100ml": 250,
+      "price_date": "2026-10",
+      "longevity": 4,
+      "sillage": 4,
+      "projection": 4,
+      "accords": [
+        "fruity",
+        "sweet",
+        "vanilla",
+        "warm spicy",
+        "patchouli"
+      ],
+      "sources": [
+        "https://www.findafragrance.com/fragrance-reviews/carlisle-eau-de-parfum",
+        "https://www.adegbe.com/f/pdm-carlisle",
+        "https://basenotes.com/fragrances/carlisle-by-parfums-de-marly.26152801/reviews/positive/"
+      ]
+    },
+    {
+      "id": "prada-la-femme-prada",
+      "longevity": 4,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "white floral",
+        "tuberose",
+        "vanilla",
+        "powdery",
+        "sweet"
+      ],
+      "sources": [
+        "https://vivir.com/article/prada-prada-la-femme-prada",
+        "https://www.landyschemist.com/prada-la-femme-eau-de-parfum-100ml",
+        "https://www.fragranzo.com/blog/top-10-most-popular-prada-women-perfumes/"
+      ]
+    },
+    {
+      "id": "hugo-boss-boss-the-scent",
+      "price_usd_100ml": 92,
+      "price_date": "2026-10",
+      "longevity": 3,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "warm spicy",
+        "leather",
+        "sweet",
+        "fresh spicy"
+      ],
+      "sources": [
+        "https://perfumania.com/products/the-scent-eau-de-toilette-spray-for-men-by-hugo-boss",
+        "https://bestmenscolognes.com/boss-the-scent-edt-by-hugo-boss-review/",
+        "https://www.parfumo.com/Perfumes/Hugo_Boss/The_Scent_Eau_de_Toilette"
+      ]
+    },
+    {
+      "id": "montale-roses-musk",
+      "price_usd_100ml": 190,
+      "price_date": "2026-10",
+      "longevity": 5,
+      "sillage": 4,
+      "projection": 4,
+      "accords": [
+        "rose",
+        "musky",
+        "powdery",
+        "floral"
+      ],
+      "sources": [
+        "https://montaleparfums.us/products/roses-musk",
+        "https://www.parfumo.com/Perfumes/Montale/roses-musk-eau-de-parfum",
+        "https://basenotes.com/fragrances/roses-musk-by-montale.26129088/reviews/"
+      ]
+    },
+    {
+      "id": "cartier-baiser-vole",
+      "price_usd_100ml": 180,
+      "price_date": "2026-10",
+      "longevity": 3,
+      "sillage": 2,
+      "projection": 2,
+      "accords": [
+        "white floral",
+        "green",
+        "powdery",
+        "floral"
+      ],
+      "sources": [
+        "https://www.macys.com/shop/product/cartier-baiser-vole-eau-de-parfum-collection-for-women?ID=626500",
+        "https://www.notino.co.uk/reviews/cartier/baiser-vole-eau-de-parfum-for-women/",
+        "https://www.parfumo.com/Perfumes/Cartier/Baiser_Vole_Eau_de_Parfum"
+      ]
+    },
+    {
+      "id": "dior-dune",
+      "price_usd_100ml": 148,
+      "price_date": "2026-10",
+      "longevity": 4,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "woody",
+        "amber",
+        "floral",
+        "powdery",
+        "aldehydic"
+      ],
+      "sources": [
+        "https://fragrancemarket.com/products/dior-dune-womens-eau-de-toilette-spray",
+        "https://southbeachperfumes.com/blogs/the-fragrance-encyclopedia-by-south-beach-perfumes/dune-by-christian-dior-notes-longevity-review-complete-guide",
+        "https://www.parfumo.com/Perfumes/Dior/Dune"
+      ]
+    },
+    {
+      "id": "elie-saab-girl-of-now",
+      "price_usd_100ml": 128,
+      "price_date": "2026-10",
+      "longevity": 4,
+      "sillage": 4,
+      "projection": 4,
+      "accords": [
+        "nutty",
+        "sweet",
+        "white floral",
+        "vanilla",
+        "fruity"
+      ],
+      "sources": [
+        "https://www.fragrancenet.com/perfume/elie-saab/elie-saab-girl-of-now/eau-de-parfum",
+        "https://www.parfumo.com/Perfumes/Elie_Saab/Girl_of_Now",
+        "https://makeupstore.com/product/324479/"
+      ]
+    },
+    {
+      "id": "floris-no-89",
+      "price_usd_100ml": 165,
+      "price_date": "2026-10",
+      "longevity": 3,
+      "sillage": 2,
+      "projection": 2,
+      "accords": [
+        "citrus",
+        "lavender",
+        "aromatic",
+        "woody",
+        "rose"
+      ],
+      "sources": [
+        "https://us.florislondon.com/products/no-89-eau-de-toilette",
+        "https://basenotes.com/fragrances/no-89-by-floris.26121190/reviews/",
+        "https://perfumebox.com/products/mc-flno89"
+      ]
+    },
+    {
+      "id": "mancera-instant-crush",
+      "price_usd_100ml": 150,
+      "price_date": "2026-10",
+      "longevity": 5,
+      "sillage": 4,
+      "projection": 4,
+      "accords": [
+        "amber",
+        "warm spicy",
+        "vanilla",
+        "citrus",
+        "sweet"
+      ],
+      "sources": [
+        "https://besuitedaroma.com/mancera-instant-crush-review/",
+        "https://www.findafragrance.com/fragrance-reviews/instant-crush",
+        "https://www.luckyscent.com/product/649041/instant-crush-by-mancera"
+      ]
+    },
+    {
+      "id": "montblanc-legend-spirit",
+      "price_usd_100ml": 112,
+      "price_date": "2026-10",
+      "longevity": 3,
+      "sillage": 2,
+      "projection": 3,
+      "accords": [
+        "citrus",
+        "fresh spicy",
+        "aromatic",
+        "lavender",
+        "musky"
+      ],
+      "sources": [
+        "https://www.nordstrom.com/s/montblanc-legend-spirit-eau-de-toilette/4295825",
+        "https://southbeachperfumes.com/blogs/the-fragrance-encyclopedia-by-south-beach-perfumes/montblanc-legend-spirit-by-montblanc-notes-longevity-review-complete-guide",
+        "https://bestmenscolognes.com/mont-blanc-legend-spirit-review/"
+      ]
+    },
+    {
+      "id": "burberry-brit-rhythm",
+      "longevity": 3,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "woody",
+        "aromatic",
+        "fresh spicy",
+        "leather"
+      ],
+      "sources": [
+        "https://bestmenscolognes.com/burberry-brit-rhythm-review/",
+        "https://bespokeunit.com/articles/fragrance/burberry-brit-rhythm-review/",
+        "https://www.parfumo.com/Perfumes/Burberry/Brit_Rhythm"
+      ]
+    },
+    {
+      "id": "lacoste-l-12-12-rouge",
+      "longevity": 3,
+      "sillage": 2,
+      "projection": 2,
+      "accords": [
+        "fruity",
+        "fresh spicy",
+        "warm spicy",
+        "woody"
+      ],
+      "sources": [
+        "https://bestmenscolognes.com/eau-lacoste-l-12-12-red-cologne-review/",
+        "https://www.michael84.co.uk/lacoste-rouge-l12-12-eau-de-lacoste/",
+        "https://pabangoph.com/blogs/news/eau-de-lacoste-l-12-12-rouge-review-a-spicy-and-woody-fragrance-for-men"
+      ]
+    },
+    {
+      "id": "lancome-miracle",
+      "price_usd_100ml": 150,
+      "price_date": "2026-10",
+      "longevity": 3,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "floral",
+        "fresh spicy",
+        "fruity",
+        "musky",
+        "amber"
+      ],
+      "sources": [
+        "https://www.fragrancenet.com/perfume/lancome/miracle/eau-de-parfum",
+        "https://perfumania.com/products/miracle-perfume-for-women",
+        "https://nearstore.com/blogs/reviews/lanc-me-miracle-perfume-review"
+      ]
+    },
+    {
+      "id": "nishane-ege",
+      "price_usd_100ml": 248,
+      "price_date": "2026-10",
+      "longevity": 4,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "green",
+        "aromatic",
+        "anise",
+        "citrus",
+        "fresh spicy"
+      ],
+      "sources": [
+        "https://www.cosmeticsnow.com/iteminfo/nishane-ege-ailaio-extrait-de-parfum-unisex-100ml",
+        "https://www.venbafragrance.com/products/nishane-ege",
+        "https://www.parfumo.com/Perfumes/Nishane/ege"
+      ]
+    },
+    {
+      "id": "amouage-dia-woman",
+      "price_usd_100ml": 395,
+      "price_date": "2026-10",
+      "longevity": 4,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "aldehydic",
+        "floral",
+        "powdery",
+        "musky"
+      ],
+      "sources": [
+        "https://www.luckyscent.com/product/41808/dia-woman-by-amouage",
+        "https://www.fragrancereview.com/perfume/amouage-dia-for-women/",
+        "https://basenotes.com/fragrances/dia-woman-by-amouage.10210059"
+      ]
+    },
+    {
+      "id": "dolce-gabbana-devotion",
+      "price_usd_100ml": 157,
+      "price_date": "2026-10",
+      "longevity": 3,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "sweet",
+        "vanilla",
+        "citrus",
+        "white floral",
+        "nutty"
+      ],
+      "sources": [
+        "https://escentual.com/blogs/editorial/dolce-gabbana-devotion-eau-de-parfum-review",
+        "https://scentverdict.com/perfume/dolce-gabbana-devotion-eau-de-parfum",
+        "https://www.fragrancex.com/products/dolce-and-gabbana/dolce-and-gabbana-devotion-perfume"
+      ]
+    },
+    {
+      "id": "guerlain-vetiver",
+      "price_usd_100ml": 105,
+      "price_date": "2026-10",
+      "longevity": 4,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "vetiver",
+        "woody",
+        "citrus",
+        "aromatic",
+        "smoky"
+      ],
+      "sources": [
+        "https://vivir.com/article/guerlain-vetiver-edt-review",
+        "https://scentsummary.com/guerlain-vetiver-eau-de-toilette-review-the-original-vetiver-masterpiece/",
+        "https://basenotes.com/fragrances/vetiver-by-guerlain.26121658/reviews/"
+      ]
+    },
+    {
+      "id": "memo-paris-irish-leather",
+      "price_usd_100ml": 413,
+      "price_date": "2026-10",
+      "longevity": 4,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "leather",
+        "green",
+        "aromatic",
+        "smoky"
+      ],
+      "sources": [
+        "https://fleekfellows.com/products/memo-paris-irish-leather-eau-de-parfum",
+        "https://theperfumesampler.com/blogs/news/best-memo-paris-perfumes",
+        "https://www.parfumo.com/Perfumes/memo-paris/irish-leather-eau-de-parfum"
+      ]
+    },
+    {
+      "id": "tiziana-terenzi-andromeda",
+      "price_usd_100ml": 342,
+      "price_date": "2026-10",
+      "longevity": 4,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "white floral",
+        "fruity",
+        "green",
+        "citrus"
+      ],
+      "sources": [
+        "https://www.lamaisonduparfum.com/en-us/products/andromeda",
+        "https://www.scentsangel.com/products/tiziana-terenzi-andromeda-extrait-de-parfum",
+        "https://www.parfumo.com/Perfumes/Tiziana_Terenzi/andromeda-extrait-de-parfum"
+      ]
+    },
+    {
+      "id": "calvin-klein-euphoria",
+      "longevity": 3,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "fruity",
+        "floral",
+        "amber",
+        "sweet",
+        "woody"
+      ],
+      "sources": [
+        "https://www.perfume.com/calvin-klein/euphoria/women-perfume",
+        "https://www.parfumo.com/Perfumes/Calvin_Klein/Euphoria",
+        "https://nstperfume.com/2006/06/01/calvin-klein-euphoria-euphoria-blossom-fragrance-reviews/"
+      ]
+    },
+    {
+      "id": "frederic-malle-rose-and-cuir",
+      "price_usd_100ml": 410,
+      "price_date": "2026-10",
+      "longevity": 4,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "leather",
+        "green",
+        "rose",
+        "woody"
+      ],
+      "sources": [
+        "https://www.violetgrey.com/products/frederic-malle-estee-rose-cuir-edp-size-100-ml",
+        "https://basenotes.com/fragrances/rose-cuir-by-editions-de-parfums-frederic-malle.26159516/reviews/",
+        "https://www.parfumo.com/Perfumes/Editions_de_Parfum_Frederic_Malle/rose-cuir"
+      ]
+    },
+    {
+      "id": "lattafa-fakhar-rose",
+      "price_usd_100ml": 50,
+      "price_date": "2026-10",
+      "longevity": 4,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "white floral",
+        "fruity",
+        "sweet",
+        "vanilla"
+      ],
+      "sources": [
+        "https://perfumania.com/products/fakhar-eau-de-parfum",
+        "https://www.navarose.com/2025/08/lattafa-fakhar-rose-review.html?m=1",
+        "https://www.notino.ie/reviews/lattafa/fakhar-rose-eau-de-parfum-for-women/"
+      ]
+    },
+    {
+      "id": "marc-jacobs-daisy-eau-so-fresh",
+      "price_usd_100ml": 100,
+      "price_date": "2026-10",
+      "longevity": 3,
+      "sillage": 2,
+      "projection": 2,
+      "accords": [
+        "fruity",
+        "floral",
+        "fresh",
+        "musky"
+      ],
+      "sources": [
+        "https://www.fragrancenet.com/perfume/marc-jacobs/marc-jacobs-daisy-eau-so-fresh/edt",
+        "https://www.fragranceoutlet.com/products/marc-jacobs-daisy-eau-so-fresh-womens-eau-de-toilette-spray",
+        "https://www.parfumo.com/Perfumes/Marc_Jacobs/Daisy_Eau_So_Fresh"
+      ]
+    },
+    {
+      "id": "viktor-rolf-flowerbomb-nectar",
+      "price_usd_100ml": 206,
+      "price_date": "2026-10",
+      "longevity": 4,
+      "sillage": 4,
+      "projection": 4,
+      "accords": [
+        "sweet",
+        "floral",
+        "fruity",
+        "vanilla"
+      ],
+      "sources": [
+        "https://www.sephora.com/product/flowerbomb-nectar-P429082",
+        "https://bestmenscolognes.com/flowerbomb-nectar-viktor-rolf/",
+        "https://millennialskin.com/2026/08/15/buy-dupe-or-splurge-flowerbomb-nectar/"
+      ]
+    },
+    {
+      "id": "armaf-club-de-nuit-precieux",
+      "price_usd_100ml": 100,
+      "price_date": "2026-10",
+      "longevity": 5,
+      "sillage": 4,
+      "projection": 4,
+      "sources": [
+        "https://www.findafragrance.com/fragrance-reviews/club-de-nuit-precieux-parfum",
+        "https://fragranote.com/fragrance/armaf-club-de-nuit-precieux-i/",
+        "https://www.notino.co.uk/reviews/armaf/club-de-nuit-precieux-perfume-extract-unisex/"
+      ]
+    },
+    {
+      "id": "creed-aventus-for-her",
+      "longevity": 4,
+      "sillage": 4,
+      "projection": 3,
+      "accords": [
+        "fruity",
+        "green",
+        "rose",
+        "musky"
+      ],
+      "sources": [
+        "https://www.venbafragrance.com/products/creed-aventus-for-her-edp",
+        "https://www.johnlewis.com/creed-aventus-for-her-eau-de-parfum/p2743499",
+        "https://basenotes.com/fragrances/aventus-for-her-by-creed.26149458/reviews/"
+      ]
+    },
+    {
+      "id": "diptyque-fleur-de-peau",
+      "price_usd_100ml": 347,
+      "price_date": "2026-10",
+      "longevity": 3,
+      "sillage": 2,
+      "projection": 2,
+      "accords": [
+        "musky",
+        "powdery",
+        "iris",
+        "floral"
+      ],
+      "sources": [
+        "https://www.beautyhabit.com/products/diptyque-fleur-de-peau-eau-de-parfum",
+        "https://www.nordstrom.com/s/diptyque-fleur-de-peau-eau-de-parfum/7340453",
+        "https://scentverdict.com/perfume/diptyque-fleur-de-peau-eau-de-parfum"
+      ]
+    },
+    {
+      "id": "etat-libre-dorange-jasmin-et-cigarette",
+      "price_usd_100ml": 200,
+      "price_date": "2026-10",
+      "longevity": 3,
+      "sillage": 2,
+      "projection": 2,
+      "accords": [
+        "white floral",
+        "tobacco",
+        "amber",
+        "smoky"
+      ],
+      "sources": [
+        "https://etatlibredorange.us/products/jasmin-et-cigarette",
+        "https://www.perfumeoutlet.com/products/jasmin-et-cigarette-by-etat-libre-dorange-eau-de-parfum-spray-for-women-1",
+        "https://basenotes.com/fragrances/jasmin-et-cigarette-by-etat-libre-dorange.26127056/reviews/"
+      ]
+    },
+    {
+      "id": "afnan-supremacy-silver",
+      "price_usd_100ml": 30,
+      "price_date": "2026-10",
+      "longevity": 3,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "fruity",
+        "citrus",
+        "woody",
+        "smoky",
+        "musky"
+      ],
+      "sources": [
+        "https://www.fragrancex.com/products/afnan/supremacy-silver-cologne",
+        "https://besuitedaroma.com/afnan-supremacy-silver-review/",
+        "https://parfumhill.com/blogs/news/afnan-supremacy-silver-review-a-true-hidden-gem"
+      ]
+    },
+    {
+      "id": "ex-nihilo-fleur-narcotique",
+      "longevity": 4,
+      "sillage": 3,
+      "projection": 3,
+      "accords": [
+        "white floral",
+        "fruity",
+        "musky",
+        "woody"
+      ],
+      "sources": [
+        "https://fragrancelord.com/blogs/articles/ex-nihilo-fleur-narcotique",
+        "https://www.venbafragrance.com/products/ex-nihilo-fleur-narcotique-edp",
+        "https://www.parfumo.com/Perfumes/Ex_Nihilo/fleur-narcotique-eau-de-parfum"
+      ]
+    }
+  ]
+}

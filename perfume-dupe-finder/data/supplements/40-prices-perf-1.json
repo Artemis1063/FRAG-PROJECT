@@ -1,0 +1,1664 @@
+{
+ "perfumes": [],
+ "patches": [
+  {
+   "id": "ysl-libre",
+   "price_usd_100ml": 177,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "lavender",
+    "citrus",
+    "white floral",
+    "vanilla",
+    "musky"
+   ],
+   "sources": [
+    "https://www.walmart.com/ip/318507554",
+    "https://theperfumeshopusa.com/products/libre-by-yves-saint-laurent-for-women"
+   ]
+  },
+  {
+   "id": "guerlain-shalimar",
+   "price_usd_100ml": 161,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 4,
+   "projection": 3,
+   "accords": [
+    "vanilla",
+    "amber",
+    "citrus",
+    "powdery",
+    "balsamic"
+   ],
+   "sources": [
+    "https://www.parfumo.com/Perfumes/Guerlain/Shalimar",
+    "https://vivir.com/article/guerlain-shalimar-perfume-parfum-review"
+   ]
+  },
+  {
+   "id": "creed-aventus",
+   "price_usd_100ml": 510,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 4,
+   "projection": 4,
+   "accords": [
+    "fruity",
+    "smoky",
+    "woody",
+    "citrus"
+   ],
+   "sources": [
+    "https://bluemercury.com/products/creed-aventus",
+    "https://hayesaura.com/blogs/news/creed-aventus-review-notes-longevity-price"
+   ]
+  },
+  {
+   "id": "mfk-baccarat-rouge-540",
+   "price_usd_100ml": 514,
+   "price_date": "2026-10",
+   "longevity": 5,
+   "sillage": 5,
+   "projection": 4,
+   "accords": [
+    "amber",
+    "woody",
+    "sweet",
+    "warm spicy"
+   ],
+   "sources": [
+    "https://www.luckyscent.com/products/baccarat-rouge-540-by-maison-francis-kurkdjian",
+    "https://www.parfumo.com/Perfumes/Maison_Francis_Kurkdjian/Baccarat_Rouge_540_Eau_de_Parfum"
+   ]
+  },
+  {
+   "id": "byredo-gypsy-water",
+   "price_usd_100ml": 330,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 2,
+   "projection": 2,
+   "accords": [
+    "woody",
+    "citrus",
+    "fresh spicy",
+    "vanilla",
+    "aromatic"
+   ],
+   "sources": [
+    "https://www.sephora.com/product/gypsy-water-eau-de-parfum-P519897",
+    "https://homewisereview.com/unbiased-byredo-gypsy-water-review/"
+   ]
+  },
+  {
+   "id": "parfums-de-marly-layton",
+   "price_usd_100ml": 320,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 4,
+   "projection": 4,
+   "accords": [
+    "vanilla",
+    "fruity",
+    "aromatic",
+    "warm spicy",
+    "woody"
+   ],
+   "sources": [
+    "https://www.luckyscent.com/products/layton-by-parfums-de-marly",
+    "https://vivir.com/article/parfums-de-marly-layton-review"
+   ]
+  },
+  {
+   "id": "kilian-angels-share",
+   "price_usd_100ml": 570,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "boozy",
+    "sweet",
+    "warm spicy",
+    "vanilla",
+    "woody"
+   ],
+   "sources": [
+    "https://www.luckyscent.com/products/angels-share-by-by-kilian",
+    "https://www.venbafragrance.com/products/kilian-angels-share-edp"
+   ]
+  },
+  {
+   "id": "guerlain-mitsouko",
+   "price_usd_100ml": 168,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "chypre",
+    "fruity",
+    "mossy",
+    "warm spicy",
+    "woody"
+   ],
+   "sources": [
+    "https://www.parfumo.com/Perfumes/Guerlain/Mitsouko",
+    "https://beautyhouse.com/products/guerlain-mitsouko-eau-de-parfum-for-women"
+   ]
+  },
+  {
+   "id": "frederic-malle-portrait-of-a-lady",
+   "price_usd_100ml": 470,
+   "price_date": "2026-10",
+   "longevity": 5,
+   "sillage": 4,
+   "projection": 4,
+   "accords": [
+    "rose",
+    "patchouli",
+    "fruity",
+    "warm spicy",
+    "incense"
+   ],
+   "sources": [
+    "https://www.jomashop.com/frederic-malle-portrait-of-a-lady-ladies-3-4-oz.html",
+    "https://www.venbafragrance.com/products/frederic-malle-portrait-of-a-lady"
+   ]
+  },
+  {
+   "id": "creed-silver-mountain-water",
+   "price_usd_100ml": 490,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "citrus",
+    "fresh",
+    "tea",
+    "fruity",
+    "musky"
+   ],
+   "sources": [
+    "https://perfumania.com/products/creed-silver-mountain-water-mens-eau-de-parfum-spray",
+    "https://scentgrail.com/holy-grail-scents/silver-mountain-water/"
+   ]
+  },
+  {
+   "id": "jo-malone-english-pear-and-freesia",
+   "price_usd_100ml": 175,
+   "price_date": "2026-10",
+   "longevity": 2,
+   "sillage": 2,
+   "projection": 2,
+   "accords": [
+    "fruity",
+    "floral",
+    "fresh",
+    "woody"
+   ],
+   "sources": [
+    "https://www.sephora.com/product/english-pear-freesia-cologne-P417180",
+    "https://www.livethatglow.com/jo-malone-londons-bestselling-english-pear-freesia-cologne-review/"
+   ]
+  },
+  {
+   "id": "mfk-aqua-universalis",
+   "price_usd_100ml": 379,
+   "price_date": "2026-10",
+   "longevity": 2,
+   "sillage": 2,
+   "projection": 2,
+   "accords": [
+    "citrus",
+    "white floral",
+    "musky",
+    "fresh"
+   ],
+   "sources": [
+    "https://www.luckyscent.com/products/aqua-universalis-by-maison-francis-kurkdjian",
+    "https://www.maxaroma.com/fragrance/niche-fragrances/maison-francis-kurkdjian-aqua-universalis/pid/21441/2"
+   ]
+  },
+  {
+   "id": "byredo-bal-dafrique",
+   "longevity": 3,
+   "sillage": 2,
+   "projection": 2,
+   "accords": [
+    "citrus",
+    "floral",
+    "woody",
+    "musky",
+    "powdery"
+   ],
+   "sources": [
+    "https://www.venbafragrance.com/products/byredo-parfums-bal-dafrique-edp",
+    "https://www.parfumo.com/Perfumes/Byredo/Bal_d_Afrique_Eau_de_Parfum"
+   ]
+  },
+  {
+   "id": "parfums-de-marly-delina",
+   "price_usd_100ml": 547,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 4,
+   "projection": 4,
+   "accords": [
+    "rose",
+    "fruity",
+    "musky",
+    "fresh spicy"
+   ],
+   "sources": [
+    "https://www.luckyscent.com/products/delina-by-parfums-de-marly",
+    "https://sensabeauty.com/blogs/knowledge-hub/parfums-de-marly-delina-review"
+   ]
+  },
+  {
+   "id": "kilian-love-dont-be-shy",
+   "price_usd_100ml": 610,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "sweet",
+    "white floral",
+    "vanilla",
+    "musky",
+    "citrus"
+   ],
+   "sources": [
+    "https://www.luckyscent.com/products/love-dont-be-shy-by-by-kilian",
+    "https://www.perfume.com/kilian/kilian-love-don-t-be-shy/women-perfume"
+   ]
+  },
+  {
+   "id": "amouage-reflection-man",
+   "price_usd_100ml": 380,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "white floral",
+    "powdery",
+    "woody",
+    "fresh spicy",
+    "aromatic"
+   ],
+   "sources": [
+    "https://www.adegbe.com/f/amouage-reflection-man",
+    "https://www.parfumo.com/Perfumes/Amouage/Reflection_Man"
+   ]
+  },
+  {
+   "id": "frederic-malle-musc-ravageur",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "musky",
+    "vanilla",
+    "amber",
+    "warm spicy",
+    "aromatic"
+   ],
+   "sources": [
+    "https://scentgrail.com/holy-grail-scents/musc-ravageur-review/",
+    "https://www.venbafragrance.com/products/federic-malle-musc-ravageur"
+   ]
+  },
+  {
+   "id": "viktor-rolf-flowerbomb",
+   "price_usd_100ml": 182,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 4,
+   "projection": 3,
+   "accords": [
+    "sweet",
+    "floral",
+    "vanilla",
+    "powdery",
+    "patchouli"
+   ],
+   "sources": [
+    "https://www.sephora.com/product/flowerbomb-P255506",
+    "https://us.viktor-rolf.com/fragrance/flowerbomb-eau-de-parfum-by-viktor-rolf-VKR_002.html"
+   ]
+  },
+  {
+   "id": "creed-green-irish-tweed",
+   "price_usd_100ml": 490,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "green",
+    "citrus",
+    "aromatic",
+    "woody",
+    "fresh"
+   ],
+   "sources": [
+    "https://creedboutique.com/products/green-irish-tweed",
+    "https://ministryofscent.com/products/creed-green-irish-tweed"
+   ]
+  },
+  {
+   "id": "jo-malone-wood-sage-and-sea-salt",
+   "price_usd_100ml": 175,
+   "price_date": "2026-10",
+   "longevity": 2,
+   "sillage": 2,
+   "projection": 2,
+   "accords": [
+    "aromatic",
+    "salty",
+    "woody",
+    "fresh",
+    "mineral"
+   ],
+   "sources": [
+    "https://www.sephora.com/product/wood-sage-sea-salt-cologne-P417179",
+    "https://www.fashioninbeauty.com/jo-malone-wood-sage-and-sea-salt/"
+   ]
+  },
+  {
+   "id": "mfk-grand-soir",
+   "price_usd_100ml": 393,
+   "price_date": "2026-10",
+   "longevity": 5,
+   "sillage": 4,
+   "projection": 4,
+   "accords": [
+    "amber",
+    "vanilla",
+    "balsamic",
+    "sweet",
+    "woody"
+   ],
+   "sources": [
+    "https://www.luckyscent.com/products/grand-soir-by-maison-francis-kurkdjian",
+    "https://nstperfume.com/2017/06/26/maison-francis-kurkdjian-grand-soir-fragrance-review/"
+   ]
+  },
+  {
+   "id": "byredo-mojave-ghost",
+   "price_usd_100ml": 330,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 2,
+   "projection": 2,
+   "accords": [
+    "musky",
+    "woody",
+    "floral",
+    "powdery"
+   ],
+   "sources": [
+    "https://bluemercury.com/products/byredo-mojave-ghost-eau-de-parfum",
+    "https://www.scento.com/blog/byredo-mojave-ghost-review-notes-sillage-honest-verdict"
+   ]
+  },
+  {
+   "id": "maison-margiela-replica-by-the-fireplace",
+   "price_usd_100ml": 170,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "smoky",
+    "sweet",
+    "vanilla",
+    "woody",
+    "warm spicy"
+   ],
+   "sources": [
+    "https://www.maisonmargiela.com/en-us/replica-by-the-fireplace-eau-de-toilette-|-maison-margiela-S33YX0024S11331961.html",
+    "https://www.venbafragrance.com/products/maison-margiela-replica-by-the-fireplace-edt"
+   ]
+  },
+  {
+   "id": "parfums-de-marly-pegasus",
+   "price_usd_100ml": 320,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "almond",
+    "vanilla",
+    "aromatic",
+    "woody",
+    "powdery"
+   ],
+   "sources": [
+    "https://www.maxaroma.com/fragrance/niche-fragrances/parfums-de-marly-pegasus/pid/9371/2",
+    "https://besuitedaroma.com/parfums-de-marly-pegasus-review/"
+   ]
+  },
+  {
+   "id": "montale-arabians-tonka",
+   "price_usd_100ml": 190,
+   "price_date": "2026-10",
+   "longevity": 5,
+   "sillage": 5,
+   "projection": 4,
+   "accords": [
+    "sweet",
+    "oud",
+    "rose",
+    "amber",
+    "warm spicy"
+   ],
+   "sources": [
+    "https://montaleparfums.us/products/arabians-tonka",
+    "https://www.venbafragrance.com/products/montale-arabians-tonka-edp"
+   ]
+  },
+  {
+   "id": "versace-dylan-blue",
+   "price_usd_100ml": 116,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "citrus",
+    "aromatic",
+    "fresh spicy",
+    "woody",
+    "amber"
+   ],
+   "sources": [
+    "https://www.selfridges.com/US/en/product/versace-dylan-blue-pour-homme-eau-de-toilette-100ml_207-75063778-DB721010/",
+    "https://www.parfumo.com/Perfumes/Versace/Versace_pour_Homme_Dylan_Blue_Eau_de_Toilette"
+   ]
+  },
+  {
+   "id": "mancera-cedrat-boise",
+   "longevity": 4,
+   "sillage": 4,
+   "projection": 4,
+   "accords": [
+    "citrus",
+    "woody",
+    "fruity",
+    "leather",
+    "fresh spicy"
+   ],
+   "sources": [
+    "https://scentgrail.com/holy-grail-scents/mancera-cedrat-boise-review/",
+    "https://www.manceraparfums.com/en/woody/16-cedrat-boise.html"
+   ]
+  },
+  {
+   "id": "kilian-good-girl-gone-bad",
+   "price_usd_100ml": 590,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "white floral",
+    "tuberose",
+    "fruity",
+    "floral"
+   ],
+   "sources": [
+    "https://www.luxinagroup.com/products/kilian-good-girl-gone-bad-w-50ml-edp-refillable-spray",
+    "https://www.venbafragrance.com/products/kilian-good-girl-gone-bad-edp"
+   ]
+  },
+  {
+   "id": "lancome-idole",
+   "price_usd_100ml": 157,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "rose",
+    "white floral",
+    "musky",
+    "fresh"
+   ],
+   "sources": [
+    "https://www.macys.com/shop/product/lancome-idole-eau-de-parfum?ID=11460761",
+    "https://perfumania.com/products/lancome-idole-perfume-for-women-eau-de-parfum"
+   ]
+  },
+  {
+   "id": "nishane-hacivat",
+   "price_usd_100ml": 395,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 4,
+   "projection": 4,
+   "accords": [
+    "fruity",
+    "citrus",
+    "woody",
+    "mossy",
+    "patchouli"
+   ],
+   "sources": [
+    "https://www.lamaisonduparfum.com/en-us/products/hacivat",
+    "https://www.venbafragrance.com/products/nishane-hacivat-extrait"
+   ]
+  },
+  {
+   "id": "ysl-la-nuit-de-lhomme",
+   "price_usd_100ml": 145,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "warm spicy",
+    "aromatic",
+    "woody",
+    "amber"
+   ],
+   "sources": [
+    "https://www.harrods.com/en-us/p/ysl-la-nuit-de-lhomme-eau-de-parfum-100ml-000000000002283594",
+    "https://sensabeauty.com/blogs/knowledge-hub/ysl-la-nuit-de-lhomme-review-guide"
+   ]
+  },
+  {
+   "id": "guerlain-jicky",
+   "longevity": 3,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "aromatic",
+    "citrus",
+    "animalic",
+    "vanilla",
+    "powdery"
+   ],
+   "sources": [
+    "https://www.parfumo.com/Perfumes/Guerlain/Jicky",
+    "https://basenotes.com/fragrances/jicky-eau-de-parfum-by-guerlain.26120870/reviews/"
+   ]
+  },
+  {
+   "id": "tiziana-terenzi-kirke",
+   "price_usd_100ml": 260,
+   "price_date": "2026-10",
+   "longevity": 5,
+   "sillage": 5,
+   "projection": 4,
+   "accords": [
+    "fruity",
+    "sweet",
+    "musky",
+    "powdery"
+   ],
+   "sources": [
+    "https://www.harrods.com/en-us/p/tiziana-terenzi-kirke-extrait-de-parfum-100ml-000000000006349699",
+    "https://www.venbafragrance.com/products/tiziana-terenzi-kirke-extrait"
+   ]
+  },
+  {
+   "id": "frederic-malle-carnal-flower",
+   "price_usd_100ml": 470,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 4,
+   "projection": 4,
+   "accords": [
+    "tuberose",
+    "white floral",
+    "green",
+    "musky"
+   ],
+   "sources": [
+    "https://www.scentsangel.com/products/frederic-malle-carnal-flower",
+    "https://elevated-classics.com/the-best-tuberose-perfume-carnal-flower-by-frederic-malle/"
+   ]
+  },
+  {
+   "id": "lattafa-khamrah",
+   "price_usd_100ml": 35,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 4,
+   "projection": 4,
+   "accords": [
+    "sweet",
+    "warm spicy",
+    "vanilla",
+    "amber",
+    "fruity"
+   ],
+   "sources": [
+    "https://www.parfumo.com/Perfumes/Lattafa/khamrah",
+    "https://scentchronicles.com/lattafa-khamrah-review-2025-is-it-really-worth-the-hype/"
+   ]
+  },
+  {
+   "id": "armaf-club-de-nuit-intense-man",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "citrus",
+    "smoky",
+    "fruity",
+    "woody"
+   ],
+   "sources": [
+    "https://smellsplus.com/blogs/news/armaf-club-de-nuit-intense-man-review",
+    "https://basenotes.com/fragrances/club-de-nuit-intense-for-men-by-armaf.26148985/reviews/"
+   ]
+  },
+  {
+   "id": "carolina-herrera-212-vip",
+   "longevity": 4,
+   "sillage": 4,
+   "projection": 3,
+   "accords": [
+    "sweet",
+    "vanilla",
+    "boozy",
+    "musky",
+    "fruity"
+   ],
+   "sources": [
+    "https://www.perfume.com/carolina-herrera/212-vip/women-perfume",
+    "https://www.landyschemist.com/carolina-herrera-212-vip-eau-de-parfum-80ml"
+   ]
+  },
+  {
+   "id": "creed-viking",
+   "price_usd_100ml": 510,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "fresh spicy",
+    "aromatic",
+    "rose",
+    "woody",
+    "citrus"
+   ],
+   "sources": [
+    "https://creedboutique.com/products/viking",
+    "https://vivir.com/article/creed-viking-fragrance-review"
+   ]
+  },
+  {
+   "id": "afnan-9pm",
+   "price_usd_100ml": 50,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 4,
+   "projection": 4,
+   "accords": [
+    "vanilla",
+    "sweet",
+    "warm spicy",
+    "aromatic",
+    "fruity"
+   ],
+   "sources": [
+    "https://us.afnan.com/products/9-pm",
+    "https://smellsplus.com/blogs/news/afnan-9pm-review"
+   ]
+  },
+  {
+   "id": "jo-malone-peony-and-blush-suede",
+   "price_usd_100ml": 175,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 2,
+   "projection": 2,
+   "accords": [
+    "floral",
+    "fruity",
+    "suede",
+    "powdery"
+   ],
+   "sources": [
+    "https://www.jomalone.com/product/25946/27028/colognes/peony-blush-suede-cologne",
+    "https://www.fragrancex.com/products/jo-malone/jo-malone-peony-and-blush-suede-cologne"
+   ]
+  },
+  {
+   "id": "mfk-oud-satin-mood",
+   "price_usd_100ml": 486,
+   "price_date": "2026-10",
+   "longevity": 5,
+   "sillage": 4,
+   "projection": 4,
+   "accords": [
+    "oud",
+    "rose",
+    "vanilla",
+    "amber",
+    "sweet"
+   ],
+   "sources": [
+    "https://www.luckyscent.com/products/oud-satin-mood-by-maison-francis-kurkdjian",
+    "https://vivir.com/article/maison-francis-kurkdjian-oud-satin-mood-review"
+   ]
+  },
+  {
+   "id": "givenchy-gentleman",
+   "price_usd_100ml": 155,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "iris",
+    "aromatic",
+    "woody",
+    "patchouli",
+    "warm spicy"
+   ],
+   "sources": [
+    "https://www.givenchybeauty.com/us/p/gentleman-givenchy-F10100026.html",
+    "https://www.parfumo.com/Perfumes/Givenchy/Gentleman_Givenchy_Eau_de_Parfum"
+   ]
+  },
+  {
+   "id": "byredo-blanche",
+   "price_usd_100ml": 330,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 2,
+   "projection": 2,
+   "accords": [
+    "white floral",
+    "musky",
+    "aldehydic",
+    "powdery",
+    "fresh"
+   ],
+   "sources": [
+    "https://www.byredo.com/us_en/c/perfume/best-sellers/blanche",
+    "https://www.scentsangel.com/products/byredo-blanche"
+   ]
+  },
+  {
+   "id": "chloe-nomade",
+   "price_usd_100ml": 176,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "fruity",
+    "mossy",
+    "chypre",
+    "floral"
+   ],
+   "sources": [
+    "https://www.fragrancenet.com/perfume/chloe/chloe-nomade/eau-de-parfum",
+    "https://southbeachperfumes.com/blogs/the-fragrance-encyclopedia-by-south-beach-perfumes/chloe-nomade-eau-de-parfum-notes-longevity-review-complete-guide"
+   ]
+  },
+  {
+   "id": "gucci-bloom",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "white floral",
+    "tuberose",
+    "green",
+    "powdery"
+   ],
+   "sources": [
+    "https://homewisereview.com/gucci-bloom-eau-de-parfum-review/",
+    "https://perfumania.com/blogs/articles/an-in-depth-review-of-gucci-bloom-eau-de-parfum"
+   ]
+  },
+  {
+   "id": "parfums-de-marly-herod",
+   "price_usd_100ml": 320,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "tobacco",
+    "vanilla",
+    "warm spicy",
+    "woody",
+    "sweet"
+   ],
+   "sources": [
+    "https://www.luckyscent.com/products/herod-by-parfums-de-marly",
+    "https://www.venbafragrance.com/products/parfums-de-marly-herod-edp"
+   ]
+  },
+  {
+   "id": "montale-intense-cafe",
+   "price_usd_100ml": 190,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 4,
+   "projection": 4,
+   "accords": [
+    "coffee",
+    "rose",
+    "vanilla",
+    "amber"
+   ],
+   "sources": [
+    "https://montaleparfums.us/products/intense-cafe",
+    "https://www.parfumo.com/Perfumes/Montale/Intense_Cafe"
+   ]
+  },
+  {
+   "id": "burberry-her",
+   "price_usd_100ml": 185,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "fruity",
+    "sweet",
+    "musky",
+    "woody"
+   ],
+   "sources": [
+    "https://us.burberry.com/her-eau-de-parfum-100ml-p40804591",
+    "https://www.lookfantastic.com/p/burberry-her-eau-de-parfum-100ml/12044922/"
+   ]
+  },
+  {
+   "id": "nishane-ani",
+   "price_usd_100ml": 380,
+   "price_date": "2026-10",
+   "longevity": 5,
+   "sillage": 4,
+   "projection": 4,
+   "accords": [
+    "vanilla",
+    "warm spicy",
+    "sweet",
+    "amber",
+    "citrus"
+   ],
+   "sources": [
+    "https://www.luckyscent.com/product/774052/ani-by-nishane",
+    "https://scentgrail.com/perfume-reviews/nishane-ani-review/"
+   ]
+  },
+  {
+   "id": "ysl-mon-paris",
+   "longevity": 4,
+   "sillage": 4,
+   "projection": 3,
+   "accords": [
+    "fruity",
+    "sweet",
+    "white floral",
+    "patchouli",
+    "musky"
+   ],
+   "sources": [
+    "https://vivir.com/article/yves-saint-laurent-mon-paris-parfum-floral-review",
+    "https://southbeachperfumes.com/blogs/the-fragrance-encyclopedia-by-south-beach-perfumes/mon-paris-by-yves-saint-laurent-notes-longevity-review-complete-guide"
+   ]
+  },
+  {
+   "id": "frederic-malle-lipstick-rose",
+   "longevity": 3,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "rose",
+    "powdery",
+    "violet",
+    "fruity",
+    "musky"
+   ],
+   "sources": [
+    "https://www.parfumo.com/Perfumes/Editions_de_Parfum_Frederic_Malle/Lipstick_Rose",
+    "https://www.fragrancex.com/products/frederic-malle/lipstick-rose-perfume"
+   ]
+  },
+  {
+   "id": "lattafa-yara",
+   "price_usd_100ml": 25,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "sweet",
+    "vanilla",
+    "fruity",
+    "powdery",
+    "musky"
+   ],
+   "sources": [
+    "https://www.parfumo.com/Perfumes/Lattafa/yara-eau-de-parfum-1",
+    "https://smellsplus.com/blogs/news/lattafa-yara-review"
+   ]
+  },
+  {
+   "id": "viktor-rolf-bonbon",
+   "longevity": 4,
+   "sillage": 4,
+   "projection": 3,
+   "accords": [
+    "caramel",
+    "sweet",
+    "fruity",
+    "citrus",
+    "woody"
+   ],
+   "sources": [
+    "https://www.fragrancex.com/products/viktor-and-rolf/bon-bon-perfume",
+    "https://www.macys.com/shop/product/viktor-rolf-bonbon-eau-de-parfum-fragrance-collection?ID=5460204"
+   ]
+  },
+  {
+   "id": "diptyque-tam-dao",
+   "price_usd_100ml": 190,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 2,
+   "projection": 2,
+   "accords": [
+    "woody",
+    "sandalwood",
+    "creamy",
+    "aromatic"
+   ],
+   "sources": [
+    "https://www.libertylondon.com/us/tam-dao-eau-de-toilette-100ml-347938.html",
+    "https://vivir.com/article/diptyque-tam-dao-edt-review"
+   ]
+  },
+  {
+   "id": "mfk-gentle-fluidity-gold",
+   "price_usd_100ml": 393,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 2,
+   "accords": [
+    "musky",
+    "vanilla",
+    "amber",
+    "warm spicy"
+   ],
+   "sources": [
+    "https://www.luckyscent.com/products/gentle-fluidity-gold-by-maison-francis-kurkdjian",
+    "https://www.venbafragrance.com/products/maison-francis-kurkdjian-gentle-fluidity-gold-edp"
+   ]
+  },
+  {
+   "id": "givenchy-linterdit",
+   "price_usd_100ml": 206,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "white floral",
+    "tuberose",
+    "patchouli",
+    "earthy"
+   ],
+   "sources": [
+    "https://www.harrods.com/en-us/p/givenchy-linterdit-eau-de-parfum-80ml-000000000006157773",
+    "https://vivir.com/article/givenchy-l-interdit-eau-de-parfum-review"
+   ]
+  },
+  {
+   "id": "byredo-rose-of-no-mans-land",
+   "price_usd_100ml": 330,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "rose",
+    "fresh spicy",
+    "fruity",
+    "amber"
+   ],
+   "sources": [
+    "https://www.sephora.com/product/ronml-edp-P520047",
+    "https://vivir.com/article/byredo-rose-of-no-mans-land-review"
+   ]
+  },
+  {
+   "id": "gucci-guilty",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "citrus",
+    "fresh spicy",
+    "floral",
+    "patchouli"
+   ],
+   "sources": [
+    "https://www.fragranceoutlet.com/products/gucci-guilty-pour-femme-by-gucci-for-women-eau-de-parfum",
+    "https://www.macys.com/shop/product/gucci-guilty-eau-de-parfum-intense-pour-femme-fragrance-collection?ID=13668218"
+   ]
+  },
+  {
+   "id": "maison-margiela-replica-lazy-sunday-morning",
+   "price_usd_100ml": 170,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 2,
+   "projection": 2,
+   "accords": [
+    "musky",
+    "aldehydic",
+    "white floral",
+    "powdery"
+   ],
+   "sources": [
+    "https://www.maisonmargiela.com/en-us/replica-lazy-sunday-morning-eau-de-toilette-S33YX0018S10932001.html",
+    "https://www.perfume.com/maison-margiela/replica-lazy-sunday-morning/women-perfume"
+   ]
+  },
+  {
+   "id": "parfums-de-marly-galloway",
+   "price_usd_100ml": 320,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "citrus",
+    "aromatic",
+    "powdery",
+    "musky",
+    "fresh spicy"
+   ],
+   "sources": [
+    "https://www.nordstrom.com/s/galloway-eau-de-parfum/7423644",
+    "https://www.scentsangel.com/products/parfums-de-marly-galloway"
+   ]
+  },
+  {
+   "id": "prada-luna-rossa-ocean",
+   "price_usd_100ml": 155,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "citrus",
+    "aromatic",
+    "iris",
+    "woody",
+    "vanilla"
+   ],
+   "sources": [
+    "https://www.sephora.com/product/luna-rossa-ocean-eau-de-parfum-P506036",
+    "https://www.macys.com/shop/product/prada-mens-luna-rossa-ocean-eau-de-parfum-fragrance-collection?ID=16057908"
+   ]
+  },
+  {
+   "id": "bvlgari-aqva-pour-homme",
+   "price_usd_100ml": 120,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 2,
+   "projection": 2,
+   "accords": [
+    "aquatic",
+    "citrus",
+    "aromatic",
+    "fresh",
+    "woody"
+   ],
+   "sources": [
+    "https://www.maxaroma.com/fragrance/men-fragrances/bvlgari-aqva-pour-homme-edt/pid/7655/3",
+    "https://perfumania.com/products/bvlgari-aqva-mens-eau-de-toilette-spray"
+   ]
+  },
+  {
+   "id": "hugo-boss-boss-bottled",
+   "price_usd_100ml": 143,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "fruity",
+    "warm spicy",
+    "woody",
+    "aromatic"
+   ],
+   "sources": [
+    "https://www.hugoboss.com/us/boss-bottled-eau-de-parfum-100ml/hbna58089321_999.html",
+    "https://www.macys.com/shop/product/boss-by-hugo-boss-mens-boss-bottled-eau-de-parfum-fragrance-collection?ID=11343634"
+   ]
+  },
+  {
+   "id": "montale-black-aoud",
+   "price_usd_100ml": 190,
+   "price_date": "2026-10",
+   "longevity": 5,
+   "sillage": 4,
+   "projection": 4,
+   "accords": [
+    "rose",
+    "oud",
+    "patchouli",
+    "woody"
+   ],
+   "sources": [
+    "https://www.luckyscent.com/products/black-aoud-by-montale",
+    "https://www.parfumo.com/Perfumes/Montale/Black_Aoud"
+   ]
+  },
+  {
+   "id": "versace-pour-homme",
+   "price_usd_100ml": 129,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "citrus",
+    "aromatic",
+    "fresh",
+    "woody"
+   ],
+   "sources": [
+    "https://www.versace.com/us/en/men/accessories/fragrances-body-care/pour-homme/pour-homme-edt-100-ml-blue/R720010-R100MLS_RNUL.html",
+    "https://www.parfumo.com/Perfumes/Versace/Versace_pour_Homme"
+   ]
+  },
+  {
+   "id": "dior-poison",
+   "price_usd_100ml": 155,
+   "price_date": "2026-10",
+   "longevity": 5,
+   "sillage": 5,
+   "projection": 4,
+   "accords": [
+    "fruity",
+    "warm spicy",
+    "tuberose",
+    "amber"
+   ],
+   "sources": [
+    "https://www.nordstrom.com/s/dior-poison-eau-de-toilette/3165375",
+    "https://www.parfumo.com/Perfumes/Dior/Poison_Eau_de_Toilette"
+   ]
+  },
+  {
+   "id": "mancera-red-tobacco",
+   "price_usd_100ml": 167,
+   "price_date": "2026-10",
+   "longevity": 5,
+   "sillage": 5,
+   "projection": 5,
+   "accords": [
+    "tobacco",
+    "warm spicy",
+    "oud",
+    "sweet",
+    "woody"
+   ],
+   "sources": [
+    "https://www.luckyscent.com/products/red-tobacco-by-mancera",
+    "https://fragranceprofile.com/articles/mancera-red-tobacco-review"
+   ]
+  },
+  {
+   "id": "montblanc-explorer",
+   "price_usd_100ml": 136,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "woody",
+    "citrus",
+    "fresh spicy",
+    "vetiver",
+    "leather"
+   ],
+   "sources": [
+    "https://www.montblanc.com/en-us/explorer-eau-de-parfum-100-ml-MB124069.html",
+    "https://www.parfumo.com/Perfumes/Montblanc/Explorer"
+   ]
+  },
+  {
+   "id": "nishane-fan-your-flames",
+   "price_usd_100ml": 340,
+   "price_date": "2026-10",
+   "longevity": 5,
+   "sillage": 4,
+   "projection": 4,
+   "accords": [
+    "tobacco",
+    "coconut",
+    "sweet",
+    "boozy",
+    "woody"
+   ],
+   "sources": [
+    "https://www.selfridges.com/US/en/product/nishane-fan-your-flames-extrait-de-parfum-100ml_R04220291/",
+    "https://www.venbafragrance.com/products/nishane-fan-your-flames-extrait"
+   ]
+  },
+  {
+   "id": "amouage-gold-man",
+   "price_usd_100ml": 395,
+   "price_date": "2026-10",
+   "longevity": 5,
+   "sillage": 4,
+   "projection": 4,
+   "accords": [
+    "floral",
+    "incense",
+    "musky",
+    "animalic",
+    "powdery"
+   ],
+   "sources": [
+    "https://theperfumehouse.com/products/amouage-gold-man",
+    "https://www.parfumo.com/Perfumes/Amouage/Amouage_Gold_Men"
+   ]
+  },
+  {
+   "id": "ralph-lauren-polo-blue",
+   "price_usd_100ml": 104,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "aquatic",
+    "aromatic",
+    "citrus",
+    "woody"
+   ],
+   "sources": [
+    "https://www.ralphlaurenfragrances.com/en_US/men/polo-blue/polo-blue-eau-de-parfum/RLFE003.html",
+    "https://vivir.com/article/ralph-lauren-polo-blue-eau-de-parfum-review"
+   ]
+  },
+  {
+   "id": "tiziana-terenzi-orion",
+   "price_usd_100ml": 350,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "fruity",
+    "sweet",
+    "woody",
+    "amber"
+   ],
+   "sources": [
+    "https://www.selfridges.com/US/en/product/tiziana-terenzi-orion-extrait-eau-de-parfum-100ml_496-3006090-TTPROFORI/",
+    "https://scentrabbit.com/products/tiziana-terenzi-orion"
+   ]
+  },
+  {
+   "id": "frederic-malle-dans-tes-bras",
+   "price_usd_100ml": 410,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 2,
+   "projection": 2,
+   "accords": [
+    "violet",
+    "musky",
+    "woody",
+    "powdery"
+   ],
+   "sources": [
+    "https://www.fredericmalle.com/product/19566/50228/parfums/dans-tes-bras/by-maurice-roucel",
+    "https://www.scentsangel.com/products/dans-tes-bras"
+   ]
+  },
+  {
+   "id": "lattafa-asad",
+   "price_usd_100ml": 30,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 4,
+   "projection": 4,
+   "accords": [
+    "warm spicy",
+    "vanilla",
+    "amber",
+    "tobacco",
+    "sweet"
+   ],
+   "sources": [
+    "https://www.parfumo.com/Perfumes/Lattafa/asad-1",
+    "https://www.lattafa.my/blog/product-guide/asad-longevity-performance/"
+   ]
+  },
+  {
+   "id": "tom-ford-neroli-portofino",
+   "price_usd_100ml": 445,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "citrus",
+    "aromatic",
+    "white floral",
+    "fresh"
+   ],
+   "sources": [
+    "https://us.marcgebauer.com/products/neroli-portofino-edp",
+    "https://www.venbafragrance.com/products/tom-ford-neroli-portofino-edp"
+   ]
+  },
+  {
+   "id": "armaf-club-de-nuit-milestone",
+   "price_usd_100ml": 48,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "aquatic",
+    "fruity",
+    "citrus",
+    "woody",
+    "fresh"
+   ],
+   "sources": [
+    "https://tripletraders.com/products/club-de-nuit-milestone-by-armaf-eau-de-parfum-105ml-3-6-fl-oz",
+    "https://vivir.com/article/armaf-club-de-nuit-milestone-review"
+   ]
+  },
+  {
+   "id": "creed-himalaya",
+   "price_usd_100ml": 490,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "citrus",
+    "woody",
+    "fresh",
+    "amber",
+    "musky"
+   ],
+   "sources": [
+    "https://creedboutique.com/products/himalaya",
+    "https://www.fragman.com/blogs/fragrance-guide/creed-himalaya-review"
+   ]
+  },
+  {
+   "id": "issey-miyake-leau-dissey-pour-homme",
+   "price_usd_100ml": 104,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 3,
+   "projection": 2,
+   "accords": [
+    "citrus",
+    "aquatic",
+    "woody",
+    "fresh spicy"
+   ],
+   "sources": [
+    "https://us.isseymiyake.com/products/leau-dissey-pour-homme-125ml",
+    "https://www.parfumo.com/Perfumes/Issey_Miyake/L_Eau_d_Issey_pour_Homme_Eau_de_Toilette"
+   ]
+  },
+  {
+   "id": "afnan-9pm-elixir",
+   "price_usd_100ml": 50,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 4,
+   "projection": 4,
+   "accords": [
+    "warm spicy",
+    "aromatic",
+    "leather",
+    "vanilla",
+    "amber"
+   ],
+   "sources": [
+    "https://www.maxaroma.com/fragrance/niche-fragrances/afnan-perfumes-9pm-elixir/pid/39861/2",
+    "https://www.parfumo.com/Perfumes/Afnan_Perfumes/9pm-elixir"
+   ]
+  },
+  {
+   "id": "kenzo-kenzo-homme",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "aquatic",
+    "leather",
+    "woody",
+    "patchouli"
+   ],
+   "sources": [
+    "https://www.fragrancenet.com/cologne/kenzo/kenzo-homme/eau-de-parfum",
+    "https://fragflex.com/products/kenzohommeedp2022edition-man"
+   ]
+  },
+  {
+   "id": "mfk-gentle-fluidity-silver",
+   "price_usd_100ml": 393,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "aromatic",
+    "woody",
+    "musky",
+    "fresh spicy"
+   ],
+   "sources": [
+    "https://www.luckyscent.com/products/gentle-fluidity-silver-by-maison-francis-kurkdjian",
+    "https://www.macys.com/shop/product/maison-francis-kurkdjian-gentle-fluidity-silver-eau-de-parfum-2.4-oz.?ID=21893909"
+   ]
+  },
+  {
+   "id": "moschino-toy-boy",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "warm spicy",
+    "rose",
+    "woody",
+    "fruity"
+   ],
+   "sources": [
+    "https://www.macys.com/shop/product/moschino-toy-boy-eau-de-parfum-fragrance-collection?ID=10513708",
+    "https://www.perfumestudiomnl.com/products/moschino-toy-boy"
+   ]
+  },
+  {
+   "id": "rabanne-olympea",
+   "price_usd_100ml": 130,
+   "price_date": "2026-10",
+   "longevity": 4,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "vanilla",
+    "salty",
+    "white floral",
+    "sweet"
+   ],
+   "sources": [
+    "https://www.selfridges.com/US/en/product/rabanne-olympea-eau-de-parfum-80ml_248-73037435-65095775/",
+    "https://www.fragrancex.com/products/paco-rabanne/olympea-perfume"
+   ]
+  },
+  {
+   "id": "nina-ricci-lair-du-temps",
+   "price_usd_100ml": 95,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "floral",
+    "warm spicy",
+    "powdery",
+    "woody"
+   ],
+   "sources": [
+    "https://wafadutyfree.com/en-us/products/nina-ricci-lair-du-temps-edp-for-women",
+    "https://www.ninaricci.com/en-us/fragrance/product/lair-du-temps-eau-de-parfum"
+   ]
+  },
+  {
+   "id": "byredo-super-cedar",
+   "price_usd_100ml": 330,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 2,
+   "projection": 2,
+   "accords": [
+    "woody",
+    "rose",
+    "musky",
+    "vetiver"
+   ],
+   "sources": [
+    "https://bluemercury.com/products/byredo-super-cedar-eau-de-parfum",
+    "https://beautinow.com/products/byredo-super-cedar-eau-de-parfum/"
+   ]
+  },
+  {
+   "id": "kayali-utopia-vanilla-coco-21",
+   "price_usd_100ml": 150,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "vanilla",
+    "coconut",
+    "sweet",
+    "white floral",
+    "musky"
+   ],
+   "sources": [
+    "https://us.kayali.com/products/utopia-vanilla-coco-21",
+    "https://www.parfumo.com/Perfumes/Kayali/utopia-vanilla-coco-21"
+   ]
+  },
+  {
+   "id": "roberto-cavalli-paradiso",
+   "price_usd_100ml": 160,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "citrus",
+    "green",
+    "white floral",
+    "woody",
+    "aromatic"
+   ],
+   "sources": [
+    "https://www.robertocavalli.com/en-us/women/fragrances/roberto-cavalli-paradiso-eau-de-parfum-75-ml--SAW003-SA004-E0293.html",
+    "https://www.fragrancex.com/products/roberto-cavalli/roberto-cavalli-paradiso-perfume"
+   ]
+  },
+  {
+   "id": "davidoff-cool-water-woman",
+   "longevity": 3,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "aquatic",
+    "fruity",
+    "floral",
+    "fresh"
+   ],
+   "sources": [
+    "https://perfumania.com/products/davidoff-cool-water-women-eau-de-toilette-spray",
+    "https://www.theperfumeshop.com/davidoff/cool-water-woman/eau-de-toilette-spray/p/25800EDTJU?varSel=1010677"
+   ]
+  },
+  {
+   "id": "maison-margiela-replica-beach-walk",
+   "price_usd_100ml": 170,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 2,
+   "projection": 2,
+   "accords": [
+    "coconut",
+    "citrus",
+    "musky",
+    "white floral"
+   ],
+   "sources": [
+    "https://www.luckyscent.com/products/beach-walk-by-maison-margiela-replica",
+    "https://www.scento.com/blog/maison-margiela-replica-beach-walk-review-summer-in-a-bottle"
+   ]
+  },
+  {
+   "id": "parfums-de-marly-percival",
+   "price_usd_100ml": 320,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "citrus",
+    "aromatic",
+    "fresh spicy",
+    "musky"
+   ],
+   "sources": [
+    "https://www.luckyscent.com/products/percival-by-parfums-de-marly",
+    "https://www.fragman.com/blogs/fragrance-guide/percival-by-parfums-de-marly-the-clean-cut-fresh-scent-that-punches-above-its-weight"
+   ]
+  },
+  {
+   "id": "salvatore-ferragamo-signorina",
+   "price_usd_100ml": 130,
+   "price_date": "2026-10",
+   "longevity": 3,
+   "sillage": 3,
+   "projection": 3,
+   "accords": [
+    "fruity",
+    "rose",
+    "sweet",
+    "musky"
+   ],
+   "sources": [
+    "https://www.bloomingdales.com/shop/product/salvatore-ferragamo-signorina-eau-de-parfum?ID=602900",
+    "https://www.fragrancex.com/products/salvatore-ferragamo/signorina-perfume"
+   ]
+  }
+ ]
+}
